@@ -1,0 +1,1 @@
+python finetune.py imagenet_resnet_ft.hocon

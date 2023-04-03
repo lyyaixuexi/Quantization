@@ -1,0 +1,43 @@
+# ------------- general options ----------------------------------------
+save_path = "/home/liujing/NFS/mixed_quantization/auto_compress/binary_gate/resnet/" # log path
+data_path = "/mnt/ssd/datasets/" # path for dataset folder, containing cifar10 and imagenet
+#data_path = "/home/dataset/"
+dataset = "imagenet"  # options: imagenet | cifar10
+seed = 1  # manually set RNG seed
+gpu = "0,1,2,3"  # GPU id to use, e.g. "0,1,2,3"
+print_frequency = 10
+
+# ------------- data options -------------------------------------------
+n_threads = 4  # number of threads used for data loading
+n_classes = 1000  # number of classes in the dataset
+
+# ------------- common optimization options ---------------------------
+batch_size = 64  # mini-batch size
+momentum = 0.9  # momentum
+weight_decay = 1e-4  # weight decay
+lr = 0.01  # initial learning rate
+n_epochs = 10  # number of total epochs
+step = [25, 30]  # multi-step for linear learning rate
+lr_scheduler_type = 'multi_step'
+opt_type = 'SGD'
+warmup_lr = 0.001
+warmup_n_iters = 0
+
+# ------------- model options ------------------------------------------
+net_type = "super_compress_gate_resnet"  # options: resnet | preresnet
+experiment_id = "sgdmn_supernet_compress_gate_indicator_pytorch_init_20210403"  # experiment identifier
+depth = 18  # resnet depth: (n-2)%6==0
+loss_lambda = 0.03
+quantize_first_last = True
+num_choices = 16
+group_size = 8
+max_pruning_ratio = 0.2
+
+# ------------- quantization options -----------------------------------
+qw = 2
+qa = 2
+
+# ------------- resume or retrain options ------------------------------
+pretrained = "/home/liujing/Models/pytorch/resnet18-5c106cde.pth"  # path of the pre-trained model
+mixed_precision_pretrained = ""
+resume = "" # resume checkpoint

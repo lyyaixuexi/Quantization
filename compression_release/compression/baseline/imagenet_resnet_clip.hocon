@@ -1,0 +1,37 @@
+# ------------- general options ----------------------------------------
+save_path = "/home/liujing/NFS/TPAMI_quantization/quantization_baseline/resnet18/dorefa_clipped/first8last8/" # log path
+data_path = "/mnt/ssd/datasets/" # path for dataset folder, containing cifar10 and imagenet
+#data_path = "/home/dataset/"
+dataset = "imagenet"  # options: imagenet | cifar10
+seed = 1  # manually set RNG seed
+gpu = "0,1,2,3"  # GPU id to use, e.g. "0,1,2,3"
+print_frequency = 10
+
+# ------------- data options -------------------------------------------
+n_threads = 4  # number of threads used for data loading
+n_classes = 1000  # number of classes in the dataset
+
+# ------------- common optimization options ---------------------------
+batch_size = 64  # mini-batch size
+momentum = 0.9  # momentum
+weight_decay = 1e-4  # weight decay
+lr = 0.01  # initial learning rate
+n_epochs = 15  # number of total epochs
+step = [15, 20]  # multi-step for linear learning rate
+lr_scheduler_type = "cosine"
+quantize_first_last = True
+opt_type = "SGD"
+warmup_n_epochs = 0
+
+# ------------- model options ------------------------------------------
+net_type = "qresnet"  # options: resnet | preresnet
+experiment_id = "dorefa_clipped_rcf_wn_first8_last8_clamp_cosine_zhan2_20210418"  # experiment identifier
+depth = 18  # resnet depth: (n-2)%6==0
+
+# ------------- quantization options -----------------------------------
+qw = 4
+qa = 4
+
+# ------------- resume or retrain options ------------------------------
+pretrained = "/home/liujing/Models/pytorch/resnet18-5c106cde.pth"  # path of the pre-trained model
+resume = "" # resume checkpoint
