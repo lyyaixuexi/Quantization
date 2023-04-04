@@ -1,4 +1,11 @@
 import argparse
+import sys
+import os
+
+CURRENT_DIR = os.path.split(os.path.abspath(__file__))[0]  # 当前目录
+config_path = CURRENT_DIR.rsplit('/', 2)[0]  # 上三级目录
+sys.path.append(config_path)
+
 
 import torch.backends.cudnn as cudnn
 import torch.utils.data

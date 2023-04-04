@@ -1,10 +1,10 @@
 # ------------- general options ----------------------------------------
-save_path = "/home/liujing/NFS/mixed_quantization/auto_compress/binary_gate/resnet/" # log path
+save_path = "/mnt/cephfs/home/lyy/NFS/mixed_quantization/auto_compress/binary_gate/resnet/" # log path
 data_path = "/mnt/ssd/datasets/" # path for dataset folder, containing cifar10 and imagenet
 #data_path = "/home/dataset/"
 dataset = "imagenet"  # options: imagenet | cifar10
 seed = 1  # manually set RNG seed
-gpu = "0,1,2,3"  # GPU id to use, e.g. "0,1,2,3"
+gpu = "0,1,3,4"  # GPU id to use, e.g. "0,1,2,3"
 print_frequency = 10
 
 # ------------- data options -------------------------------------------
@@ -36,8 +36,10 @@ max_pruning_ratio = 0.2
 # ------------- quantization options -----------------------------------
 qw = 2
 qa = 2
+bits_weights_list = [2,4,8]
+bits_activations_list = [2,4,8]
 
 # ------------- resume or retrain options ------------------------------
-pretrained = "/home/liujing/Models/pytorch/resnet18-5c106cde.pth"  # path of the pre-trained model
+pretrained = "/mnt/cephfs/home/lyy/Models/pytorch/resnet18-5c106cde.pth"  # path of the pre-trained model
 mixed_precision_pretrained = ""
 resume = "" # resume checkpoint
