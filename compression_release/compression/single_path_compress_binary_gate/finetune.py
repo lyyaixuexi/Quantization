@@ -1,4 +1,10 @@
 import argparse
+import sys
+import os
+
+CURRENT_DIR = os.path.split(os.path.abspath(__file__))[0]  # 当前目录
+config_path = CURRENT_DIR.rsplit('/', 2)[0]  # 上三级目录
+sys.path.append(config_path)
 
 import torch.backends.cudnn as cudnn
 import torch.nn as nn
@@ -175,7 +181,7 @@ class Experiment(object):
                 self.settings.pretrained, map_location="cpu"
             )
             model_state = check_point_params
-            model_state = check_point_params["model"]
+            # model_state = check_point_params["model"]
 
             if self.settings.net_type in ["qpreresnet", "qresnet"]:
                 bit_key_names = ["bits_weights", "bits_activations"]

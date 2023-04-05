@@ -1,5 +1,5 @@
 # ------------- general options ----------------------------------------
-save_path = "/mnt/cephfs/home/lyy/NFS/mixed_quantization/auto_compress/binary_gate/resnet/" # log path
+save_path = "/mnt/cephfs/home/lyy/NFS/mixed_quantization/auto_compress_ft/binary_gate/resnet/" # log path
 data_path = "/mnt/ssd/datasets/" # path for dataset folder, containing cifar10 and imagenet
 #data_path = "/home/dataset/"
 dataset = "imagenet"  # options: imagenet | cifar10

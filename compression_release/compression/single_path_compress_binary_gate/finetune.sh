@@ -1,1 +1,1 @@
-python finetune.py imagenet_resnet_ft.hocon
+python -m torch.distributed.launch --nproc_per_node=3 --master_port=65525 --use_env finetune.py imagenet_resnet_ft.hocon 0 5,6,7

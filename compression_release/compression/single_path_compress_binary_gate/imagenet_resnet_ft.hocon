@@ -1,11 +1,11 @@
 # ------------- general options ----------------------------------------
-save_path = "/home/liujing/NFS/mixed_quantization/auto_compress_ft/binary_gate/resnet/" # log path
+save_path = "/mnt/cephfs/home/lyy/NFS/mixed_quantization/auto_compress_ft/binary_gate/resnet/" # log path
 data_path = "/mnt/ssd/datasets/" # path for dataset folder, containing cifar10 and imagenet
 #data_path = "/home/dataset/"
 #data_path = "/mnt/cephfs/dataset"
 dataset = "imagenet"  # options: imagenet | cifar10
 seed = 1  # manually set RNG seed
-gpu = "4,5,6,7"  # GPU id to use, e.g. "0,1,2,3"
+gpu = "5,6,7"  # GPU id to use, e.g. "0,1,2,3"
 print_frequency = 10
 
 # ------------- data options -------------------------------------------
@@ -26,7 +26,7 @@ warmup_n_iters = 0
 
 # ------------- model options ------------------------------------------
 net_type = "qresnet"  # options: resnet | preresnet
-experiment_id = "sgdmn_supernet_compress_gate_max_0.035_cp004_34027_cosine_get_bits_20210422"  # experiment identifier
+experiment_id = "sgdmn_supernet_compress_gate_max_0.035_cp004_34027_cosine_get_bits_20230405"  # experiment identifier
 depth = 18  # resnet depth: (n-2)%6==0
 loss_lambda = 0.035
 quantize_first_last = True
@@ -37,8 +37,10 @@ max_pruning_ratio = 0.2
 # ------------- quantization options -----------------------------------
 qw = 2
 qa = 2
+bits_weights_list = [2,4,8]
+bits_activations_list = [2,4,8]
 
 # ------------- resume or retrain options ------------------------------
-pretrained = "/home/liujing/NFS/mixed_quantization/auto_compress/binary_gate/resnet/log_super_compress_gate_resnet_imagenet_w2a2_bs64_e10_lr0.01000_step[25, 30]_lambda0.07_gp16_maxp0.3_sgdmn_supernet_compress_gate_indicator_2021040201/check_point/checkpoint_009.pth"  # path of the pre-trained model
+pretrained = "/mnt/cephfs/home/lyy/NFS/mixed_quantization/auto_compress/binary_gate/resnet/log_super_compress_gate_resnet_imagenet_w2a2_bs64_e10_lr0.01000_step[25, 30]_lambda0.05_gp16_maxp0.2_sgdmn_supernet_compress_gate_indicator_pytorch_init_2021040301/check_point/best_model.pth"  # path of the pre-trained model
 mixed_precision_pretrained = ""
 resume = "" # resume checkpoint
