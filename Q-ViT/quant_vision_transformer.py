@@ -527,3 +527,16 @@ def twobits_deit_small_patch16_224(pretrained=False, **kwargs):
             map_location="cpu", check_hash=True
         )
     return model
+
+@register_model
+def fourbits_deit_tiny_patch16_224(pretrained=False, **kwargs):
+    model = lowbit_VisionTransformer(
+        nbits=4, patch_size=16, embed_dim=192, depth=12, num_heads=3, mlp_ratio=4, qkv_bias=True,
+        norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
+    model.default_cfg = _cfg()
+    if pretrained:
+        torch.hub.load_state_dict_from_url(
+            url='https://dl.fbaipublicfiles.com/deit/deit_tiny_distilled_patch16_224-b40b3cf7.pth',
+            map_location="cpu", check_hash=True
+        )
+    return model
