@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Q-ViT" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/compression_release" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.6.13 (sftp://lyy@gpu023.scut-smil.cn:22/mnt/cephfs/mixed/home/lyy/envs/pytorch-py36/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.6.13 (sftp://lyy@127.0.0.1:8000/mnt/cephfs/mixed/home/lyy/envs/pytorch-py36/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
