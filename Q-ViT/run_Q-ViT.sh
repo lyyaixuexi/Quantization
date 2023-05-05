@@ -13,4 +13,6 @@ CUDA_VISIBLE_DEVICES=${GPU_ID} python -m torch.distributed.launch --master_port=
         --output_dir ./dist_4bit_tiny_lamb_3e-4_300_84 \
         --distillation-type hard \
         --teacher-model deit_tiny_patch16_224 \
-        --opt fusedlamb
+        --opt fusedlamb \
+        --resume /mnt/cephfs/home/lyy/Quantization/Q-ViT/dist_4bit_tiny_lamb_3e-4_300_84/checkpoint.pth \
+        --start_epoch 81
