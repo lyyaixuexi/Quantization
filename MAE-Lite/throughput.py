@@ -4,8 +4,10 @@ import numpy as np
 # model_list = timm.list_models()
 # print(model_list)
 
+model_name = 'deit_tiny_patch16_224'
 
-model = timm.create_model('vit_base_patch16_224', pretrained=True)
+model = timm.create_model(model_name, pretrained=True)
+print("model: ", model_name)
 torch.cuda.set_device(1)
 model.cuda(1)
 # dummy_input = torch.randn(1, 3, 224, 224,dtype=torch.float).to(1)
@@ -31,8 +33,9 @@ model.cuda(1)
 # print(' * Mean@1 {mean_syn:.3f}ms Std@5 {std_syn:.3f}ms FPS@1 {mean_fps:.2f}'.format(mean_syn=mean_syn, std_syn=std_syn, mean_fps=mean_fps))
 # print(mean_syn)
 
-optimal_batch_size = 512
-dummy_input = torch.randn(optimal_batch_size, 3,224,224, dtype=torch.float).to(1)
+optimal_batch_size = 2048
+print("batch_size: ", optimal_batch_size)
+dummy_input = torch.randn(optimal_batch_size, 3, 224, 224, dtype=torch.float).to(1)
 repetitions=100
 total_time = 0
 with torch.no_grad():
