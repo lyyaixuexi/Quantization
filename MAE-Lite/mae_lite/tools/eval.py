@@ -161,7 +161,7 @@ def main_worker(gpu, nr_gpu, args):
             ckpt_path = os.path.join(file_name, "last_epoch_ckpt.pth.tar")
             assert os.path.isfile(ckpt_path), "Failed to load ckpt from '{}'".format(ckpt_path)
     ckpt = torch.load(ckpt_path, map_location="cpu")
-    msg = model.load_state_dict(ckpt["model"])
+    msg = model.load_state_dict({k.replace('module.', ''): v for k, v in ckpt["model"].items()})
     if rank == 0:
         logger.warning("Model params {} are not loaded".format(msg.missing_keys))
         logger.warning("State-dict params {} are not used".format(msg.unexpected_keys))
@@ -186,6 +186,7 @@ def run_eval(model, eval_loader):
         for _, (inp, target) in zip(pbar, eval_loader):
             inp = inp.cuda(non_blocking=True)
             target = target.cuda(non_blocking=True)
+            print(inp.shape)
             logits = model(inp)
             acc1, acc5 = accuracy(logits, target, (1, 5))
             acc1, acc5 = all_reduce_mean(acc1), all_reduce_mean(acc5)
