@@ -7,22 +7,25 @@ import numpy as np
 # print(model_list)
 optimal_batch_size = 2500
 gpu = 0
-model_name = 'vit_base_patch16_384.augreg_in1k'
+model_name = 'deit_tiny_patch16_224'
 
-# model = timm.create_model(model_name, pretrained=True)
+model = timm.create_model(model_name, pretrained=True)
 # print("model: ", model_name)
 # torch.cuda.set_device(gpu)
 # model.cuda(gpu)
 
 
-exp_file = 'projects/eval_tools/finetuning_rpe_exp.py'
-# current_exp_name = os.path.basename(exp_file).split(".")[0]
+exp_file = 'projects/eval_tools/finetuning_exp.py'
+
 sys.path.insert(0, os.path.dirname(exp_file))
 current_exp = importlib.import_module(os.path.basename(exp_file).split(".")[0])
 exp = current_exp.Exp(optimal_batch_size)
 model = exp.get_model()
-ckpt = torch.load('/root/mae_tiny_400e_ft_rpe_1000e.pth.tar', map_location="cpu")
-msg = model.load_state_dict({k.replace('module.', ''): v for k, v in ckpt["model"].items()})
+
+ckpt = torch.load('/mnt/cephfs/home/lyy/Quantization/MAE-Lite/model/mae_tiny_400e_ft_300e.pth.tar', map_location="cpu")
+ckpt["model"]['module.model.norm.weight'] = ckpt["model"].pop('module.model.fc_norm.weight')
+ckpt["model"]['module.model.norm.bias'] = ckpt["model"].pop('module.model.fc_norm.bias')
+msg = model.load_state_dict({k.replace('module.model.', ''): v for k, v in ckpt["model"].items()})
 model.eval()
 model.cuda(gpu)
 
@@ -41,3 +44,17 @@ with torch.no_grad():
      total_time += curr_time
 Throughput = (repetitions*optimal_batch_size)/total_time
 print('Final Throughput:',Throughput)
+
+
+
+
+
+
+
+
+
+
+f = open("mae.txt", "w")    # 打开文件以便写入
+print("mae:\n", model, file=f)
+f.close  #  关闭文件
+
