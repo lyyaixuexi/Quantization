@@ -5,6 +5,7 @@ import subprocess
 import sys
 import time
 import torch
+import timm
 
 import torch.distributed as dist
 import torch.multiprocessing as mp
@@ -160,12 +161,21 @@ def main_worker(gpu, nr_gpu, args):
         if os.path.isfile(ckpt_path):
             ckpt_path = os.path.join(file_name, "last_epoch_ckpt.pth.tar")
             assert os.path.isfile(ckpt_path), "Failed to load ckpt from '{}'".format(ckpt_path)
-    ckpt = torch.load(ckpt_path, map_location="cpu")
-    msg = model.load_state_dict(ckpt["model"])
+
+
+    model_name = 'deit_tiny_patch16_224'
+    model = timm.create_model(model_name, pretrained=True)
+    print(model)
+    ckpt = torch.load('/mnt/cephfs/home/lyy/Quantization/MAE-Lite/model/mae_tiny_400e_ft_300e.pth.tar', map_location="cpu")
+    ckpt["model"]['module.model.norm.weight'] = ckpt["model"].pop('module.model.fc_norm.weight')
+    ckpt["model"]['module.model.norm.bias'] = ckpt["model"].pop('module.model.fc_norm.bias')
+    msg = model.load_state_dict({k.replace('module.model.', ''): v for k, v in ckpt["model"].items()})
+
     if rank == 0:
         logger.warning("Model params {} are not loaded".format(msg.missing_keys))
         logger.warning("State-dict params {} are not used".format(msg.unexpected_keys))
 
+    model.to('cuda')
     model.eval()
     eval_top1, eval_top5 = run_eval(model, eval_loader)
     if rank == 0:
