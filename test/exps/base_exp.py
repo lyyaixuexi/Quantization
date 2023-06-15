@@ -11,8 +11,8 @@ from typing import Dict
 import torch
 from torch.nn import Module
 
-from mae_lite.layers.lr_scheduler import LRScheduler
-from mae_lite.utils.env import get_root_dir
+from layers.lr_scheduler import LRScheduler
+from utils.env import get_root_dir
 
 
 class BaseExp(metaclass=ABCMeta):

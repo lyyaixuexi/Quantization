@@ -23,6 +23,10 @@ python mae_lite/tools/eval_mae.py -b 1024 -d 0 -f projects/eval_tools/finetuning
 --ckpt /mnt/cephfs/home/lyy/Quantization/MAE-Lite/model/mae_tiny_400e_ft_300e.pth.tar \
 --exp-options pretrain_exp_name=mae_lite/mae_tiny_400e/ft_eval
 
-python eval_mae.py -b 1024 -d 0 -f projects/eval_tools/finetuning_exp.py \
+python eval_mae.py -b 1024 -d 0 -f finetuning_exp.py \
 --ckpt /mnt/cephfs/home/lyy/Quantization/MAE-Lite/model/mae_tiny_400e_ft_300e.pth.tar \
 --exp-options pretrain_exp_name=mae_lite/mae_tiny_400e/ft_eval
+
+python eval_mae.py -b 128 -d 0 -f finetuning_rpe_exp.py \
+--ckpt /mnt/cephfs/home/lyy/Quantization/MAE-Lite/model/mae_tiny_400e_ft_rpe_1000e.pth.tar \
+--exp-options pretrain_exp_name=mae_lite/mae_tiny_400e/ft_rpe_eval

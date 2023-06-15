@@ -20,11 +20,11 @@ from timm.scheduler import create_scheduler as create_scheduler_timm
 from timm.optim import create_optimizer
 from timm.utils import ModelEmaV2
 
-from mae_lite.exps.base_exp import BaseExp
-from mae_lite.data import build_dataset
-from mae_lite.data.transforms import transforms, ToRGB
-from mae_lite.layers.lr_scheduler import LRScheduler, _Scheduler
-import mae_lite.utils.torch_dist as dist
+from exps.base_exp import BaseExp
+from data import build_dataset
+from data.transforms import transforms, ToRGB
+from layers.lr_scheduler import LRScheduler, _Scheduler
+import utils.torch_dist as dist
 
 
 class Model(nn.Module):
