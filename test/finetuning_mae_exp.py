@@ -9,7 +9,7 @@ from util.lr_decay import create_optimizer, LayerDecayValueAssigner
 from exps.timm_imagenet_exp import Exp as BaseExp, Model
 from mae_lite.layers import build_lr_scheduler
 from loguru import logger
-# from models_vit import *
+from models_vit import *
 # from models_vit_rpe import *
 
 

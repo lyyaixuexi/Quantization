@@ -33,9 +33,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD, IMAGENET_INCEPTION_MEAN, IMAGENET_INCEPTION_STD
-from .helpers import build_model_with_cfg, named_apply, adapt_input_conv
-from .layers import PatchEmbed, Mlp, DropPath, trunc_normal_, lecun_normal_
-from .registry import register_model
+from timm.models.helpers import build_model_with_cfg, named_apply, adapt_input_conv
+from timm.models.layers import PatchEmbed, Mlp, DropPath, trunc_normal_, lecun_normal_
+from timm.models.registry import register_model
 
 _logger = logging.getLogger(__name__)
 
@@ -337,8 +337,10 @@ class VisionTransformer(nn.Module):
             x = torch.cat((cls_token, self.dist_token.expand(x.shape[0], -1, -1), x), dim=1)
         x = self.pos_drop(x + self.pos_embed)
         x = self.blocks(x)
+        # x = x[:, 1:, :].mean(dim=1)  # global pool without cls token
         x = self.norm(x)
         if self.dist_token is None:
+            # return x
             return self.pre_logits(x[:, 0])
         else:
             return x[:, 0], x[:, 1]
