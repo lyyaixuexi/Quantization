@@ -150,7 +150,7 @@ def main_worker(gpu, nr_gpu, args):
         random_seed(exp.seed, rank)
 
     file_name = os.path.join(exp.output_dir, exp.exp_name)
-
+    print("======================================================", file_name)
     if rank == 0:
         os.makedirs(file_name, exist_ok=True)
 

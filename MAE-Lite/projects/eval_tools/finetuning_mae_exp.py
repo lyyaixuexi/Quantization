@@ -11,6 +11,7 @@ from mae_lite.layers import build_lr_scheduler
 from loguru import logger
 from mae_lite.models.models_vit import *
 from models_vit_rpe import *
+from projects.mae_lite.models_mae import *
 
 
 class Exp(BaseExp):

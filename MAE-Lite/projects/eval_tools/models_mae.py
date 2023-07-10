@@ -17,7 +17,7 @@ import torch.nn as nn
 from timm.models.vision_transformer import PatchEmbed
 from mae_lite.models.models_vit import Block
 
-from projects.mae_lite.util.pos_embed import get_2d_sincos_pos_embed
+from util.pos_embed import get_2d_sincos_pos_embed
 from timm.models import register_model
 
 

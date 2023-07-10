@@ -117,7 +117,7 @@ class Exp(BaseExp):
 
     def get_data_loader(self):
         super().get_data_loader()
-        self.data_loader["eval"] = None
+        # self.data_loader["eval"] = None
         return self.data_loader
 
     def get_lr_scheduler(self):
