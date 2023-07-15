@@ -24,7 +24,7 @@ CUDA_VISIBLE_DEVICES=5 python -m awq.entry --model_path /mnt/cephfs/home/lyy/.ca
     --w_bit 4 --q_group_size 128 \
     --load_quant /mnt/cephfs/home/lyy/Quantization/llm-awq/quant_cache/opt-6.7b-w4-g128-awq.pt
 
-CUDA_VISIBLE_DEVICES=1 python -m awq.entry --model_path /mnt/cephfs/home/lyy/.cache/huggingface/hub/models--facebook--opt-6.7b/snapshots/a45aa65bbeb77c1558bc99bedc6779195462dab0 \
+CUDA_VISIBLE_DEVICES=0 python -m awq.entry --model_path /mnt/cephfs/home/lyy/.cache/huggingface/hub/models--facebook--opt-6.7b/snapshots/a45aa65bbeb77c1558bc99bedc6779195462dab0 \
     --tasks wikitext \
     --w_bit 4 --q_group_size 128 \
     --load_quant /mnt/cephfs/home/lyy/Quantization/llm-awq/model/OPT/opt-6.7b.pt

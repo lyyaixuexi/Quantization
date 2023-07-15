@@ -10,7 +10,7 @@ from exps.timm_imagenet_exp import Exp as BaseExp, Model
 from mae_lite.layers import build_lr_scheduler
 from loguru import logger
 from models_vit import *
-# from models_vit_rpe import *
+from models_vit_rpe import *
 
 
 class Exp(BaseExp):
