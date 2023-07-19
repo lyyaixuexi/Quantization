@@ -434,7 +434,7 @@ if __name__ == '__main__':
     )
 
     args = parser.parse_args()
-
+    print(args.model)
     if args.load:
         model = load_quant3(args.model, args.load)
     else:
@@ -462,7 +462,9 @@ if __name__ == '__main__':
     if args.load:
         exit()
 
-    datasets = ['wikitext2', 'ptb', 'c4'] 
+    # datasets = ['wikitext2', 'ptb', 'c4']
+    # datasets = ['wikitext2']
+    datasets = []
     if args.new_eval:
       datasets = ['wikitext2', 'ptb-new', 'c4-new']
     for dataset in datasets: 

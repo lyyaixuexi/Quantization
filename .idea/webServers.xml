@@ -10,7 +10,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="ed108939-0939-41ac-b51b-c61fde7c7a27" name="A800">
-        <fileTransfer rootFolder="/home/liaoyuyan" accessType="SFTP" host="localhost" port="8001" sshConfigId="15dbcf61-f58c-4f3e-8fb1-9acb6c83848d" sshConfig="liaoyuyan@localhost:8001 password">
+        <fileTransfer rootFolder="/home/liaoyuyan" accessType="SFTP" host="10.50.3.33" port="31250" sshConfigId="35cf9d5b-b21f-41e4-ada6-812fe3ecef09" sshConfig="liaoyuyan@10.50.3.33:31250 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
