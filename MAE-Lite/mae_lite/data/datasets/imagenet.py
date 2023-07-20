@@ -15,7 +15,7 @@ from mae_lite.utils import get_root_dir
 class SSL_ImageNet(ImageFolder):
     def __init__(self, transform=None, root=None, target_transform=None, is_valid_file=None):
         if root is None:
-            root = osp.join(get_root_dir(), "/mnt/cephfs/mixed/dataset/imagenet/train")
+            root = osp.join(get_root_dir(), "/home/liaoyuyan/dataset/imagenet/train")
         super(SSL_ImageNet, self).__init__(
             root, transform=transform, target_transform=target_transform, is_valid_file=is_valid_file
         )
@@ -50,7 +50,7 @@ class ImageNet(ImageFolder):
     def __init__(self, train, transform=None):
         root = osp.join(
             get_root_dir(),
-            "/mnt/cephfs/mixed/dataset/imagenet/{}".format("train" if train else "val")
+            "/home/liaoyuyan/dataset/imagenet/{}".format("train" if train else "val")
         )
         super(ImageNet, self).__init__(root, transform=transform)
         self.transform = transform
