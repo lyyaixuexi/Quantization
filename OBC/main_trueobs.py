@@ -179,5 +179,6 @@ if aquant:
 
 if args.save:
     torch.save(modelp.state_dict(), args.save)
+    torch.save(modeld.state_dict(), "modeld.pth")
 
 test(modelp, testloader)

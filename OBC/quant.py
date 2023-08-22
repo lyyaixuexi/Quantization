@@ -29,6 +29,7 @@ class Quantizer(nn.Module):
 
     def find_params(self, x, weight=False):
         dev = x.device
+        print(x.shape)
         self.maxq = self.maxq.to(dev)
 
         shape = x.shape

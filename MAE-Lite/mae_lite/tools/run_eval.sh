@@ -46,3 +46,6 @@ python mae_lite/tools/eval.py -b 1024 -d 7 -f projects/eval_tools/pretraining.py
 python mae_lite/tools/eval.py -b 128 -d 0 -f projects/eval_tools/finetuning_rpe_exp.py \
 --ckpt /mnt/cephfs/home/lyy/Quantization/MAE-Lite/model/mae_tiny_400e_ft_rpe_1000e.pth.tar \
 --exp-options pretrain_exp_name=mae_lite/mae_tiny_400e/ft_rpe_eval
+
+ssl_train -b 1648 -d 0-7 -e 1000 -f finetuning_rpe_exp.py --amp \
+--ckpt /mnt/cephfs/home/lyy/Quantization/MAE-Lite/outputs/mae_lite/mae_tiny_400e_numheads6/last_epoch_ckpt.pth.tar --exp-options pretrain_exp_name=mae_lite/mae_tiny_400e_numheads6

@@ -56,8 +56,8 @@ torch.cuda.synchronize()
 
 # #
 ckpt = torch.load('../MAE-Lite/model/mae_tiny_400e_ft_300e.pth.tar', map_location="cpu")
-ckpt["model"]['module.model.norm.weight'] = ckpt["model"].pop('module.model.fc_norm.weight')
-ckpt["model"]['module.model.norm.bias'] = ckpt["model"].pop('module.model.fc_norm.bias')
+# ckpt["model"]['module.model.norm.weight'] = ckpt["model"].pop('module.model.fc_norm.weight')
+# ckpt["model"]['module.model.norm.bias'] = ckpt["model"].pop('module.model.fc_norm.bias')
 
 # ckpt["model"]['module.model.norm.weight'] = ckpt["model"]['module.model.fc_norm.weight']
 # ckpt["model"]['module.model.norm.bias'] = ckpt["model"]['module.model.fc_norm.bias']

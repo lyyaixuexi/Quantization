@@ -183,6 +183,7 @@ get_models = {
     'rn18': lambda: resnet18(pretrained=True),
     'rn34': lambda: resnet34(pretrained=True),
     'rn50': lambda: resnet50(pretrained=True),
+    'rn101': lambda: resnet101(pretrained=True),
     'yolov5s': lambda: get_yolo('yolov5s'),
     'yolov5m': lambda: get_yolo('yolov5m'),
     'yolov5l': lambda: get_yolo('yolov5l'),

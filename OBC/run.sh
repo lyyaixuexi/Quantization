@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=3,4,5,6,7 python main_trueobs.py rn18 imagenet quant --wbits 4 --abits 4 --save rn18_4w4a.pth --datapath /mnt/cephfs/mixed/dataset/imagenet

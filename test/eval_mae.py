@@ -163,11 +163,11 @@ def main_worker(gpu, nr_gpu, args):
             ckpt_path = os.path.join(file_name, "last_epoch_ckpt.pth.tar")
             assert os.path.isfile(ckpt_path), "Failed to load ckpt from '{}'".format(ckpt_path)
 
-    model = models.vit_b_16(pretrained=True)
-    # model_name = 'deit_tiny_patch16_224'
-    # model = timm.create_model(model_name, pretrained=True)
-    # print(model)
-    # ckpt = torch.load('/mnt/cephfs/home/lyy/Quantization/MAE-Lite/model/mae_tiny_400e_ft_300e.pth.tar', map_location="cpu")
+    # model = models.vit_b_16(pretrained=True)
+    model_name = 'vit_base_patch16_224'
+    model = timm.create_model(model_name, pretrained=True)
+    print(model)
+    # ckpt = torch.load('/mnt/cephfs/home/lyy/Quantization/MAE-Lite/outputs/mae_lite/mae_tiny_400e_numheads8/ft_impr_rpe_eval/last_epoch_ckpt.pth.tar', map_location="cpu")
     # ckpt["model"]['module.model.norm.weight'] = ckpt["model"].pop('module.model.fc_norm.weight')
     # ckpt["model"]['module.model.norm.bias'] = ckpt["model"].pop('module.model.fc_norm.bias')
     # ckpt["model"]['module.model.norm.weight'] = ckpt["model"]['module.model.fc_norm.weight']
