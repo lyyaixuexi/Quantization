@@ -14,6 +14,10 @@ from models.Label_SmoothCELoss import LabelSmoothCELoss, LabelSmoothCELoss_modif
 from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
 from dataloader_mulit_patch import img_cls_by_dir_loader as data_loader
+from lr_scheduling import *
+
+# seed = 42
+# torch.manual_seed(seed)
 
 dict={}
 # Training settings
@@ -32,7 +36,7 @@ parser.add_argument('--lr', type=float, default=1e-2,
                     help='learning rate (default: 0.010)')
 parser.add_argument('--refine', default='', type=str, metavar='PATH',
                     help='path to the pruned model to be fine tuned')
-parser.add_argument('--batch-size', type=int, default=768, metavar='N',
+parser.add_argument('--batch-size', type=int, default=512, metavar='N',
                     help='input batch size for training (default: 64)')
 parser.add_argument('--test-batch-size', type=int, default=32, metavar='N',
                     help='input batch size for testing (default: 64)')
@@ -123,28 +127,39 @@ train_loader = data.DataLoader(
 
 val_dataset = data_loader(root_dir, split="val", is_transform=True, img_size=args.img_size, color_mode=args.color_mode, multi_patch = args.multi_patch)
 test_loader = data.DataLoader(
-    val_dataset, batch_size=1, num_workers=4, shuffle=True, pin_memory=True
+    val_dataset, batch_size=1, num_workers=4, shuffle=False, pin_memory=True
 )
 
 if args.refine:
     args.refine = args.save + args.refine + '.pth'
     checkpoint = torch.load(args.refine)
-    model = models.__dict__[args.arch](dataset=args.dataset, depth=args.depth, cfg=checkpoint['cfg'])
+    from models.traffic_sign_cls_1_modify import traffic_sign_cls_modify as ClassifyNet
+    model = ClassifyNet(cfg=checkpoint['cfg'])
+    # model = models.__dict__[args.arch](dataset=args.dataset, depth=args.depth, cfg=checkpoint['cfg'])
     model.load_state_dict(checkpoint['state_dict'])
 
 else:
     # model = models.__dict__[args.arch](dataset=args.dataset, depth=args.depth)
-    from models.traffic_sign_cls_1 import traffic_sign_cls as ClassifyNet
-    model = ClassifyNet(c1=3, n_classes=279, color_mode=args.color_mode)
+    from models.traffic_sign_cls_1_modify import traffic_sign_cls_modify as ClassifyNet
+    model = ClassifyNet()
 
 if args.cuda:
     model.cuda()
 
-#优化器
-optimizer = Ranger(model.parameters(),lr=args.lr)  # 设置学习方法
-warm_up_with_cosine_lr = lambda epoch: ((epoch+1) / args.warm_up_epochs) if (epoch+1) <= args.warm_up_epochs else 0.5 * (
-                math.cos((epoch - args.warm_up_epochs) / (args.epochs - args.warm_up_epochs) * math.pi) + 1)
-scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=warm_up_with_cosine_lr)
+# 优化器
+if args.refine:
+    optimizer = torch.optim.SGD(
+        filter(lambda p: p.requires_grad, model.parameters()),
+        lr=args.lr,
+        weight_decay=5e-4,
+        momentum=0.9,
+    )
+else:
+    optimizer = Ranger(model.parameters(), lr=args.lr)  # 设置学习方法
+    warm_up_with_cosine_lr = lambda epoch: ((epoch + 1) / args.warm_up_epochs) if (
+                                                                                              epoch + 1) <= args.warm_up_epochs else 0.5 * (
+            math.cos((epoch - args.warm_up_epochs) / (args.epochs - args.warm_up_epochs) * math.pi) + 1)
+    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=warm_up_with_cosine_lr)
 
 #使用amp的量化训练
 if args.amp_loss:
@@ -169,8 +184,23 @@ def updateBN():
         if isinstance(m, nn.BatchNorm2d):
             m.weight.grad.data.add_(args.s*torch.sign(m.weight.data))  # L1
 
+def cls_multi_patch_loss(pred, target):
+    '''
+    This loss is for the mutli patch concat input
+    '''
+    batchsize, c_num, _, _ = pred.shape
+    pred = pred.permute(0, 2, 3, 1)
+    pred = pred.reshape(-1, c_num)
+    # pred = pred.permute(0, 2, 1)
+    # pred = pred.reshape(-1)
+    target = target.reshape(-1)
+    loss_cls = torch.nn.functional.cross_entropy(pred, target.long())
+    return loss_cls
+
 def train(epoch):
     model.train()
+
+
     for batch_idx, (data, target) in enumerate(train_loader):
         if args.cuda:
             data, target = data.cuda(), target.cuda()
@@ -178,13 +208,15 @@ def train(epoch):
         optimizer.zero_grad()
         output = model(data)
 
-        batchsize, c_num, _, _ = output.shape
-        output = output.permute(0, 2, 3, 1)
-        output = output.reshape(-1, c_num)
-        target = target.reshape(-1)
+        # batchsize, c_num, _, _ = output.shape
+        # output = output.permute(0, 2, 3, 1)
+        # output = output.reshape(-1, c_num)
+        # target = target.reshape(-1)
 
-        criterion = LabelSmoothCELoss_modify().cuda()
-        loss = criterion(output, target)
+        # criterion = LabelSmoothCELoss_modify().cuda()
+        # criterion = cls_multi_patch_loss().cuda()
+        # loss = criterion(output, target)
+        loss = cls_multi_patch_loss(output, target).cuda()
         if args.amp_loss:
             with amp.scale_loss(loss, optimizer) as scaled_loss:
                 scaled_loss.backward()
@@ -197,7 +229,11 @@ def train(epoch):
             print('Train Epoch: {} [{}/{} ({:.1f}%)]\tLoss: {:.6f}'.format(
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                        100. * batch_idx / len(train_loader), loss.item()))
-    scheduler.step()
+
+    if args.refine:
+        adjust_learning_rate(optimizer, args.lr, epoch)
+    else:
+        scheduler.step()
 
 
 # test_loader = torch.utils.data.DataLoader(
@@ -218,13 +254,15 @@ def test(model):
             data, target = data, target
             output = model(data)
 
-            batchsize, c_num, _, _ = output.shape
-            output = output.permute(0, 2, 3, 1)
-            output = output.reshape(-1, c_num)
-            target = target.reshape(-1)
+            # batchsize, c_num, _, _ = output.shape
+            # output = output.permute(0, 2, 3, 1)
+            # output = output.reshape(-1, c_num)
+            # target = target.reshape(-1)
 
-            criterion = LabelSmoothCELoss_modify().cuda()
-            test_loss += criterion(output, target).item() # sum up batch loss
+            # criterion = LabelSmoothCELoss_modify().cuda()
+            # test_loss += criterion(output, target).item() # sum up batch loss
+            test_loss += cls_multi_patch_loss(output, target).cuda().item()
+
             pred = output.data.max(1, keepdim=True)[1] # get the index of the max log-probability
             correct += pred.eq(target.data.view_as(pred)).cpu().sum()
 
@@ -232,7 +270,7 @@ def test(model):
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.1f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset)*9,
         100. * correct / (len(test_loader.dataset)*9)))
-    return correct / float(len(test_loader.dataset))
+    return correct / float((len(test_loader.dataset)*9))
 
 def save_checkpoint(state, is_best,filename,model_best):
     torch.save(state, filename)

@@ -56,6 +56,7 @@ class traffic_sign_cls(nn.Module):
         #self.pool1 = nn.Conv2d(in_channels=16, out_channels=32, kernel_size=2, stride=2, padding=0, dilation=1, groups=1, bias=False)
         self.conv2 = nn.Sequential(
             nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=2, padding=1, dilation=1, groups=1, bias=False),
+
             nn.ReLU(inplace=True)
         )
         self.conv3 = nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1, dilation=1, groups=1, bias=True)

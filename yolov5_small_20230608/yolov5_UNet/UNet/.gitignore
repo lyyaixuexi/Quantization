@@ -1,0 +1,7 @@
+checkpoint/
+data/
+*.pt
+*.npy
+*.scale
+*.ptl
+*.rar

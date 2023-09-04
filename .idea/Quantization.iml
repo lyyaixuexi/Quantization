@@ -13,8 +13,10 @@
       <sourceFolder url="file://$MODULE_DIR$/HAWQ" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tsr" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Network-Slimming" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/yolov3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/yolov5_small_20230608" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.7.16 (sftp://lyy@gpu017.scut-smil.cn:22/mnt/cephfs/home/lyy/miniconda3/envs/mae-lite/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.7.12 (sftp://lyy@gpu010.scut-smil.cn:22/mnt/cephfs/home/lyy/anaconda3/envs/mae-lite/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

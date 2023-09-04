@@ -164,6 +164,8 @@ class img_cls_by_dir_loader(torch.utils.data.Dataset):
 
         random.seed(42)
         random.shuffle(file_lst)
+        print(len(file_lst))
+        print(int(len(file_lst) * 0.99))
         self.files["train"] = file_lst[0:int(len(file_lst)*0.99)]
         self.files["val"] = file_lst[int(len(file_lst) * 0.99):]
         self.files["train+val"] = file_lst
@@ -337,12 +339,7 @@ def old_test():
 
     ## root_dir应该是个list
     root_dir = [        
-        "/home.bak/nv3070/ljj_project/DATA/classification_80",
-        "/home.bak/nv3070/ljj_project/DATA/电子限速牌分类_ljj",
-        "/home.bak/nv3070/ljj_project/DATA/G1S限重标牌压制数据",
-        "/home.bak/nv3070/ljj_project/DATA/qirui_20220622_small_crop_diff",
-        "/home.bak/nv3070/ljj_project/DATA/zxd_tsr_补充训练数据",
-        "/home.bak/nv3070/ljj_project/DATA/qirui_20220805",]
+        "/home/lyy/data/tsr/t1q_tsr_data_part1",]
 
     # root_dir = ["/home.bak/nv3070/ljj_project/DATA/qirui_20220805",]
     cls_lst = './test_ljj.txt'

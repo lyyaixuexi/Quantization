@@ -4,7 +4,10 @@ from torchvision import datasets, transforms
 from models import *
 from torch.utils import data
 from dataloader_mulit_patch import img_cls_by_dir_loader as data_loader
+import torch
 
+seed = 42
+torch.manual_seed(seed)
 
 # Prune settings
 parser = argparse.ArgumentParser(description='PyTorch Slimming CIFAR prune')
@@ -42,8 +45,8 @@ args.img_size = 288
 args.color_mode = 'YUV_bt601V'
 
 # model = vgg(dataset=args.dataset, depth=args.depth)
-from models.traffic_sign_cls_1 import traffic_sign_cls as ClassifyNet
-model = ClassifyNet(c1=3, n_classes=279, color_mode='YUV_bt601V')
+from models.traffic_sign_cls_1_modify import traffic_sign_cls_modify as ClassifyNet
+model = ClassifyNet()
 
 if args.cuda:
     model.cuda()
@@ -100,6 +103,19 @@ pruned_ratio = pruned/total
 
 print('Pre-processing Successful!')
 
+def cls_multi_patch_loss(pred, target):
+    '''
+    This loss is for the mutli patch concat input
+    '''
+    batchsize, c_num, _, _ = pred.shape
+    pred = pred.permute(0, 2, 3, 1)
+    pred = pred.reshape(-1, c_num)
+    # pred = pred.permute(0, 2, 1)
+    # pred = pred.reshape(-1)
+    target = target.reshape(-1)
+    loss_cls = torch.nn.functional.cross_entropy(pred, target.long())
+    return loss_cls
+
 # simple test model after Pre-processing prune (simple set BN scales to zeros)
 def test(model):
     kwargs = {'num_workers': 0, 'pin_memory': True} if args.cuda else {}
@@ -120,34 +136,47 @@ def test(model):
     val_dataset = data_loader(root_dir, split="val", is_transform=True, img_size=args.img_size,
                               color_mode=args.color_mode, multi_patch=args.multi_patch)
     test_loader = torch.utils.data.DataLoader(
-        val_dataset, batch_size=1, num_workers=4, shuffle=True, pin_memory=True
+        val_dataset, batch_size=1, num_workers=4, shuffle=False, pin_memory=True
     )
     model.eval()
+    test_loss = 0
     correct = 0
-    for data, target in test_loader:
-        if args.cuda:
-            data, target = data.cuda(), target.cuda()
-        data, target = data, target
-        output = model(data)
+    with torch.no_grad():
+        for data, target in test_loader:
+            if args.cuda:
+                data, target = data.cuda(), target.cuda()
+            data, target = data, target
+            output = model(data)
 
-        batchsize, c_num, _, _ = output.shape
-        output = output.permute(0, 2, 3, 1)
-        output = output.reshape(-1, c_num)
-        target = target.reshape(-1)
+            # batchsize, c_num, _, _ = output.shape
+            # output = output.permute(0, 2, 3, 1)
+            # output = output.reshape(-1, c_num)
+            # target = target.reshape(-1)
 
-        pred = output.data.max(1, keepdim=True)[1] # get the index of the max log-probability
-        correct += pred.eq(target.data.view_as(pred)).cpu().sum()
+            # criterion = LabelSmoothCELoss_modify().cuda()
+            # test_loss += criterion(output, target).item() # sum up batch loss
+            test_loss += cls_multi_patch_loss(output, target).cuda().item()
 
-    print('\nTest set: Accuracy: {}/{} ({:.1f}%)\n'.format(
-        correct, len(test_loader.dataset), 100. * correct / len(test_loader.dataset)))
-    return correct / float(len(test_loader.dataset))
+            pred = output.data.max(1, keepdim=True)[1] # get the index of the max log-probability
+            correct += pred.eq(target.data.view_as(pred)).cpu().sum()
+
+    test_loss /= len(test_loader.dataset)
+    print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.1f}%)\n'.format(
+        test_loss, correct, len(test_loader.dataset)*9,
+        100. * correct / (len(test_loader.dataset)*9)))
+    return correct / float((len(test_loader.dataset)*9))
 
 acc = test(model)
 
 # Make real prune
-print(cfg)
+cfg.extend([256, 279])
 
-newmodel = ClassifyNet(c1=3, n_classes=279, color_mode='YUV_bt601V')
+cfg_mask.append(torch.ones(256))
+cfg_mask.append(torch.ones(279))
+
+
+from models.traffic_sign_cls_1_modify import traffic_sign_cls_modify as ClassifyNet_modify
+newmodel = ClassifyNet_modify(cfg=cfg)
 
 if args.cuda:
     newmodel.cuda()
@@ -164,6 +193,11 @@ with open(savepath, "w") as fp:
 layer_id_in_cfg = 0
 start_mask = torch.ones(3)
 end_mask = cfg_mask[layer_id_in_cfg]
+conv_count = 0
+
+# source_state_dict = model.state_dict()
+# newmodel.load_state_dict(source_state_dict)
+
 for [m0, m1] in zip(model.modules(), newmodel.modules()):
     if isinstance(m0, nn.BatchNorm2d):
         idx1 = np.squeeze(np.argwhere(np.asarray(end_mask.cpu().numpy())))
@@ -178,6 +212,12 @@ for [m0, m1] in zip(model.modules(), newmodel.modules()):
         if layer_id_in_cfg < len(cfg_mask):  # do not change in Final FC
             end_mask = cfg_mask[layer_id_in_cfg]
     elif isinstance(m0, nn.Conv2d):
+        if conv_count >= 7:
+            start_mask = cfg_mask[layer_id_in_cfg-1]
+            end_mask = cfg_mask[layer_id_in_cfg]
+            layer_id_in_cfg += 1
+            conv_count += 1
+        conv_count += 1
         idx0 = np.squeeze(np.argwhere(np.asarray(start_mask.cpu().numpy())))
         idx1 = np.squeeze(np.argwhere(np.asarray(end_mask.cpu().numpy())))
         print('In shape: {:d}, Out shape {:d}.'.format(idx0.size, idx1.size))
@@ -188,12 +228,13 @@ for [m0, m1] in zip(model.modules(), newmodel.modules()):
         w1 = m0.weight.data[:, idx0.tolist(), :, :].clone()
         w1 = w1[idx1.tolist(), :, :, :].clone()
         m1.weight.data = w1.clone()
-    elif isinstance(m0, nn.Linear):
-        idx0 = np.squeeze(np.argwhere(np.asarray(start_mask.cpu().numpy())))
-        if idx0.size == 1:
-            idx0 = np.resize(idx0, (1,))
-        m1.weight.data = m0.weight.data[:, idx0].clone()
-        m1.bias.data = m0.bias.data.clone()
+
+        # b1 = m0.bias.data[:, idx0.tolist(), :, :].clone()
+        # b1 = b1[idx1.tolist(), :, :, :].clone()
+        # m1.bias.data = b1.clone()
+        if (m0.bias is not None):
+            m1.bias.data = m0.bias.data[idx1.tolist()].clone()
+            # print(m0.bias.data.shape)
 
 torch.save({'cfg': cfg, 'state_dict': newmodel.state_dict()}, os.path.join(args.save, args.filename + '.pth'))
 
