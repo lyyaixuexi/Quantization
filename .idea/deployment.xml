@@ -23,6 +23,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="lyy@gpu010.scut-smil.cn:22 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="lyy@gpu017.scut-smil.cn:22 password">
         <serverdata>
           <mappings>
@@ -58,10 +65,17 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="lyy@gpu024.scut-smil.cn:22 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mnt/cephfs/home/lyy/Quantization" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="p100">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/Quantization" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

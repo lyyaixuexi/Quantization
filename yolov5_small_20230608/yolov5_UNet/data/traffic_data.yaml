@@ -1,0 +1,6 @@
+train: ../datasets/images/train
+val: ../datasets/images/valid
+# test: test/images
+
+nc: 9
+names: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat']

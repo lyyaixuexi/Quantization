@@ -1,0 +1,75 @@
+activation scale:
+conv_name activation_scale clamp_max
+model.model.24.m.2 0.00089684 8191
+
+weight scale:
+conv_name channel_index weight_scale
+model.model.24.m.2 0 0.00047250
+model.model.24.m.2 1 0.00060440
+model.model.24.m.2 2 0.00029325
+model.model.24.m.2 3 0.00057918
+model.model.24.m.2 4 0.00033907
+model.model.24.m.2 5 0.00049570
+model.model.24.m.2 6 0.00087555
+model.model.24.m.2 7 0.00041380
+model.model.24.m.2 8 0.00063357
+model.model.24.m.2 9 0.00093471
+model.model.24.m.2 10 0.00068779
+model.model.24.m.2 11 0.00112867
+model.model.24.m.2 12 0.00046398
+model.model.24.m.2 13 0.00050609
+model.model.24.m.2 14 0.00067239
+model.model.24.m.2 15 0.00039834
+model.model.24.m.2 16 0.00054674
+model.model.24.m.2 17 0.00066442
+model.model.24.m.2 18 0.00060544
+model.model.24.m.2 19 0.00065112
+model.model.24.m.2 20 0.00029656
+model.model.24.m.2 21 0.00034007
+model.model.24.m.2 22 0.00058315
+model.model.24.m.2 23 0.00022633
+model.model.24.m.2 24 0.00017325
+model.model.24.m.2 25 0.00039022
+model.model.24.m.2 26 0.00049412
+model.model.24.m.2 27 0.00088316
+model.model.24.m.2 28 0.00050256
+model.model.24.m.2 29 0.00025818
+model.model.24.m.2 30 0.00016402
+model.model.24.m.2 31 0.00018283
+model.model.24.m.2 32 0.00018196
+
+multiplier for conv:
+conv_name channel_index M_approximation_float M_shift M_multiplier_int
+model.model.24.m.2 0 0.00017345 23 1455
+model.model.24.m.2 1 0.00022197 23 1862
+model.model.24.m.2 2 0.00010765 23 903
+model.model.24.m.2 3 0.00021267 23 1784
+model.model.24.m.2 4 0.00012445 23 1044
+model.model.24.m.2 5 0.00018203 23 1527
+model.model.24.m.2 6 0.00032151 23 2697
+model.model.24.m.2 7 0.00015187 23 1274
+model.model.24.m.2 8 0.00023270 23 1952
+model.model.24.m.2 9 0.00034320 23 2879
+model.model.24.m.2 10 0.00025260 23 2119
+model.model.24.m.2 11 0.00041449 23 3477
+model.model.24.m.2 12 0.00017035 23 1429
+model.model.24.m.2 13 0.00018585 23 1559
+model.model.24.m.2 14 0.00024688 23 2071
+model.model.24.m.2 15 0.00014627 23 1227
+model.model.24.m.2 16 0.00020075 23 1684
+model.model.24.m.2 17 0.00024402 23 2047
+model.model.24.m.2 18 0.00022233 23 1865
+model.model.24.m.2 19 0.00023913 23 2006
+model.model.24.m.2 20 0.00010884 23 913
+model.model.24.m.2 21 0.00012481 23 1047
+model.model.24.m.2 22 0.00021410 23 1796
+model.model.24.m.2 23 0.00008309 23 697
+model.model.24.m.2 24 0.00006354 23 533
+model.model.24.m.2 25 0.00014329 23 1202
+model.model.24.m.2 26 0.00018144 23 1522
+model.model.24.m.2 27 0.00032437 23 2721
+model.model.24.m.2 28 0.00018454 23 1548
+model.model.24.m.2 29 0.00009477 23 795
+model.model.24.m.2 30 0.00006020 23 505
+model.model.24.m.2 31 0.00006711 23 563
+model.model.24.m.2 32 0.00006676 23 560

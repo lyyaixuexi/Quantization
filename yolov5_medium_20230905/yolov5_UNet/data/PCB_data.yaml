@@ -1,0 +1,6 @@
+train: ../datasets/images/train
+val: ../datasets/images/valid
+# test: test/images
+
+nc: 6
+names: ['notch', 'open', 'pinhole', 'short', 'spur', 'spurious_copper']

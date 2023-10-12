@@ -1,0 +1,75 @@
+activation scale:
+conv_name activation_scale clamp_max
+model.model.24.m.2 0.09840478 74
+
+weight scale:
+conv_name channel_index weight_scale
+model.model.24.m.2 0 0.06087631
+model.model.24.m.2 1 0.07153595
+model.model.24.m.2 2 0.05905368
+model.model.24.m.2 3 0.05258777
+model.model.24.m.2 4 0.05742311
+model.model.24.m.2 5 0.04834830
+model.model.24.m.2 6 0.09468801
+model.model.24.m.2 7 0.04567808
+model.model.24.m.2 8 0.07672036
+model.model.24.m.2 9 0.08142187
+model.model.24.m.2 10 0.07233983
+model.model.24.m.2 11 0.07826011
+model.model.24.m.2 12 0.05778666
+model.model.24.m.2 13 0.03497842
+model.model.24.m.2 14 0.07083956
+model.model.24.m.2 15 0.05887111
+model.model.24.m.2 16 0.06604943
+model.model.24.m.2 17 0.07579473
+model.model.24.m.2 18 0.06433878
+model.model.24.m.2 19 0.06022468
+model.model.24.m.2 20 0.03021180
+model.model.24.m.2 21 0.04132478
+model.model.24.m.2 22 0.04339096
+model.model.24.m.2 23 0.06387495
+model.model.24.m.2 24 0.04437620
+model.model.24.m.2 25 0.01783115
+model.model.24.m.2 26 0.05382895
+model.model.24.m.2 27 0.08223640
+model.model.24.m.2 28 0.04838277
+model.model.24.m.2 29 0.03133055
+model.model.24.m.2 30 0.01626089
+model.model.24.m.2 31 0.01872543
+model.model.24.m.2 32 0.01943908
+
+multiplier for conv:
+conv_name channel_index M_approximation_float M_shift M_multiplier_int
+model.model.24.m.2 0 0.03802490 16 2492
+model.model.24.m.2 1 0.04469299 16 2929
+model.model.24.m.2 2 0.03689575 16 2418
+model.model.24.m.2 3 0.03285217 16 2153
+model.model.24.m.2 4 0.03587341 16 2351
+model.model.24.m.2 5 0.03019714 16 1979
+model.model.24.m.2 6 0.05915833 16 3877
+model.model.24.m.2 7 0.02853394 16 1870
+model.model.24.m.2 8 0.04792786 16 3141
+model.model.24.m.2 9 0.05087280 16 3334
+model.model.24.m.2 10 0.04519653 16 2962
+model.model.24.m.2 11 0.04888916 16 3204
+model.model.24.m.2 12 0.03610229 16 2366
+model.model.24.m.2 13 0.02185059 16 1432
+model.model.24.m.2 14 0.04425049 16 2900
+model.model.24.m.2 15 0.03677368 16 2410
+model.model.24.m.2 16 0.04125977 16 2704
+model.model.24.m.2 17 0.04734802 16 3103
+model.model.24.m.2 18 0.04019165 16 2634
+model.model.24.m.2 19 0.03762817 16 2466
+model.model.24.m.2 20 0.01887512 16 1237
+model.model.24.m.2 21 0.02581787 16 1692
+model.model.24.m.2 22 0.02709961 16 1776
+model.model.24.m.2 23 0.03990173 16 2615
+model.model.24.m.2 24 0.02772522 16 1817
+model.model.24.m.2 25 0.01113892 16 730
+model.model.24.m.2 26 0.03363037 16 2204
+model.model.24.m.2 27 0.05137634 16 3367
+model.model.24.m.2 28 0.03022766 16 1981
+model.model.24.m.2 29 0.01957703 16 1283
+model.model.24.m.2 30 0.01014709 16 665
+model.model.24.m.2 31 0.01168823 16 766
+model.model.24.m.2 32 0.01214600 16 796

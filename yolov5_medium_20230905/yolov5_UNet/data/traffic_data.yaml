@@ -1,0 +1,6 @@
+train: /mnt/cephfs/home/lyy/data/traffic_detect/images/train
+val: /mnt/cephfs/home/lyy/data/traffic_detect/images/val
+# test: test/images
+
+nc: 9
+names: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat']

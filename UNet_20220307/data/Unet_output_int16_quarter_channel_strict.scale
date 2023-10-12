@@ -1,0 +1,2435 @@
+activation scale:
+conv_name activation_scale clamp_max
+inc.double_conv.0 0.00016970 32767
+inc.double_conv.3 0.00059522 11311
+down1.maxpool_conv.1.double_conv.0 0.00045411 14822
+down1.maxpool_conv.1.double_conv.3 0.00042352 14316
+down2.maxpool_conv.1.double_conv.0 0.00045565 13855
+down2.maxpool_conv.1.double_conv.3 0.00051271 11591
+down3.maxpool_conv.1.double_conv.0 0.00044140 13056
+down3.maxpool_conv.1.double_conv.3 0.00045932 13712
+down4.maxpool_conv.1.double_conv.0 0.00039811 14965
+down4.maxpool_conv.1.double_conv.3 0.00038650 15189
+up1.conv.double_conv.0 0.00045851 13319
+up1.conv.double_conv.3 0.00045373 13271
+up2.conv.double_conv.0 0.00053193 11794
+up2.conv.double_conv.3 0.00048348 13293
+up3.conv.double_conv.0 0.00060290 11101
+up3.conv.double_conv.3 0.00053656 12312
+up4.conv.double_conv.0 0.00069017 9322
+up4.conv.double_conv.3 0.00061502 11154
+outc.conv 0.00034454 19852
+
+weight scale:
+conv_name channel_index weight_scale
+inc.double_conv.0 0 0.00011230
+inc.double_conv.0 1 0.00025788
+inc.double_conv.0 2 0.00013305
+inc.double_conv.0 3 0.00040834
+inc.double_conv.0 4 0.00040025
+inc.double_conv.0 5 0.00014408
+inc.double_conv.0 6 0.00013569
+inc.double_conv.0 7 0.00009480
+inc.double_conv.0 8 0.00025077
+inc.double_conv.0 9 0.00014255
+inc.double_conv.0 10 0.00044370
+inc.double_conv.0 11 0.00010588
+inc.double_conv.0 12 0.00010774
+inc.double_conv.0 13 0.00024494
+inc.double_conv.0 14 0.00010535
+inc.double_conv.0 15 0.00025805
+inc.double_conv.0 16 0.00035627
+inc.double_conv.0 17 0.00012104
+inc.double_conv.0 18 0.00011809
+inc.double_conv.0 19 0.00011051
+inc.double_conv.0 20 0.00003856
+inc.double_conv.0 21 0.00040650
+inc.double_conv.0 22 0.00013975
+inc.double_conv.0 23 0.00015586
+inc.double_conv.0 24 0.00007342
+inc.double_conv.0 25 0.00008163
+inc.double_conv.0 26 0.00019534
+inc.double_conv.0 27 0.00016289
+inc.double_conv.0 28 0.00009098
+inc.double_conv.0 29 0.00010055
+inc.double_conv.0 30 0.00020091
+inc.double_conv.0 31 0.00051213
+inc.double_conv.3 0 0.00001612
+inc.double_conv.3 1 0.00002091
+inc.double_conv.3 2 0.00001768
+inc.double_conv.3 3 0.00001271
+inc.double_conv.3 4 0.00002062
+inc.double_conv.3 5 0.00002188
+inc.double_conv.3 6 0.00001304
+inc.double_conv.3 7 0.00001962
+inc.double_conv.3 8 0.00002415
+inc.double_conv.3 9 0.00001526
+inc.double_conv.3 10 0.00001480
+inc.double_conv.3 11 0.00001844
+inc.double_conv.3 12 0.00001490
+inc.double_conv.3 13 0.00002582
+inc.double_conv.3 14 0.00001328
+inc.double_conv.3 15 0.00002285
+inc.double_conv.3 16 0.00001945
+inc.double_conv.3 17 0.00002541
+inc.double_conv.3 18 0.00001280
+inc.double_conv.3 19 0.00001820
+inc.double_conv.3 20 0.00001358
+inc.double_conv.3 21 0.00001196
+inc.double_conv.3 22 0.00001413
+inc.double_conv.3 23 0.00003335
+inc.double_conv.3 24 0.00004981
+inc.double_conv.3 25 0.00001492
+inc.double_conv.3 26 0.00002148
+inc.double_conv.3 27 0.00002011
+inc.double_conv.3 28 0.00000869
+inc.double_conv.3 29 0.00001055
+inc.double_conv.3 30 0.00001733
+inc.double_conv.3 31 0.00001488
+down1.maxpool_conv.1.double_conv.0 0 0.00002577
+down1.maxpool_conv.1.double_conv.0 1 0.00002576
+down1.maxpool_conv.1.double_conv.0 2 0.00003678
+down1.maxpool_conv.1.double_conv.0 3 0.00001663
+down1.maxpool_conv.1.double_conv.0 4 0.00001676
+down1.maxpool_conv.1.double_conv.0 5 0.00001940
+down1.maxpool_conv.1.double_conv.0 6 0.00001860
+down1.maxpool_conv.1.double_conv.0 7 0.00004367
+down1.maxpool_conv.1.double_conv.0 8 0.00003339
+down1.maxpool_conv.1.double_conv.0 9 0.00002910
+down1.maxpool_conv.1.double_conv.0 10 0.00002478
+down1.maxpool_conv.1.double_conv.0 11 0.00002323
+down1.maxpool_conv.1.double_conv.0 12 0.00002367
+down1.maxpool_conv.1.double_conv.0 13 0.00001533
+down1.maxpool_conv.1.double_conv.0 14 0.00002013
+down1.maxpool_conv.1.double_conv.0 15 0.00001871
+down1.maxpool_conv.1.double_conv.0 16 0.00001560
+down1.maxpool_conv.1.double_conv.0 17 0.00002418
+down1.maxpool_conv.1.double_conv.0 18 0.00002600
+down1.maxpool_conv.1.double_conv.0 19 0.00002516
+down1.maxpool_conv.1.double_conv.0 20 0.00003891
+down1.maxpool_conv.1.double_conv.0 21 0.00002445
+down1.maxpool_conv.1.double_conv.0 22 0.00001923
+down1.maxpool_conv.1.double_conv.0 23 0.00002090
+down1.maxpool_conv.1.double_conv.0 24 0.00001274
+down1.maxpool_conv.1.double_conv.0 25 0.00002152
+down1.maxpool_conv.1.double_conv.0 26 0.00004402
+down1.maxpool_conv.1.double_conv.0 27 0.00001838
+down1.maxpool_conv.1.double_conv.0 28 0.00005942
+down1.maxpool_conv.1.double_conv.0 29 0.00002194
+down1.maxpool_conv.1.double_conv.0 30 0.00001374
+down1.maxpool_conv.1.double_conv.0 31 0.00002033
+down1.maxpool_conv.1.double_conv.3 0 0.00002325
+down1.maxpool_conv.1.double_conv.3 1 0.00002145
+down1.maxpool_conv.1.double_conv.3 2 0.00001627
+down1.maxpool_conv.1.double_conv.3 3 0.00001089
+down1.maxpool_conv.1.double_conv.3 4 0.00001593
+down1.maxpool_conv.1.double_conv.3 5 0.00001552
+down1.maxpool_conv.1.double_conv.3 6 0.00002267
+down1.maxpool_conv.1.double_conv.3 7 0.00001563
+down1.maxpool_conv.1.double_conv.3 8 0.00001899
+down1.maxpool_conv.1.double_conv.3 9 0.00001429
+down1.maxpool_conv.1.double_conv.3 10 0.00002508
+down1.maxpool_conv.1.double_conv.3 11 0.00001892
+down1.maxpool_conv.1.double_conv.3 12 0.00001960
+down1.maxpool_conv.1.double_conv.3 13 0.00001981
+down1.maxpool_conv.1.double_conv.3 14 0.00002273
+down1.maxpool_conv.1.double_conv.3 15 0.00000980
+down1.maxpool_conv.1.double_conv.3 16 0.00001952
+down1.maxpool_conv.1.double_conv.3 17 0.00001627
+down1.maxpool_conv.1.double_conv.3 18 0.00001673
+down1.maxpool_conv.1.double_conv.3 19 0.00001390
+down1.maxpool_conv.1.double_conv.3 20 0.00002044
+down1.maxpool_conv.1.double_conv.3 21 0.00002247
+down1.maxpool_conv.1.double_conv.3 22 0.00001357
+down1.maxpool_conv.1.double_conv.3 23 0.00001389
+down1.maxpool_conv.1.double_conv.3 24 0.00001822
+down1.maxpool_conv.1.double_conv.3 25 0.00001425
+down1.maxpool_conv.1.double_conv.3 26 0.00002060
+down1.maxpool_conv.1.double_conv.3 27 0.00001310
+down1.maxpool_conv.1.double_conv.3 28 0.00001435
+down1.maxpool_conv.1.double_conv.3 29 0.00001287
+down1.maxpool_conv.1.double_conv.3 30 0.00001131
+down1.maxpool_conv.1.double_conv.3 31 0.00001587
+down2.maxpool_conv.1.double_conv.0 0 0.00000792
+down2.maxpool_conv.1.double_conv.0 1 0.00000980
+down2.maxpool_conv.1.double_conv.0 2 0.00001515
+down2.maxpool_conv.1.double_conv.0 3 0.00001788
+down2.maxpool_conv.1.double_conv.0 4 0.00001835
+down2.maxpool_conv.1.double_conv.0 5 0.00001442
+down2.maxpool_conv.1.double_conv.0 6 0.00001040
+down2.maxpool_conv.1.double_conv.0 7 0.00001325
+down2.maxpool_conv.1.double_conv.0 8 0.00000782
+down2.maxpool_conv.1.double_conv.0 9 0.00001394
+down2.maxpool_conv.1.double_conv.0 10 0.00001594
+down2.maxpool_conv.1.double_conv.0 11 0.00001399
+down2.maxpool_conv.1.double_conv.0 12 0.00001471
+down2.maxpool_conv.1.double_conv.0 13 0.00001124
+down2.maxpool_conv.1.double_conv.0 14 0.00001429
+down2.maxpool_conv.1.double_conv.0 15 0.00001738
+down2.maxpool_conv.1.double_conv.0 16 0.00001310
+down2.maxpool_conv.1.double_conv.0 17 0.00001230
+down2.maxpool_conv.1.double_conv.0 18 0.00001974
+down2.maxpool_conv.1.double_conv.0 19 0.00001366
+down2.maxpool_conv.1.double_conv.0 20 0.00001547
+down2.maxpool_conv.1.double_conv.0 21 0.00001665
+down2.maxpool_conv.1.double_conv.0 22 0.00001205
+down2.maxpool_conv.1.double_conv.0 23 0.00001520
+down2.maxpool_conv.1.double_conv.0 24 0.00001993
+down2.maxpool_conv.1.double_conv.0 25 0.00001455
+down2.maxpool_conv.1.double_conv.0 26 0.00001230
+down2.maxpool_conv.1.double_conv.0 27 0.00001387
+down2.maxpool_conv.1.double_conv.0 28 0.00001056
+down2.maxpool_conv.1.double_conv.0 29 0.00001706
+down2.maxpool_conv.1.double_conv.0 30 0.00001232
+down2.maxpool_conv.1.double_conv.0 31 0.00001201
+down2.maxpool_conv.1.double_conv.0 32 0.00001159
+down2.maxpool_conv.1.double_conv.0 33 0.00001042
+down2.maxpool_conv.1.double_conv.0 34 0.00001288
+down2.maxpool_conv.1.double_conv.0 35 0.00001821
+down2.maxpool_conv.1.double_conv.0 36 0.00002141
+down2.maxpool_conv.1.double_conv.0 37 0.00001256
+down2.maxpool_conv.1.double_conv.0 38 0.00001445
+down2.maxpool_conv.1.double_conv.0 39 0.00001003
+down2.maxpool_conv.1.double_conv.0 40 0.00001580
+down2.maxpool_conv.1.double_conv.0 41 0.00001487
+down2.maxpool_conv.1.double_conv.0 42 0.00000927
+down2.maxpool_conv.1.double_conv.0 43 0.00001498
+down2.maxpool_conv.1.double_conv.0 44 0.00001440
+down2.maxpool_conv.1.double_conv.0 45 0.00000826
+down2.maxpool_conv.1.double_conv.0 46 0.00001163
+down2.maxpool_conv.1.double_conv.0 47 0.00002220
+down2.maxpool_conv.1.double_conv.0 48 0.00001837
+down2.maxpool_conv.1.double_conv.0 49 0.00001371
+down2.maxpool_conv.1.double_conv.0 50 0.00001147
+down2.maxpool_conv.1.double_conv.0 51 0.00001403
+down2.maxpool_conv.1.double_conv.0 52 0.00001449
+down2.maxpool_conv.1.double_conv.0 53 0.00001483
+down2.maxpool_conv.1.double_conv.0 54 0.00001112
+down2.maxpool_conv.1.double_conv.0 55 0.00001007
+down2.maxpool_conv.1.double_conv.0 56 0.00002636
+down2.maxpool_conv.1.double_conv.0 57 0.00001097
+down2.maxpool_conv.1.double_conv.0 58 0.00001867
+down2.maxpool_conv.1.double_conv.0 59 0.00002092
+down2.maxpool_conv.1.double_conv.0 60 0.00001975
+down2.maxpool_conv.1.double_conv.0 61 0.00001592
+down2.maxpool_conv.1.double_conv.0 62 0.00001599
+down2.maxpool_conv.1.double_conv.0 63 0.00001635
+down2.maxpool_conv.1.double_conv.3 0 0.00000940
+down2.maxpool_conv.1.double_conv.3 1 0.00001253
+down2.maxpool_conv.1.double_conv.3 2 0.00001334
+down2.maxpool_conv.1.double_conv.3 3 0.00001571
+down2.maxpool_conv.1.double_conv.3 4 0.00001522
+down2.maxpool_conv.1.double_conv.3 5 0.00001096
+down2.maxpool_conv.1.double_conv.3 6 0.00001503
+down2.maxpool_conv.1.double_conv.3 7 0.00001420
+down2.maxpool_conv.1.double_conv.3 8 0.00000940
+down2.maxpool_conv.1.double_conv.3 9 0.00001416
+down2.maxpool_conv.1.double_conv.3 10 0.00001073
+down2.maxpool_conv.1.double_conv.3 11 0.00001652
+down2.maxpool_conv.1.double_conv.3 12 0.00001922
+down2.maxpool_conv.1.double_conv.3 13 0.00000971
+down2.maxpool_conv.1.double_conv.3 14 0.00001652
+down2.maxpool_conv.1.double_conv.3 15 0.00001367
+down2.maxpool_conv.1.double_conv.3 16 0.00001838
+down2.maxpool_conv.1.double_conv.3 17 0.00001609
+down2.maxpool_conv.1.double_conv.3 18 0.00001194
+down2.maxpool_conv.1.double_conv.3 19 0.00001515
+down2.maxpool_conv.1.double_conv.3 20 0.00001217
+down2.maxpool_conv.1.double_conv.3 21 0.00001234
+down2.maxpool_conv.1.double_conv.3 22 0.00001066
+down2.maxpool_conv.1.double_conv.3 23 0.00001211
+down2.maxpool_conv.1.double_conv.3 24 0.00001438
+down2.maxpool_conv.1.double_conv.3 25 0.00001044
+down2.maxpool_conv.1.double_conv.3 26 0.00001239
+down2.maxpool_conv.1.double_conv.3 27 0.00001403
+down2.maxpool_conv.1.double_conv.3 28 0.00001246
+down2.maxpool_conv.1.double_conv.3 29 0.00001255
+down2.maxpool_conv.1.double_conv.3 30 0.00001739
+down2.maxpool_conv.1.double_conv.3 31 0.00000994
+down2.maxpool_conv.1.double_conv.3 32 0.00001728
+down2.maxpool_conv.1.double_conv.3 33 0.00000873
+down2.maxpool_conv.1.double_conv.3 34 0.00001880
+down2.maxpool_conv.1.double_conv.3 35 0.00001252
+down2.maxpool_conv.1.double_conv.3 36 0.00001195
+down2.maxpool_conv.1.double_conv.3 37 0.00001203
+down2.maxpool_conv.1.double_conv.3 38 0.00001310
+down2.maxpool_conv.1.double_conv.3 39 0.00001240
+down2.maxpool_conv.1.double_conv.3 40 0.00001749
+down2.maxpool_conv.1.double_conv.3 41 0.00001044
+down2.maxpool_conv.1.double_conv.3 42 0.00001506
+down2.maxpool_conv.1.double_conv.3 43 0.00001384
+down2.maxpool_conv.1.double_conv.3 44 0.00002278
+down2.maxpool_conv.1.double_conv.3 45 0.00002549
+down2.maxpool_conv.1.double_conv.3 46 0.00001280
+down2.maxpool_conv.1.double_conv.3 47 0.00001280
+down2.maxpool_conv.1.double_conv.3 48 0.00001029
+down2.maxpool_conv.1.double_conv.3 49 0.00001194
+down2.maxpool_conv.1.double_conv.3 50 0.00001349
+down2.maxpool_conv.1.double_conv.3 51 0.00001412
+down2.maxpool_conv.1.double_conv.3 52 0.00001601
+down2.maxpool_conv.1.double_conv.3 53 0.00001835
+down2.maxpool_conv.1.double_conv.3 54 0.00001096
+down2.maxpool_conv.1.double_conv.3 55 0.00001528
+down2.maxpool_conv.1.double_conv.3 56 0.00001377
+down2.maxpool_conv.1.double_conv.3 57 0.00001015
+down2.maxpool_conv.1.double_conv.3 58 0.00001440
+down2.maxpool_conv.1.double_conv.3 59 0.00000881
+down2.maxpool_conv.1.double_conv.3 60 0.00001262
+down2.maxpool_conv.1.double_conv.3 61 0.00001768
+down2.maxpool_conv.1.double_conv.3 62 0.00000977
+down2.maxpool_conv.1.double_conv.3 63 0.00000723
+down3.maxpool_conv.1.double_conv.0 0 0.00000829
+down3.maxpool_conv.1.double_conv.0 1 0.00001020
+down3.maxpool_conv.1.double_conv.0 2 0.00001500
+down3.maxpool_conv.1.double_conv.0 3 0.00000929
+down3.maxpool_conv.1.double_conv.0 4 0.00000861
+down3.maxpool_conv.1.double_conv.0 5 0.00001148
+down3.maxpool_conv.1.double_conv.0 6 0.00001151
+down3.maxpool_conv.1.double_conv.0 7 0.00001270
+down3.maxpool_conv.1.double_conv.0 8 0.00001301
+down3.maxpool_conv.1.double_conv.0 9 0.00001246
+down3.maxpool_conv.1.double_conv.0 10 0.00000702
+down3.maxpool_conv.1.double_conv.0 11 0.00000897
+down3.maxpool_conv.1.double_conv.0 12 0.00001194
+down3.maxpool_conv.1.double_conv.0 13 0.00001100
+down3.maxpool_conv.1.double_conv.0 14 0.00001220
+down3.maxpool_conv.1.double_conv.0 15 0.00001286
+down3.maxpool_conv.1.double_conv.0 16 0.00000999
+down3.maxpool_conv.1.double_conv.0 17 0.00000793
+down3.maxpool_conv.1.double_conv.0 18 0.00001158
+down3.maxpool_conv.1.double_conv.0 19 0.00001318
+down3.maxpool_conv.1.double_conv.0 20 0.00001082
+down3.maxpool_conv.1.double_conv.0 21 0.00000845
+down3.maxpool_conv.1.double_conv.0 22 0.00001110
+down3.maxpool_conv.1.double_conv.0 23 0.00001056
+down3.maxpool_conv.1.double_conv.0 24 0.00000871
+down3.maxpool_conv.1.double_conv.0 25 0.00000793
+down3.maxpool_conv.1.double_conv.0 26 0.00000990
+down3.maxpool_conv.1.double_conv.0 27 0.00001076
+down3.maxpool_conv.1.double_conv.0 28 0.00001536
+down3.maxpool_conv.1.double_conv.0 29 0.00000729
+down3.maxpool_conv.1.double_conv.0 30 0.00000963
+down3.maxpool_conv.1.double_conv.0 31 0.00000979
+down3.maxpool_conv.1.double_conv.0 32 0.00000784
+down3.maxpool_conv.1.double_conv.0 33 0.00001064
+down3.maxpool_conv.1.double_conv.0 34 0.00001273
+down3.maxpool_conv.1.double_conv.0 35 0.00000874
+down3.maxpool_conv.1.double_conv.0 36 0.00000956
+down3.maxpool_conv.1.double_conv.0 37 0.00000993
+down3.maxpool_conv.1.double_conv.0 38 0.00000861
+down3.maxpool_conv.1.double_conv.0 39 0.00001483
+down3.maxpool_conv.1.double_conv.0 40 0.00000877
+down3.maxpool_conv.1.double_conv.0 41 0.00001130
+down3.maxpool_conv.1.double_conv.0 42 0.00000916
+down3.maxpool_conv.1.double_conv.0 43 0.00001119
+down3.maxpool_conv.1.double_conv.0 44 0.00000989
+down3.maxpool_conv.1.double_conv.0 45 0.00000902
+down3.maxpool_conv.1.double_conv.0 46 0.00001114
+down3.maxpool_conv.1.double_conv.0 47 0.00000986
+down3.maxpool_conv.1.double_conv.0 48 0.00000773
+down3.maxpool_conv.1.double_conv.0 49 0.00001060
+down3.maxpool_conv.1.double_conv.0 50 0.00000623
+down3.maxpool_conv.1.double_conv.0 51 0.00001058
+down3.maxpool_conv.1.double_conv.0 52 0.00001271
+down3.maxpool_conv.1.double_conv.0 53 0.00000862
+down3.maxpool_conv.1.double_conv.0 54 0.00001064
+down3.maxpool_conv.1.double_conv.0 55 0.00001030
+down3.maxpool_conv.1.double_conv.0 56 0.00000854
+down3.maxpool_conv.1.double_conv.0 57 0.00001117
+down3.maxpool_conv.1.double_conv.0 58 0.00001089
+down3.maxpool_conv.1.double_conv.0 59 0.00000969
+down3.maxpool_conv.1.double_conv.0 60 0.00001044
+down3.maxpool_conv.1.double_conv.0 61 0.00001427
+down3.maxpool_conv.1.double_conv.0 62 0.00000887
+down3.maxpool_conv.1.double_conv.0 63 0.00000713
+down3.maxpool_conv.1.double_conv.0 64 0.00000952
+down3.maxpool_conv.1.double_conv.0 65 0.00000970
+down3.maxpool_conv.1.double_conv.0 66 0.00000746
+down3.maxpool_conv.1.double_conv.0 67 0.00000779
+down3.maxpool_conv.1.double_conv.0 68 0.00000858
+down3.maxpool_conv.1.double_conv.0 69 0.00000929
+down3.maxpool_conv.1.double_conv.0 70 0.00001207
+down3.maxpool_conv.1.double_conv.0 71 0.00001127
+down3.maxpool_conv.1.double_conv.0 72 0.00000964
+down3.maxpool_conv.1.double_conv.0 73 0.00001303
+down3.maxpool_conv.1.double_conv.0 74 0.00001020
+down3.maxpool_conv.1.double_conv.0 75 0.00000919
+down3.maxpool_conv.1.double_conv.0 76 0.00000795
+down3.maxpool_conv.1.double_conv.0 77 0.00000923
+down3.maxpool_conv.1.double_conv.0 78 0.00001299
+down3.maxpool_conv.1.double_conv.0 79 0.00001487
+down3.maxpool_conv.1.double_conv.0 80 0.00000961
+down3.maxpool_conv.1.double_conv.0 81 0.00000895
+down3.maxpool_conv.1.double_conv.0 82 0.00001002
+down3.maxpool_conv.1.double_conv.0 83 0.00001096
+down3.maxpool_conv.1.double_conv.0 84 0.00001164
+down3.maxpool_conv.1.double_conv.0 85 0.00000950
+down3.maxpool_conv.1.double_conv.0 86 0.00001079
+down3.maxpool_conv.1.double_conv.0 87 0.00001298
+down3.maxpool_conv.1.double_conv.0 88 0.00000970
+down3.maxpool_conv.1.double_conv.0 89 0.00000917
+down3.maxpool_conv.1.double_conv.0 90 0.00000987
+down3.maxpool_conv.1.double_conv.0 91 0.00001137
+down3.maxpool_conv.1.double_conv.0 92 0.00000859
+down3.maxpool_conv.1.double_conv.0 93 0.00001056
+down3.maxpool_conv.1.double_conv.0 94 0.00000985
+down3.maxpool_conv.1.double_conv.0 95 0.00001270
+down3.maxpool_conv.1.double_conv.0 96 0.00001036
+down3.maxpool_conv.1.double_conv.0 97 0.00000874
+down3.maxpool_conv.1.double_conv.0 98 0.00000966
+down3.maxpool_conv.1.double_conv.0 99 0.00000760
+down3.maxpool_conv.1.double_conv.0 100 0.00001197
+down3.maxpool_conv.1.double_conv.0 101 0.00000913
+down3.maxpool_conv.1.double_conv.0 102 0.00001326
+down3.maxpool_conv.1.double_conv.0 103 0.00000886
+down3.maxpool_conv.1.double_conv.0 104 0.00000896
+down3.maxpool_conv.1.double_conv.0 105 0.00001346
+down3.maxpool_conv.1.double_conv.0 106 0.00001348
+down3.maxpool_conv.1.double_conv.0 107 0.00000921
+down3.maxpool_conv.1.double_conv.0 108 0.00000987
+down3.maxpool_conv.1.double_conv.0 109 0.00000989
+down3.maxpool_conv.1.double_conv.0 110 0.00001165
+down3.maxpool_conv.1.double_conv.0 111 0.00000967
+down3.maxpool_conv.1.double_conv.0 112 0.00000955
+down3.maxpool_conv.1.double_conv.0 113 0.00000884
+down3.maxpool_conv.1.double_conv.0 114 0.00001037
+down3.maxpool_conv.1.double_conv.0 115 0.00001033
+down3.maxpool_conv.1.double_conv.0 116 0.00000802
+down3.maxpool_conv.1.double_conv.0 117 0.00000883
+down3.maxpool_conv.1.double_conv.0 118 0.00001246
+down3.maxpool_conv.1.double_conv.0 119 0.00001389
+down3.maxpool_conv.1.double_conv.0 120 0.00000964
+down3.maxpool_conv.1.double_conv.0 121 0.00000919
+down3.maxpool_conv.1.double_conv.0 122 0.00001122
+down3.maxpool_conv.1.double_conv.0 123 0.00001567
+down3.maxpool_conv.1.double_conv.0 124 0.00000881
+down3.maxpool_conv.1.double_conv.0 125 0.00000843
+down3.maxpool_conv.1.double_conv.0 126 0.00000949
+down3.maxpool_conv.1.double_conv.0 127 0.00001326
+down3.maxpool_conv.1.double_conv.3 0 0.00001048
+down3.maxpool_conv.1.double_conv.3 1 0.00000872
+down3.maxpool_conv.1.double_conv.3 2 0.00000719
+down3.maxpool_conv.1.double_conv.3 3 0.00000727
+down3.maxpool_conv.1.double_conv.3 4 0.00000864
+down3.maxpool_conv.1.double_conv.3 5 0.00001157
+down3.maxpool_conv.1.double_conv.3 6 0.00001127
+down3.maxpool_conv.1.double_conv.3 7 0.00001019
+down3.maxpool_conv.1.double_conv.3 8 0.00000738
+down3.maxpool_conv.1.double_conv.3 9 0.00001097
+down3.maxpool_conv.1.double_conv.3 10 0.00000898
+down3.maxpool_conv.1.double_conv.3 11 0.00000951
+down3.maxpool_conv.1.double_conv.3 12 0.00001246
+down3.maxpool_conv.1.double_conv.3 13 0.00001059
+down3.maxpool_conv.1.double_conv.3 14 0.00000770
+down3.maxpool_conv.1.double_conv.3 15 0.00000958
+down3.maxpool_conv.1.double_conv.3 16 0.00000818
+down3.maxpool_conv.1.double_conv.3 17 0.00001231
+down3.maxpool_conv.1.double_conv.3 18 0.00000911
+down3.maxpool_conv.1.double_conv.3 19 0.00000820
+down3.maxpool_conv.1.double_conv.3 20 0.00001298
+down3.maxpool_conv.1.double_conv.3 21 0.00001286
+down3.maxpool_conv.1.double_conv.3 22 0.00001290
+down3.maxpool_conv.1.double_conv.3 23 0.00000806
+down3.maxpool_conv.1.double_conv.3 24 0.00000890
+down3.maxpool_conv.1.double_conv.3 25 0.00001462
+down3.maxpool_conv.1.double_conv.3 26 0.00001315
+down3.maxpool_conv.1.double_conv.3 27 0.00001623
+down3.maxpool_conv.1.double_conv.3 28 0.00001082
+down3.maxpool_conv.1.double_conv.3 29 0.00000783
+down3.maxpool_conv.1.double_conv.3 30 0.00001236
+down3.maxpool_conv.1.double_conv.3 31 0.00001144
+down3.maxpool_conv.1.double_conv.3 32 0.00000715
+down3.maxpool_conv.1.double_conv.3 33 0.00000937
+down3.maxpool_conv.1.double_conv.3 34 0.00000990
+down3.maxpool_conv.1.double_conv.3 35 0.00001226
+down3.maxpool_conv.1.double_conv.3 36 0.00000871
+down3.maxpool_conv.1.double_conv.3 37 0.00000551
+down3.maxpool_conv.1.double_conv.3 38 0.00000876
+down3.maxpool_conv.1.double_conv.3 39 0.00001114
+down3.maxpool_conv.1.double_conv.3 40 0.00000933
+down3.maxpool_conv.1.double_conv.3 41 0.00000944
+down3.maxpool_conv.1.double_conv.3 42 0.00000851
+down3.maxpool_conv.1.double_conv.3 43 0.00001116
+down3.maxpool_conv.1.double_conv.3 44 0.00001192
+down3.maxpool_conv.1.double_conv.3 45 0.00000835
+down3.maxpool_conv.1.double_conv.3 46 0.00001016
+down3.maxpool_conv.1.double_conv.3 47 0.00000981
+down3.maxpool_conv.1.double_conv.3 48 0.00000924
+down3.maxpool_conv.1.double_conv.3 49 0.00001021
+down3.maxpool_conv.1.double_conv.3 50 0.00000878
+down3.maxpool_conv.1.double_conv.3 51 0.00001169
+down3.maxpool_conv.1.double_conv.3 52 0.00000920
+down3.maxpool_conv.1.double_conv.3 53 0.00000676
+down3.maxpool_conv.1.double_conv.3 54 0.00000955
+down3.maxpool_conv.1.double_conv.3 55 0.00000908
+down3.maxpool_conv.1.double_conv.3 56 0.00000646
+down3.maxpool_conv.1.double_conv.3 57 0.00001055
+down3.maxpool_conv.1.double_conv.3 58 0.00001073
+down3.maxpool_conv.1.double_conv.3 59 0.00001094
+down3.maxpool_conv.1.double_conv.3 60 0.00000659
+down3.maxpool_conv.1.double_conv.3 61 0.00001072
+down3.maxpool_conv.1.double_conv.3 62 0.00001084
+down3.maxpool_conv.1.double_conv.3 63 0.00001009
+down3.maxpool_conv.1.double_conv.3 64 0.00000997
+down3.maxpool_conv.1.double_conv.3 65 0.00000827
+down3.maxpool_conv.1.double_conv.3 66 0.00001425
+down3.maxpool_conv.1.double_conv.3 67 0.00001404
+down3.maxpool_conv.1.double_conv.3 68 0.00001499
+down3.maxpool_conv.1.double_conv.3 69 0.00001053
+down3.maxpool_conv.1.double_conv.3 70 0.00001006
+down3.maxpool_conv.1.double_conv.3 71 0.00001420
+down3.maxpool_conv.1.double_conv.3 72 0.00000875
+down3.maxpool_conv.1.double_conv.3 73 0.00001151
+down3.maxpool_conv.1.double_conv.3 74 0.00001171
+down3.maxpool_conv.1.double_conv.3 75 0.00000822
+down3.maxpool_conv.1.double_conv.3 76 0.00001337
+down3.maxpool_conv.1.double_conv.3 77 0.00000583
+down3.maxpool_conv.1.double_conv.3 78 0.00001144
+down3.maxpool_conv.1.double_conv.3 79 0.00001006
+down3.maxpool_conv.1.double_conv.3 80 0.00000938
+down3.maxpool_conv.1.double_conv.3 81 0.00001287
+down3.maxpool_conv.1.double_conv.3 82 0.00000708
+down3.maxpool_conv.1.double_conv.3 83 0.00000829
+down3.maxpool_conv.1.double_conv.3 84 0.00001431
+down3.maxpool_conv.1.double_conv.3 85 0.00000713
+down3.maxpool_conv.1.double_conv.3 86 0.00000854
+down3.maxpool_conv.1.double_conv.3 87 0.00000971
+down3.maxpool_conv.1.double_conv.3 88 0.00000859
+down3.maxpool_conv.1.double_conv.3 89 0.00001329
+down3.maxpool_conv.1.double_conv.3 90 0.00000943
+down3.maxpool_conv.1.double_conv.3 91 0.00000805
+down3.maxpool_conv.1.double_conv.3 92 0.00001174
+down3.maxpool_conv.1.double_conv.3 93 0.00001400
+down3.maxpool_conv.1.double_conv.3 94 0.00001516
+down3.maxpool_conv.1.double_conv.3 95 0.00001099
+down3.maxpool_conv.1.double_conv.3 96 0.00001255
+down3.maxpool_conv.1.double_conv.3 97 0.00000844
+down3.maxpool_conv.1.double_conv.3 98 0.00001358
+down3.maxpool_conv.1.double_conv.3 99 0.00001076
+down3.maxpool_conv.1.double_conv.3 100 0.00000877
+down3.maxpool_conv.1.double_conv.3 101 0.00000922
+down3.maxpool_conv.1.double_conv.3 102 0.00000880
+down3.maxpool_conv.1.double_conv.3 103 0.00001256
+down3.maxpool_conv.1.double_conv.3 104 0.00001171
+down3.maxpool_conv.1.double_conv.3 105 0.00001045
+down3.maxpool_conv.1.double_conv.3 106 0.00000888
+down3.maxpool_conv.1.double_conv.3 107 0.00001041
+down3.maxpool_conv.1.double_conv.3 108 0.00001284
+down3.maxpool_conv.1.double_conv.3 109 0.00000698
+down3.maxpool_conv.1.double_conv.3 110 0.00000999
+down3.maxpool_conv.1.double_conv.3 111 0.00001156
+down3.maxpool_conv.1.double_conv.3 112 0.00001151
+down3.maxpool_conv.1.double_conv.3 113 0.00001091
+down3.maxpool_conv.1.double_conv.3 114 0.00001236
+down3.maxpool_conv.1.double_conv.3 115 0.00001113
+down3.maxpool_conv.1.double_conv.3 116 0.00001385
+down3.maxpool_conv.1.double_conv.3 117 0.00000689
+down3.maxpool_conv.1.double_conv.3 118 0.00001222
+down3.maxpool_conv.1.double_conv.3 119 0.00001073
+down3.maxpool_conv.1.double_conv.3 120 0.00001042
+down3.maxpool_conv.1.double_conv.3 121 0.00000986
+down3.maxpool_conv.1.double_conv.3 122 0.00001243
+down3.maxpool_conv.1.double_conv.3 123 0.00000965
+down3.maxpool_conv.1.double_conv.3 124 0.00000966
+down3.maxpool_conv.1.double_conv.3 125 0.00000749
+down3.maxpool_conv.1.double_conv.3 126 0.00000878
+down3.maxpool_conv.1.double_conv.3 127 0.00000961
+down4.maxpool_conv.1.double_conv.0 0 0.00001117
+down4.maxpool_conv.1.double_conv.0 1 0.00000785
+down4.maxpool_conv.1.double_conv.0 2 0.00001175
+down4.maxpool_conv.1.double_conv.0 3 0.00001327
+down4.maxpool_conv.1.double_conv.0 4 0.00000991
+down4.maxpool_conv.1.double_conv.0 5 0.00000888
+down4.maxpool_conv.1.double_conv.0 6 0.00000715
+down4.maxpool_conv.1.double_conv.0 7 0.00000819
+down4.maxpool_conv.1.double_conv.0 8 0.00000934
+down4.maxpool_conv.1.double_conv.0 9 0.00000894
+down4.maxpool_conv.1.double_conv.0 10 0.00000911
+down4.maxpool_conv.1.double_conv.0 11 0.00001271
+down4.maxpool_conv.1.double_conv.0 12 0.00000835
+down4.maxpool_conv.1.double_conv.0 13 0.00000768
+down4.maxpool_conv.1.double_conv.0 14 0.00001350
+down4.maxpool_conv.1.double_conv.0 15 0.00000829
+down4.maxpool_conv.1.double_conv.0 16 0.00000931
+down4.maxpool_conv.1.double_conv.0 17 0.00001019
+down4.maxpool_conv.1.double_conv.0 18 0.00000859
+down4.maxpool_conv.1.double_conv.0 19 0.00001777
+down4.maxpool_conv.1.double_conv.0 20 0.00001117
+down4.maxpool_conv.1.double_conv.0 21 0.00000680
+down4.maxpool_conv.1.double_conv.0 22 0.00000945
+down4.maxpool_conv.1.double_conv.0 23 0.00001040
+down4.maxpool_conv.1.double_conv.0 24 0.00000680
+down4.maxpool_conv.1.double_conv.0 25 0.00001050
+down4.maxpool_conv.1.double_conv.0 26 0.00000843
+down4.maxpool_conv.1.double_conv.0 27 0.00001041
+down4.maxpool_conv.1.double_conv.0 28 0.00000898
+down4.maxpool_conv.1.double_conv.0 29 0.00000851
+down4.maxpool_conv.1.double_conv.0 30 0.00000919
+down4.maxpool_conv.1.double_conv.0 31 0.00001024
+down4.maxpool_conv.1.double_conv.0 32 0.00000948
+down4.maxpool_conv.1.double_conv.0 33 0.00000934
+down4.maxpool_conv.1.double_conv.0 34 0.00001004
+down4.maxpool_conv.1.double_conv.0 35 0.00001102
+down4.maxpool_conv.1.double_conv.0 36 0.00000871
+down4.maxpool_conv.1.double_conv.0 37 0.00001001
+down4.maxpool_conv.1.double_conv.0 38 0.00001060
+down4.maxpool_conv.1.double_conv.0 39 0.00001227
+down4.maxpool_conv.1.double_conv.0 40 0.00000990
+down4.maxpool_conv.1.double_conv.0 41 0.00000977
+down4.maxpool_conv.1.double_conv.0 42 0.00001106
+down4.maxpool_conv.1.double_conv.0 43 0.00000896
+down4.maxpool_conv.1.double_conv.0 44 0.00001117
+down4.maxpool_conv.1.double_conv.0 45 0.00000801
+down4.maxpool_conv.1.double_conv.0 46 0.00000929
+down4.maxpool_conv.1.double_conv.0 47 0.00000980
+down4.maxpool_conv.1.double_conv.0 48 0.00001061
+down4.maxpool_conv.1.double_conv.0 49 0.00001250
+down4.maxpool_conv.1.double_conv.0 50 0.00001127
+down4.maxpool_conv.1.double_conv.0 51 0.00000707
+down4.maxpool_conv.1.double_conv.0 52 0.00000725
+down4.maxpool_conv.1.double_conv.0 53 0.00000923
+down4.maxpool_conv.1.double_conv.0 54 0.00001289
+down4.maxpool_conv.1.double_conv.0 55 0.00000832
+down4.maxpool_conv.1.double_conv.0 56 0.00001056
+down4.maxpool_conv.1.double_conv.0 57 0.00000806
+down4.maxpool_conv.1.double_conv.0 58 0.00001036
+down4.maxpool_conv.1.double_conv.0 59 0.00000893
+down4.maxpool_conv.1.double_conv.0 60 0.00001131
+down4.maxpool_conv.1.double_conv.0 61 0.00000862
+down4.maxpool_conv.1.double_conv.0 62 0.00000785
+down4.maxpool_conv.1.double_conv.0 63 0.00000871
+down4.maxpool_conv.1.double_conv.0 64 0.00000838
+down4.maxpool_conv.1.double_conv.0 65 0.00000890
+down4.maxpool_conv.1.double_conv.0 66 0.00000945
+down4.maxpool_conv.1.double_conv.0 67 0.00000687
+down4.maxpool_conv.1.double_conv.0 68 0.00000899
+down4.maxpool_conv.1.double_conv.0 69 0.00000972
+down4.maxpool_conv.1.double_conv.0 70 0.00000842
+down4.maxpool_conv.1.double_conv.0 71 0.00000855
+down4.maxpool_conv.1.double_conv.0 72 0.00000975
+down4.maxpool_conv.1.double_conv.0 73 0.00000805
+down4.maxpool_conv.1.double_conv.0 74 0.00000984
+down4.maxpool_conv.1.double_conv.0 75 0.00000632
+down4.maxpool_conv.1.double_conv.0 76 0.00000863
+down4.maxpool_conv.1.double_conv.0 77 0.00001161
+down4.maxpool_conv.1.double_conv.0 78 0.00000724
+down4.maxpool_conv.1.double_conv.0 79 0.00001031
+down4.maxpool_conv.1.double_conv.0 80 0.00001201
+down4.maxpool_conv.1.double_conv.0 81 0.00000906
+down4.maxpool_conv.1.double_conv.0 82 0.00000962
+down4.maxpool_conv.1.double_conv.0 83 0.00001081
+down4.maxpool_conv.1.double_conv.0 84 0.00001073
+down4.maxpool_conv.1.double_conv.0 85 0.00000694
+down4.maxpool_conv.1.double_conv.0 86 0.00001156
+down4.maxpool_conv.1.double_conv.0 87 0.00000894
+down4.maxpool_conv.1.double_conv.0 88 0.00000932
+down4.maxpool_conv.1.double_conv.0 89 0.00001178
+down4.maxpool_conv.1.double_conv.0 90 0.00000883
+down4.maxpool_conv.1.double_conv.0 91 0.00000709
+down4.maxpool_conv.1.double_conv.0 92 0.00001174
+down4.maxpool_conv.1.double_conv.0 93 0.00001121
+down4.maxpool_conv.1.double_conv.0 94 0.00000951
+down4.maxpool_conv.1.double_conv.0 95 0.00000715
+down4.maxpool_conv.1.double_conv.0 96 0.00000753
+down4.maxpool_conv.1.double_conv.0 97 0.00000875
+down4.maxpool_conv.1.double_conv.0 98 0.00000981
+down4.maxpool_conv.1.double_conv.0 99 0.00001231
+down4.maxpool_conv.1.double_conv.0 100 0.00000930
+down4.maxpool_conv.1.double_conv.0 101 0.00001387
+down4.maxpool_conv.1.double_conv.0 102 0.00001170
+down4.maxpool_conv.1.double_conv.0 103 0.00001203
+down4.maxpool_conv.1.double_conv.0 104 0.00001133
+down4.maxpool_conv.1.double_conv.0 105 0.00000858
+down4.maxpool_conv.1.double_conv.0 106 0.00000697
+down4.maxpool_conv.1.double_conv.0 107 0.00000966
+down4.maxpool_conv.1.double_conv.0 108 0.00000878
+down4.maxpool_conv.1.double_conv.0 109 0.00000797
+down4.maxpool_conv.1.double_conv.0 110 0.00000840
+down4.maxpool_conv.1.double_conv.0 111 0.00001518
+down4.maxpool_conv.1.double_conv.0 112 0.00000910
+down4.maxpool_conv.1.double_conv.0 113 0.00000663
+down4.maxpool_conv.1.double_conv.0 114 0.00001092
+down4.maxpool_conv.1.double_conv.0 115 0.00000860
+down4.maxpool_conv.1.double_conv.0 116 0.00001285
+down4.maxpool_conv.1.double_conv.0 117 0.00000923
+down4.maxpool_conv.1.double_conv.0 118 0.00000957
+down4.maxpool_conv.1.double_conv.0 119 0.00000820
+down4.maxpool_conv.1.double_conv.0 120 0.00000954
+down4.maxpool_conv.1.double_conv.0 121 0.00000725
+down4.maxpool_conv.1.double_conv.0 122 0.00001219
+down4.maxpool_conv.1.double_conv.0 123 0.00001070
+down4.maxpool_conv.1.double_conv.0 124 0.00000937
+down4.maxpool_conv.1.double_conv.0 125 0.00000751
+down4.maxpool_conv.1.double_conv.0 126 0.00000742
+down4.maxpool_conv.1.double_conv.0 127 0.00001061
+down4.maxpool_conv.1.double_conv.3 0 0.00001417
+down4.maxpool_conv.1.double_conv.3 1 0.00001068
+down4.maxpool_conv.1.double_conv.3 2 0.00000964
+down4.maxpool_conv.1.double_conv.3 3 0.00001314
+down4.maxpool_conv.1.double_conv.3 4 0.00001096
+down4.maxpool_conv.1.double_conv.3 5 0.00001114
+down4.maxpool_conv.1.double_conv.3 6 0.00000930
+down4.maxpool_conv.1.double_conv.3 7 0.00000801
+down4.maxpool_conv.1.double_conv.3 8 0.00001001
+down4.maxpool_conv.1.double_conv.3 9 0.00001136
+down4.maxpool_conv.1.double_conv.3 10 0.00000838
+down4.maxpool_conv.1.double_conv.3 11 0.00001064
+down4.maxpool_conv.1.double_conv.3 12 0.00000831
+down4.maxpool_conv.1.double_conv.3 13 0.00001175
+down4.maxpool_conv.1.double_conv.3 14 0.00001570
+down4.maxpool_conv.1.double_conv.3 15 0.00001088
+down4.maxpool_conv.1.double_conv.3 16 0.00001011
+down4.maxpool_conv.1.double_conv.3 17 0.00001144
+down4.maxpool_conv.1.double_conv.3 18 0.00000817
+down4.maxpool_conv.1.double_conv.3 19 0.00001075
+down4.maxpool_conv.1.double_conv.3 20 0.00001014
+down4.maxpool_conv.1.double_conv.3 21 0.00000808
+down4.maxpool_conv.1.double_conv.3 22 0.00000990
+down4.maxpool_conv.1.double_conv.3 23 0.00001493
+down4.maxpool_conv.1.double_conv.3 24 0.00001632
+down4.maxpool_conv.1.double_conv.3 25 0.00001025
+down4.maxpool_conv.1.double_conv.3 26 0.00000955
+down4.maxpool_conv.1.double_conv.3 27 0.00001051
+down4.maxpool_conv.1.double_conv.3 28 0.00001345
+down4.maxpool_conv.1.double_conv.3 29 0.00001493
+down4.maxpool_conv.1.double_conv.3 30 0.00001242
+down4.maxpool_conv.1.double_conv.3 31 0.00000883
+down4.maxpool_conv.1.double_conv.3 32 0.00000945
+down4.maxpool_conv.1.double_conv.3 33 0.00001269
+down4.maxpool_conv.1.double_conv.3 34 0.00001278
+down4.maxpool_conv.1.double_conv.3 35 0.00001153
+down4.maxpool_conv.1.double_conv.3 36 0.00001028
+down4.maxpool_conv.1.double_conv.3 37 0.00001376
+down4.maxpool_conv.1.double_conv.3 38 0.00001181
+down4.maxpool_conv.1.double_conv.3 39 0.00001087
+down4.maxpool_conv.1.double_conv.3 40 0.00001108
+down4.maxpool_conv.1.double_conv.3 41 0.00000920
+down4.maxpool_conv.1.double_conv.3 42 0.00001284
+down4.maxpool_conv.1.double_conv.3 43 0.00001297
+down4.maxpool_conv.1.double_conv.3 44 0.00001160
+down4.maxpool_conv.1.double_conv.3 45 0.00000936
+down4.maxpool_conv.1.double_conv.3 46 0.00001191
+down4.maxpool_conv.1.double_conv.3 47 0.00001124
+down4.maxpool_conv.1.double_conv.3 48 0.00001168
+down4.maxpool_conv.1.double_conv.3 49 0.00001235
+down4.maxpool_conv.1.double_conv.3 50 0.00000948
+down4.maxpool_conv.1.double_conv.3 51 0.00001356
+down4.maxpool_conv.1.double_conv.3 52 0.00001164
+down4.maxpool_conv.1.double_conv.3 53 0.00001216
+down4.maxpool_conv.1.double_conv.3 54 0.00001560
+down4.maxpool_conv.1.double_conv.3 55 0.00000773
+down4.maxpool_conv.1.double_conv.3 56 0.00001227
+down4.maxpool_conv.1.double_conv.3 57 0.00001188
+down4.maxpool_conv.1.double_conv.3 58 0.00001087
+down4.maxpool_conv.1.double_conv.3 59 0.00000988
+down4.maxpool_conv.1.double_conv.3 60 0.00000952
+down4.maxpool_conv.1.double_conv.3 61 0.00001046
+down4.maxpool_conv.1.double_conv.3 62 0.00001691
+down4.maxpool_conv.1.double_conv.3 63 0.00000968
+down4.maxpool_conv.1.double_conv.3 64 0.00002890
+down4.maxpool_conv.1.double_conv.3 65 0.00001554
+down4.maxpool_conv.1.double_conv.3 66 0.00001257
+down4.maxpool_conv.1.double_conv.3 67 0.00000907
+down4.maxpool_conv.1.double_conv.3 68 0.00000759
+down4.maxpool_conv.1.double_conv.3 69 0.00001178
+down4.maxpool_conv.1.double_conv.3 70 0.00001354
+down4.maxpool_conv.1.double_conv.3 71 0.00001403
+down4.maxpool_conv.1.double_conv.3 72 0.00001291
+down4.maxpool_conv.1.double_conv.3 73 0.00000955
+down4.maxpool_conv.1.double_conv.3 74 0.00001174
+down4.maxpool_conv.1.double_conv.3 75 0.00002105
+down4.maxpool_conv.1.double_conv.3 76 0.00001271
+down4.maxpool_conv.1.double_conv.3 77 0.00001094
+down4.maxpool_conv.1.double_conv.3 78 0.00001238
+down4.maxpool_conv.1.double_conv.3 79 0.00000787
+down4.maxpool_conv.1.double_conv.3 80 0.00001033
+down4.maxpool_conv.1.double_conv.3 81 0.00001318
+down4.maxpool_conv.1.double_conv.3 82 0.00001166
+down4.maxpool_conv.1.double_conv.3 83 0.00002261
+down4.maxpool_conv.1.double_conv.3 84 0.00001166
+down4.maxpool_conv.1.double_conv.3 85 0.00000854
+down4.maxpool_conv.1.double_conv.3 86 0.00000998
+down4.maxpool_conv.1.double_conv.3 87 0.00001024
+down4.maxpool_conv.1.double_conv.3 88 0.00000681
+down4.maxpool_conv.1.double_conv.3 89 0.00001057
+down4.maxpool_conv.1.double_conv.3 90 0.00001251
+down4.maxpool_conv.1.double_conv.3 91 0.00001197
+down4.maxpool_conv.1.double_conv.3 92 0.00001422
+down4.maxpool_conv.1.double_conv.3 93 0.00001186
+down4.maxpool_conv.1.double_conv.3 94 0.00001006
+down4.maxpool_conv.1.double_conv.3 95 0.00001574
+down4.maxpool_conv.1.double_conv.3 96 0.00000902
+down4.maxpool_conv.1.double_conv.3 97 0.00001730
+down4.maxpool_conv.1.double_conv.3 98 0.00001006
+down4.maxpool_conv.1.double_conv.3 99 0.00001068
+down4.maxpool_conv.1.double_conv.3 100 0.00000981
+down4.maxpool_conv.1.double_conv.3 101 0.00001004
+down4.maxpool_conv.1.double_conv.3 102 0.00001955
+down4.maxpool_conv.1.double_conv.3 103 0.00001113
+down4.maxpool_conv.1.double_conv.3 104 0.00000934
+down4.maxpool_conv.1.double_conv.3 105 0.00000982
+down4.maxpool_conv.1.double_conv.3 106 0.00001308
+down4.maxpool_conv.1.double_conv.3 107 0.00001468
+down4.maxpool_conv.1.double_conv.3 108 0.00000800
+down4.maxpool_conv.1.double_conv.3 109 0.00001366
+down4.maxpool_conv.1.double_conv.3 110 0.00001141
+down4.maxpool_conv.1.double_conv.3 111 0.00001141
+down4.maxpool_conv.1.double_conv.3 112 0.00001110
+down4.maxpool_conv.1.double_conv.3 113 0.00001436
+down4.maxpool_conv.1.double_conv.3 114 0.00001319
+down4.maxpool_conv.1.double_conv.3 115 0.00000659
+down4.maxpool_conv.1.double_conv.3 116 0.00001025
+down4.maxpool_conv.1.double_conv.3 117 0.00001312
+down4.maxpool_conv.1.double_conv.3 118 0.00000932
+down4.maxpool_conv.1.double_conv.3 119 0.00000868
+down4.maxpool_conv.1.double_conv.3 120 0.00001148
+down4.maxpool_conv.1.double_conv.3 121 0.00001224
+down4.maxpool_conv.1.double_conv.3 122 0.00001428
+down4.maxpool_conv.1.double_conv.3 123 0.00001623
+down4.maxpool_conv.1.double_conv.3 124 0.00001282
+down4.maxpool_conv.1.double_conv.3 125 0.00001245
+down4.maxpool_conv.1.double_conv.3 126 0.00001109
+down4.maxpool_conv.1.double_conv.3 127 0.00000980
+up1.conv.double_conv.0 0 0.00001002
+up1.conv.double_conv.0 1 0.00000646
+up1.conv.double_conv.0 2 0.00001557
+up1.conv.double_conv.0 3 0.00000975
+up1.conv.double_conv.0 4 0.00000694
+up1.conv.double_conv.0 5 0.00001161
+up1.conv.double_conv.0 6 0.00001099
+up1.conv.double_conv.0 7 0.00000812
+up1.conv.double_conv.0 8 0.00001170
+up1.conv.double_conv.0 9 0.00001350
+up1.conv.double_conv.0 10 0.00001020
+up1.conv.double_conv.0 11 0.00000530
+up1.conv.double_conv.0 12 0.00001372
+up1.conv.double_conv.0 13 0.00000639
+up1.conv.double_conv.0 14 0.00000737
+up1.conv.double_conv.0 15 0.00000827
+up1.conv.double_conv.0 16 0.00000830
+up1.conv.double_conv.0 17 0.00001008
+up1.conv.double_conv.0 18 0.00002757
+up1.conv.double_conv.0 19 0.00000921
+up1.conv.double_conv.0 20 0.00001012
+up1.conv.double_conv.0 21 0.00001448
+up1.conv.double_conv.0 22 0.00000838
+up1.conv.double_conv.0 23 0.00001368
+up1.conv.double_conv.0 24 0.00001244
+up1.conv.double_conv.0 25 0.00000690
+up1.conv.double_conv.0 26 0.00000683
+up1.conv.double_conv.0 27 0.00000703
+up1.conv.double_conv.0 28 0.00000942
+up1.conv.double_conv.0 29 0.00001360
+up1.conv.double_conv.0 30 0.00001892
+up1.conv.double_conv.0 31 0.00001058
+up1.conv.double_conv.0 32 0.00001620
+up1.conv.double_conv.0 33 0.00001172
+up1.conv.double_conv.0 34 0.00000604
+up1.conv.double_conv.0 35 0.00000780
+up1.conv.double_conv.0 36 0.00001606
+up1.conv.double_conv.0 37 0.00000864
+up1.conv.double_conv.0 38 0.00000940
+up1.conv.double_conv.0 39 0.00000902
+up1.conv.double_conv.0 40 0.00000809
+up1.conv.double_conv.0 41 0.00000839
+up1.conv.double_conv.0 42 0.00000883
+up1.conv.double_conv.0 43 0.00000754
+up1.conv.double_conv.0 44 0.00001045
+up1.conv.double_conv.0 45 0.00000572
+up1.conv.double_conv.0 46 0.00000886
+up1.conv.double_conv.0 47 0.00001610
+up1.conv.double_conv.0 48 0.00001459
+up1.conv.double_conv.0 49 0.00000766
+up1.conv.double_conv.0 50 0.00000887
+up1.conv.double_conv.0 51 0.00000684
+up1.conv.double_conv.0 52 0.00000928
+up1.conv.double_conv.0 53 0.00000938
+up1.conv.double_conv.0 54 0.00001044
+up1.conv.double_conv.0 55 0.00000942
+up1.conv.double_conv.0 56 0.00001422
+up1.conv.double_conv.0 57 0.00000886
+up1.conv.double_conv.0 58 0.00000855
+up1.conv.double_conv.0 59 0.00001130
+up1.conv.double_conv.0 60 0.00000889
+up1.conv.double_conv.0 61 0.00001378
+up1.conv.double_conv.0 62 0.00000727
+up1.conv.double_conv.0 63 0.00000882
+up1.conv.double_conv.0 64 0.00000908
+up1.conv.double_conv.0 65 0.00000856
+up1.conv.double_conv.0 66 0.00000548
+up1.conv.double_conv.0 67 0.00000599
+up1.conv.double_conv.0 68 0.00001159
+up1.conv.double_conv.0 69 0.00001392
+up1.conv.double_conv.0 70 0.00000987
+up1.conv.double_conv.0 71 0.00001000
+up1.conv.double_conv.0 72 0.00000956
+up1.conv.double_conv.0 73 0.00000936
+up1.conv.double_conv.0 74 0.00001088
+up1.conv.double_conv.0 75 0.00001007
+up1.conv.double_conv.0 76 0.00001088
+up1.conv.double_conv.0 77 0.00000903
+up1.conv.double_conv.0 78 0.00000983
+up1.conv.double_conv.0 79 0.00001185
+up1.conv.double_conv.0 80 0.00002648
+up1.conv.double_conv.0 81 0.00001548
+up1.conv.double_conv.0 82 0.00001026
+up1.conv.double_conv.0 83 0.00000870
+up1.conv.double_conv.0 84 0.00001180
+up1.conv.double_conv.0 85 0.00000675
+up1.conv.double_conv.0 86 0.00000927
+up1.conv.double_conv.0 87 0.00001334
+up1.conv.double_conv.0 88 0.00000735
+up1.conv.double_conv.0 89 0.00001025
+up1.conv.double_conv.0 90 0.00003052
+up1.conv.double_conv.0 91 0.00000520
+up1.conv.double_conv.0 92 0.00001020
+up1.conv.double_conv.0 93 0.00001429
+up1.conv.double_conv.0 94 0.00001016
+up1.conv.double_conv.0 95 0.00001144
+up1.conv.double_conv.0 96 0.00000915
+up1.conv.double_conv.0 97 0.00000912
+up1.conv.double_conv.0 98 0.00000953
+up1.conv.double_conv.0 99 0.00000945
+up1.conv.double_conv.0 100 0.00000886
+up1.conv.double_conv.0 101 0.00001488
+up1.conv.double_conv.0 102 0.00000824
+up1.conv.double_conv.0 103 0.00000631
+up1.conv.double_conv.0 104 0.00001441
+up1.conv.double_conv.0 105 0.00000891
+up1.conv.double_conv.0 106 0.00001032
+up1.conv.double_conv.0 107 0.00000870
+up1.conv.double_conv.0 108 0.00001424
+up1.conv.double_conv.0 109 0.00001429
+up1.conv.double_conv.0 110 0.00000632
+up1.conv.double_conv.0 111 0.00000961
+up1.conv.double_conv.0 112 0.00001113
+up1.conv.double_conv.0 113 0.00000962
+up1.conv.double_conv.0 114 0.00002179
+up1.conv.double_conv.0 115 0.00000780
+up1.conv.double_conv.0 116 0.00000615
+up1.conv.double_conv.0 117 0.00000555
+up1.conv.double_conv.0 118 0.00000740
+up1.conv.double_conv.0 119 0.00000771
+up1.conv.double_conv.0 120 0.00000940
+up1.conv.double_conv.0 121 0.00000688
+up1.conv.double_conv.0 122 0.00000874
+up1.conv.double_conv.0 123 0.00000742
+up1.conv.double_conv.0 124 0.00000771
+up1.conv.double_conv.0 125 0.00001140
+up1.conv.double_conv.0 126 0.00000942
+up1.conv.double_conv.0 127 0.00000811
+up1.conv.double_conv.3 0 0.00001604
+up1.conv.double_conv.3 1 0.00001054
+up1.conv.double_conv.3 2 0.00001122
+up1.conv.double_conv.3 3 0.00001122
+up1.conv.double_conv.3 4 0.00001167
+up1.conv.double_conv.3 5 0.00001259
+up1.conv.double_conv.3 6 0.00001077
+up1.conv.double_conv.3 7 0.00001118
+up1.conv.double_conv.3 8 0.00001603
+up1.conv.double_conv.3 9 0.00001192
+up1.conv.double_conv.3 10 0.00002287
+up1.conv.double_conv.3 11 0.00001714
+up1.conv.double_conv.3 12 0.00002101
+up1.conv.double_conv.3 13 0.00001690
+up1.conv.double_conv.3 14 0.00001549
+up1.conv.double_conv.3 15 0.00001046
+up1.conv.double_conv.3 16 0.00001683
+up1.conv.double_conv.3 17 0.00000949
+up1.conv.double_conv.3 18 0.00001346
+up1.conv.double_conv.3 19 0.00001476
+up1.conv.double_conv.3 20 0.00001018
+up1.conv.double_conv.3 21 0.00001290
+up1.conv.double_conv.3 22 0.00001615
+up1.conv.double_conv.3 23 0.00001486
+up1.conv.double_conv.3 24 0.00001000
+up1.conv.double_conv.3 25 0.00001634
+up1.conv.double_conv.3 26 0.00000952
+up1.conv.double_conv.3 27 0.00000792
+up1.conv.double_conv.3 28 0.00001390
+up1.conv.double_conv.3 29 0.00001081
+up1.conv.double_conv.3 30 0.00001113
+up1.conv.double_conv.3 31 0.00001157
+up1.conv.double_conv.3 32 0.00001243
+up1.conv.double_conv.3 33 0.00001342
+up1.conv.double_conv.3 34 0.00001711
+up1.conv.double_conv.3 35 0.00001996
+up1.conv.double_conv.3 36 0.00001951
+up1.conv.double_conv.3 37 0.00000903
+up1.conv.double_conv.3 38 0.00000990
+up1.conv.double_conv.3 39 0.00003112
+up1.conv.double_conv.3 40 0.00000754
+up1.conv.double_conv.3 41 0.00001362
+up1.conv.double_conv.3 42 0.00000856
+up1.conv.double_conv.3 43 0.00001574
+up1.conv.double_conv.3 44 0.00001814
+up1.conv.double_conv.3 45 0.00001230
+up1.conv.double_conv.3 46 0.00001478
+up1.conv.double_conv.3 47 0.00001218
+up1.conv.double_conv.3 48 0.00000993
+up1.conv.double_conv.3 49 0.00001063
+up1.conv.double_conv.3 50 0.00000775
+up1.conv.double_conv.3 51 0.00000759
+up1.conv.double_conv.3 52 0.00001627
+up1.conv.double_conv.3 53 0.00001223
+up1.conv.double_conv.3 54 0.00001703
+up1.conv.double_conv.3 55 0.00001322
+up1.conv.double_conv.3 56 0.00001428
+up1.conv.double_conv.3 57 0.00001594
+up1.conv.double_conv.3 58 0.00001153
+up1.conv.double_conv.3 59 0.00000791
+up1.conv.double_conv.3 60 0.00001445
+up1.conv.double_conv.3 61 0.00001438
+up1.conv.double_conv.3 62 0.00000715
+up1.conv.double_conv.3 63 0.00001169
+up2.conv.double_conv.0 0 0.00001249
+up2.conv.double_conv.0 1 0.00000494
+up2.conv.double_conv.0 2 0.00001324
+up2.conv.double_conv.0 3 0.00001077
+up2.conv.double_conv.0 4 0.00002902
+up2.conv.double_conv.0 5 0.00000754
+up2.conv.double_conv.0 6 0.00001678
+up2.conv.double_conv.0 7 0.00000829
+up2.conv.double_conv.0 8 0.00000901
+up2.conv.double_conv.0 9 0.00001071
+up2.conv.double_conv.0 10 0.00001051
+up2.conv.double_conv.0 11 0.00000977
+up2.conv.double_conv.0 12 0.00001530
+up2.conv.double_conv.0 13 0.00000884
+up2.conv.double_conv.0 14 0.00000839
+up2.conv.double_conv.0 15 0.00000611
+up2.conv.double_conv.0 16 0.00001724
+up2.conv.double_conv.0 17 0.00001209
+up2.conv.double_conv.0 18 0.00001150
+up2.conv.double_conv.0 19 0.00000650
+up2.conv.double_conv.0 20 0.00002150
+up2.conv.double_conv.0 21 0.00001956
+up2.conv.double_conv.0 22 0.00000575
+up2.conv.double_conv.0 23 0.00002342
+up2.conv.double_conv.0 24 0.00001993
+up2.conv.double_conv.0 25 0.00001953
+up2.conv.double_conv.0 26 0.00001335
+up2.conv.double_conv.0 27 0.00001010
+up2.conv.double_conv.0 28 0.00001314
+up2.conv.double_conv.0 29 0.00001822
+up2.conv.double_conv.0 30 0.00001586
+up2.conv.double_conv.0 31 0.00001120
+up2.conv.double_conv.0 32 0.00001710
+up2.conv.double_conv.0 33 0.00001140
+up2.conv.double_conv.0 34 0.00002396
+up2.conv.double_conv.0 35 0.00002162
+up2.conv.double_conv.0 36 0.00001657
+up2.conv.double_conv.0 37 0.00001041
+up2.conv.double_conv.0 38 0.00000705
+up2.conv.double_conv.0 39 0.00001580
+up2.conv.double_conv.0 40 0.00000930
+up2.conv.double_conv.0 41 0.00000764
+up2.conv.double_conv.0 42 0.00000995
+up2.conv.double_conv.0 43 0.00000819
+up2.conv.double_conv.0 44 0.00000976
+up2.conv.double_conv.0 45 0.00001127
+up2.conv.double_conv.0 46 0.00000887
+up2.conv.double_conv.0 47 0.00001274
+up2.conv.double_conv.0 48 0.00000868
+up2.conv.double_conv.0 49 0.00001553
+up2.conv.double_conv.0 50 0.00001365
+up2.conv.double_conv.0 51 0.00002875
+up2.conv.double_conv.0 52 0.00001366
+up2.conv.double_conv.0 53 0.00000877
+up2.conv.double_conv.0 54 0.00001072
+up2.conv.double_conv.0 55 0.00001951
+up2.conv.double_conv.0 56 0.00000855
+up2.conv.double_conv.0 57 0.00000866
+up2.conv.double_conv.0 58 0.00000880
+up2.conv.double_conv.0 59 0.00000973
+up2.conv.double_conv.0 60 0.00000972
+up2.conv.double_conv.0 61 0.00001231
+up2.conv.double_conv.0 62 0.00001514
+up2.conv.double_conv.0 63 0.00000999
+up2.conv.double_conv.3 0 0.00001203
+up2.conv.double_conv.3 1 0.00001653
+up2.conv.double_conv.3 2 0.00001816
+up2.conv.double_conv.3 3 0.00001128
+up2.conv.double_conv.3 4 0.00001350
+up2.conv.double_conv.3 5 0.00002100
+up2.conv.double_conv.3 6 0.00001504
+up2.conv.double_conv.3 7 0.00001973
+up2.conv.double_conv.3 8 0.00001200
+up2.conv.double_conv.3 9 0.00000858
+up2.conv.double_conv.3 10 0.00001267
+up2.conv.double_conv.3 11 0.00001082
+up2.conv.double_conv.3 12 0.00001786
+up2.conv.double_conv.3 13 0.00002138
+up2.conv.double_conv.3 14 0.00001986
+up2.conv.double_conv.3 15 0.00001307
+up2.conv.double_conv.3 16 0.00001771
+up2.conv.double_conv.3 17 0.00000982
+up2.conv.double_conv.3 18 0.00000649
+up2.conv.double_conv.3 19 0.00001628
+up2.conv.double_conv.3 20 0.00003526
+up2.conv.double_conv.3 21 0.00000732
+up2.conv.double_conv.3 22 0.00000936
+up2.conv.double_conv.3 23 0.00001972
+up2.conv.double_conv.3 24 0.00001664
+up2.conv.double_conv.3 25 0.00000940
+up2.conv.double_conv.3 26 0.00002095
+up2.conv.double_conv.3 27 0.00000705
+up2.conv.double_conv.3 28 0.00001254
+up2.conv.double_conv.3 29 0.00001305
+up2.conv.double_conv.3 30 0.00001265
+up2.conv.double_conv.3 31 0.00001871
+up3.conv.double_conv.0 0 0.00002210
+up3.conv.double_conv.0 1 0.00000780
+up3.conv.double_conv.0 2 0.00001472
+up3.conv.double_conv.0 3 0.00001382
+up3.conv.double_conv.0 4 0.00000718
+up3.conv.double_conv.0 5 0.00000807
+up3.conv.double_conv.0 6 0.00001610
+up3.conv.double_conv.0 7 0.00001075
+up3.conv.double_conv.0 8 0.00000656
+up3.conv.double_conv.0 9 0.00001048
+up3.conv.double_conv.0 10 0.00000996
+up3.conv.double_conv.0 11 0.00000561
+up3.conv.double_conv.0 12 0.00000578
+up3.conv.double_conv.0 13 0.00001047
+up3.conv.double_conv.0 14 0.00000841
+up3.conv.double_conv.0 15 0.00001518
+up3.conv.double_conv.0 16 0.00002029
+up3.conv.double_conv.0 17 0.00000902
+up3.conv.double_conv.0 18 0.00001027
+up3.conv.double_conv.0 19 0.00000912
+up3.conv.double_conv.0 20 0.00000971
+up3.conv.double_conv.0 21 0.00002570
+up3.conv.double_conv.0 22 0.00000761
+up3.conv.double_conv.0 23 0.00001545
+up3.conv.double_conv.0 24 0.00001014
+up3.conv.double_conv.0 25 0.00001062
+up3.conv.double_conv.0 26 0.00000788
+up3.conv.double_conv.0 27 0.00000969
+up3.conv.double_conv.0 28 0.00000786
+up3.conv.double_conv.0 29 0.00000717
+up3.conv.double_conv.0 30 0.00000813
+up3.conv.double_conv.0 31 0.00001219
+up3.conv.double_conv.3 0 0.00001991
+up3.conv.double_conv.3 1 0.00000737
+up3.conv.double_conv.3 2 0.00001094
+up3.conv.double_conv.3 3 0.00001266
+up3.conv.double_conv.3 4 0.00001794
+up3.conv.double_conv.3 5 0.00001321
+up3.conv.double_conv.3 6 0.00001126
+up3.conv.double_conv.3 7 0.00001046
+up3.conv.double_conv.3 8 0.00001342
+up3.conv.double_conv.3 9 0.00000840
+up3.conv.double_conv.3 10 0.00001507
+up3.conv.double_conv.3 11 0.00001240
+up3.conv.double_conv.3 12 0.00000932
+up3.conv.double_conv.3 13 0.00000881
+up3.conv.double_conv.3 14 0.00001062
+up3.conv.double_conv.3 15 0.00001066
+up3.conv.double_conv.3 16 0.00000781
+up3.conv.double_conv.3 17 0.00001408
+up3.conv.double_conv.3 18 0.00000789
+up3.conv.double_conv.3 19 0.00001432
+up3.conv.double_conv.3 20 0.00001540
+up3.conv.double_conv.3 21 0.00001358
+up3.conv.double_conv.3 22 0.00000953
+up3.conv.double_conv.3 23 0.00000751
+up3.conv.double_conv.3 24 0.00002011
+up3.conv.double_conv.3 25 0.00002209
+up3.conv.double_conv.3 26 0.00001109
+up3.conv.double_conv.3 27 0.00001127
+up3.conv.double_conv.3 28 0.00000926
+up3.conv.double_conv.3 29 0.00000942
+up3.conv.double_conv.3 30 0.00001945
+up3.conv.double_conv.3 31 0.00001491
+up4.conv.double_conv.0 0 0.00000951
+up4.conv.double_conv.0 1 0.00000963
+up4.conv.double_conv.0 2 0.00001021
+up4.conv.double_conv.0 3 0.00000847
+up4.conv.double_conv.0 4 0.00000771
+up4.conv.double_conv.0 5 0.00000814
+up4.conv.double_conv.0 6 0.00000817
+up4.conv.double_conv.0 7 0.00003683
+up4.conv.double_conv.0 8 0.00001690
+up4.conv.double_conv.0 9 0.00000815
+up4.conv.double_conv.0 10 0.00001045
+up4.conv.double_conv.0 11 0.00000762
+up4.conv.double_conv.0 12 0.00001925
+up4.conv.double_conv.0 13 0.00001434
+up4.conv.double_conv.0 14 0.00000828
+up4.conv.double_conv.0 15 0.00001037
+up4.conv.double_conv.0 16 0.00000898
+up4.conv.double_conv.0 17 0.00002211
+up4.conv.double_conv.0 18 0.00000807
+up4.conv.double_conv.0 19 0.00000828
+up4.conv.double_conv.0 20 0.00001185
+up4.conv.double_conv.0 21 0.00000571
+up4.conv.double_conv.0 22 0.00001251
+up4.conv.double_conv.0 23 0.00001124
+up4.conv.double_conv.0 24 0.00001526
+up4.conv.double_conv.0 25 0.00001034
+up4.conv.double_conv.0 26 0.00000885
+up4.conv.double_conv.0 27 0.00001148
+up4.conv.double_conv.0 28 0.00001243
+up4.conv.double_conv.0 29 0.00000686
+up4.conv.double_conv.0 30 0.00004913
+up4.conv.double_conv.0 31 0.00000483
+up4.conv.double_conv.3 0 0.00001181
+up4.conv.double_conv.3 1 0.00001422
+up4.conv.double_conv.3 2 0.00001457
+up4.conv.double_conv.3 3 0.00001486
+up4.conv.double_conv.3 4 0.00001953
+up4.conv.double_conv.3 5 0.00001518
+up4.conv.double_conv.3 6 0.00001000
+up4.conv.double_conv.3 7 0.00001246
+up4.conv.double_conv.3 8 0.00001746
+up4.conv.double_conv.3 9 0.00001623
+up4.conv.double_conv.3 10 0.00001565
+up4.conv.double_conv.3 11 0.00001278
+up4.conv.double_conv.3 12 0.00001245
+up4.conv.double_conv.3 13 0.00001831
+up4.conv.double_conv.3 14 0.00001562
+up4.conv.double_conv.3 15 0.00002795
+up4.conv.double_conv.3 16 0.00001284
+up4.conv.double_conv.3 17 0.00001864
+up4.conv.double_conv.3 18 0.00001388
+up4.conv.double_conv.3 19 0.00002206
+up4.conv.double_conv.3 20 0.00001347
+up4.conv.double_conv.3 21 0.00001121
+up4.conv.double_conv.3 22 0.00001390
+up4.conv.double_conv.3 23 0.00001232
+up4.conv.double_conv.3 24 0.00002806
+up4.conv.double_conv.3 25 0.00001282
+up4.conv.double_conv.3 26 0.00001917
+up4.conv.double_conv.3 27 0.00001336
+up4.conv.double_conv.3 28 0.00001500
+up4.conv.double_conv.3 29 0.00001782
+up4.conv.double_conv.3 30 0.00000961
+up4.conv.double_conv.3 31 0.00001535
+outc.conv 0 0.00004087
+outc.conv 1 0.00007068
+outc.conv 2 0.00009304
+outc.conv 3 0.00013402
+outc.conv 4 0.00007084
+outc.conv 5 0.00012188
+outc.conv 6 0.00016543
+outc.conv 7 0.00019261
+outc.conv 8 0.00009628
+outc.conv 9 0.00009762
+outc.conv 10 0.00006424
+outc.conv 11 0.00016834
+outc.conv 12 0.00009705
+outc.conv 13 0.00015085
+outc.conv 14 0.00008928
+outc.conv 15 0.00012789
+outc.conv 16 0.00010117
+outc.conv 17 0.00017332
+outc.conv 18 0.00013204
+outc.conv 19 0.00009928
+
+multiplier for conv:
+conv_name channel_index M_approximation_float M_shift M_multiplier_int
+inc.double_conv.0 0 0.00003201 24 537
+inc.double_conv.0 1 0.00007349 24 1233
+inc.double_conv.0 2 0.00003791 24 636
+inc.double_conv.0 3 0.00011641 24 1953
+inc.double_conv.0 4 0.00011408 24 1914
+inc.double_conv.0 5 0.00004107 24 689
+inc.double_conv.0 6 0.00003868 24 649
+inc.double_conv.0 7 0.00002700 24 453
+inc.double_conv.0 8 0.00007147 24 1199
+inc.double_conv.0 9 0.00004059 24 681
+inc.double_conv.0 10 0.00012648 24 2122
+inc.double_conv.0 11 0.00003016 24 506
+inc.double_conv.0 12 0.00003070 24 515
+inc.double_conv.0 13 0.00006980 24 1171
+inc.double_conv.0 14 0.00002998 24 503
+inc.double_conv.0 15 0.00007355 24 1234
+inc.double_conv.0 16 0.00010157 24 1704
+inc.double_conv.0 17 0.00003445 24 578
+inc.double_conv.0 18 0.00003362 24 564
+inc.double_conv.0 19 0.00003147 24 528
+inc.double_conv.0 20 0.00001097 24 184
+inc.double_conv.0 21 0.00011587 24 1944
+inc.double_conv.0 22 0.00003982 24 668
+inc.double_conv.0 23 0.00004441 24 745
+inc.double_conv.0 24 0.00002092 24 351
+inc.double_conv.0 25 0.00002325 24 390
+inc.double_conv.0 26 0.00005567 24 934
+inc.double_conv.0 27 0.00004643 24 779
+inc.double_conv.0 28 0.00002593 24 435
+inc.double_conv.0 29 0.00002861 24 480
+inc.double_conv.0 30 0.00005722 24 960
+inc.double_conv.0 31 0.00014597 24 2449
+inc.double_conv.3 0 0.00002113 25 709
+inc.double_conv.3 1 0.00002739 25 919
+inc.double_conv.3 2 0.00002316 25 777
+inc.double_conv.3 3 0.00001663 25 558
+inc.double_conv.3 4 0.00002700 25 906
+inc.double_conv.3 5 0.00002867 25 962
+inc.double_conv.3 6 0.00001708 25 573
+inc.double_conv.3 7 0.00002572 25 863
+inc.double_conv.3 8 0.00003165 25 1062
+inc.double_conv.3 9 0.00002000 25 671
+inc.double_conv.3 10 0.00001937 25 650
+inc.double_conv.3 11 0.00002417 25 811
+inc.double_conv.3 12 0.00001952 25 655
+inc.double_conv.3 13 0.00003383 25 1135
+inc.double_conv.3 14 0.00001740 25 584
+inc.double_conv.3 15 0.00002992 25 1004
+inc.double_conv.3 16 0.00002548 25 855
+inc.double_conv.3 17 0.00003329 25 1117
+inc.double_conv.3 18 0.00001678 25 563
+inc.double_conv.3 19 0.00002384 25 800
+inc.double_conv.3 20 0.00001779 25 597
+inc.double_conv.3 21 0.00001568 25 526
+inc.double_conv.3 22 0.00001851 25 621
+inc.double_conv.3 23 0.00004369 25 1466
+inc.double_conv.3 24 0.00006527 25 2190
+inc.double_conv.3 25 0.00001955 25 656
+inc.double_conv.3 26 0.00002813 25 944
+inc.double_conv.3 27 0.00002635 25 884
+inc.double_conv.3 28 0.00001138 25 382
+inc.double_conv.3 29 0.00001383 25 464
+inc.double_conv.3 30 0.00002271 25 762
+inc.double_conv.3 31 0.00001949 25 654
+down1.maxpool_conv.1.double_conv.0 0 0.00002760 25 926
+down1.maxpool_conv.1.double_conv.0 1 0.00002760 25 926
+down1.maxpool_conv.1.double_conv.0 2 0.00003943 25 1323
+down1.maxpool_conv.1.double_conv.0 3 0.00001782 25 598
+down1.maxpool_conv.1.double_conv.0 4 0.00001794 25 602
+down1.maxpool_conv.1.double_conv.0 5 0.00002080 25 698
+down1.maxpool_conv.1.double_conv.0 6 0.00001994 25 669
+down1.maxpool_conv.1.double_conv.0 7 0.00004682 25 1571
+down1.maxpool_conv.1.double_conv.0 8 0.00003579 25 1201
+down1.maxpool_conv.1.double_conv.0 9 0.00003117 25 1046
+down1.maxpool_conv.1.double_conv.0 10 0.00002655 25 891
+down1.maxpool_conv.1.double_conv.0 11 0.00002488 25 835
+down1.maxpool_conv.1.double_conv.0 12 0.00002536 25 851
+down1.maxpool_conv.1.double_conv.0 13 0.00001642 25 551
+down1.maxpool_conv.1.double_conv.0 14 0.00002158 25 724
+down1.maxpool_conv.1.double_conv.0 15 0.00002006 25 673
+down1.maxpool_conv.1.double_conv.0 16 0.00001672 25 561
+down1.maxpool_conv.1.double_conv.0 17 0.00002593 25 870
+down1.maxpool_conv.1.double_conv.0 18 0.00002787 25 935
+down1.maxpool_conv.1.double_conv.0 19 0.00002697 25 905
+down1.maxpool_conv.1.double_conv.0 20 0.00004169 25 1399
+down1.maxpool_conv.1.double_conv.0 21 0.00002620 25 879
+down1.maxpool_conv.1.double_conv.0 22 0.00002059 25 691
+down1.maxpool_conv.1.double_conv.0 23 0.00002238 25 751
+down1.maxpool_conv.1.double_conv.0 24 0.00001365 25 458
+down1.maxpool_conv.1.double_conv.0 25 0.00002307 25 774
+down1.maxpool_conv.1.double_conv.0 26 0.00004718 25 1583
+down1.maxpool_conv.1.double_conv.0 27 0.00001970 25 661
+down1.maxpool_conv.1.double_conv.0 28 0.00006369 25 2137
+down1.maxpool_conv.1.double_conv.0 29 0.00002351 25 789
+down1.maxpool_conv.1.double_conv.0 30 0.00001472 25 494
+down1.maxpool_conv.1.double_conv.0 31 0.00002179 25 731
+down1.maxpool_conv.1.double_conv.3 0 0.00002161 27 2900
+down1.maxpool_conv.1.double_conv.3 1 0.00001994 27 2676
+down1.maxpool_conv.1.double_conv.3 2 0.00001512 27 2029
+down1.maxpool_conv.1.double_conv.3 3 0.00001013 27 1359
+down1.maxpool_conv.1.double_conv.3 4 0.00001480 27 1986
+down1.maxpool_conv.1.double_conv.3 5 0.00001442 27 1936
+down1.maxpool_conv.1.double_conv.3 6 0.00002106 27 2827
+down1.maxpool_conv.1.double_conv.3 7 0.00001453 27 1950
+down1.maxpool_conv.1.double_conv.3 8 0.00001765 27 2369
+down1.maxpool_conv.1.double_conv.3 9 0.00001328 27 1782
+down1.maxpool_conv.1.double_conv.3 10 0.00002331 27 3128
+down1.maxpool_conv.1.double_conv.3 11 0.00001758 27 2360
+down1.maxpool_conv.1.double_conv.3 12 0.00001822 27 2445
+down1.maxpool_conv.1.double_conv.3 13 0.00001841 27 2471
+down1.maxpool_conv.1.double_conv.3 14 0.00002112 27 2835
+down1.maxpool_conv.1.double_conv.3 15 0.00000910 27 1222
+down1.maxpool_conv.1.double_conv.3 16 0.00001813 27 2434
+down1.maxpool_conv.1.double_conv.3 17 0.00001512 27 2029
+down1.maxpool_conv.1.double_conv.3 18 0.00001554 27 2086
+down1.maxpool_conv.1.double_conv.3 19 0.00001292 27 1734
+down1.maxpool_conv.1.double_conv.3 20 0.00001899 27 2549
+down1.maxpool_conv.1.double_conv.3 21 0.00002088 27 2802
+down1.maxpool_conv.1.double_conv.3 22 0.00001261 27 1692
+down1.maxpool_conv.1.double_conv.3 23 0.00001290 27 1732
+down1.maxpool_conv.1.double_conv.3 24 0.00001694 27 2273
+down1.maxpool_conv.1.double_conv.3 25 0.00001324 27 1777
+down1.maxpool_conv.1.double_conv.3 26 0.00001914 27 2569
+down1.maxpool_conv.1.double_conv.3 27 0.00001217 27 1634
+down1.maxpool_conv.1.double_conv.3 28 0.00001334 27 1790
+down1.maxpool_conv.1.double_conv.3 29 0.00001196 27 1605
+down1.maxpool_conv.1.double_conv.3 30 0.00001051 27 1410
+down1.maxpool_conv.1.double_conv.3 31 0.00001474 27 1979
+down2.maxpool_conv.1.double_conv.0 0 0.00000703 27 944
+down2.maxpool_conv.1.double_conv.0 1 0.00000871 27 1169
+down2.maxpool_conv.1.double_conv.0 2 0.00001346 27 1806
+down2.maxpool_conv.1.double_conv.0 3 0.00001588 27 2132
+down2.maxpool_conv.1.double_conv.0 4 0.00001630 27 2188
+down2.maxpool_conv.1.double_conv.0 5 0.00001281 27 1720
+down2.maxpool_conv.1.double_conv.0 6 0.00000924 27 1240
+down2.maxpool_conv.1.double_conv.0 7 0.00001177 27 1580
+down2.maxpool_conv.1.double_conv.0 8 0.00000694 27 932
+down2.maxpool_conv.1.double_conv.0 9 0.00001238 27 1662
+down2.maxpool_conv.1.double_conv.0 10 0.00001416 27 1901
+down2.maxpool_conv.1.double_conv.0 11 0.00001243 27 1668
+down2.maxpool_conv.1.double_conv.0 12 0.00001308 27 1755
+down2.maxpool_conv.1.double_conv.0 13 0.00000998 27 1340
+down2.maxpool_conv.1.double_conv.0 14 0.00001270 27 1704
+down2.maxpool_conv.1.double_conv.0 15 0.00001545 27 2073
+down2.maxpool_conv.1.double_conv.0 16 0.00001164 27 1562
+down2.maxpool_conv.1.double_conv.0 17 0.00001093 27 1467
+down2.maxpool_conv.1.double_conv.0 18 0.00001754 27 2354
+down2.maxpool_conv.1.double_conv.0 19 0.00001214 27 1629
+down2.maxpool_conv.1.double_conv.0 20 0.00001374 27 1844
+down2.maxpool_conv.1.double_conv.0 21 0.00001479 27 1985
+down2.maxpool_conv.1.double_conv.0 22 0.00001071 27 1437
+down2.maxpool_conv.1.double_conv.0 23 0.00001351 27 1813
+down2.maxpool_conv.1.double_conv.0 24 0.00001771 27 2377
+down2.maxpool_conv.1.double_conv.0 25 0.00001293 27 1735
+down2.maxpool_conv.1.double_conv.0 26 0.00001092 27 1466
+down2.maxpool_conv.1.double_conv.0 27 0.00001232 27 1654
+down2.maxpool_conv.1.double_conv.0 28 0.00000939 27 1260
+down2.maxpool_conv.1.double_conv.0 29 0.00001515 27 2034
+down2.maxpool_conv.1.double_conv.0 30 0.00001094 27 1469
+down2.maxpool_conv.1.double_conv.0 31 0.00001067 27 1432
+down2.maxpool_conv.1.double_conv.0 32 0.00001030 27 1382
+down2.maxpool_conv.1.double_conv.0 33 0.00000925 27 1242
+down2.maxpool_conv.1.double_conv.0 34 0.00001144 27 1536
+down2.maxpool_conv.1.double_conv.0 35 0.00001618 27 2172
+down2.maxpool_conv.1.double_conv.0 36 0.00001902 27 2553
+down2.maxpool_conv.1.double_conv.0 37 0.00001116 27 1498
+down2.maxpool_conv.1.double_conv.0 38 0.00001284 27 1723
+down2.maxpool_conv.1.double_conv.0 39 0.00000891 27 1196
+down2.maxpool_conv.1.double_conv.0 40 0.00001404 27 1884
+down2.maxpool_conv.1.double_conv.0 41 0.00001321 27 1773
+down2.maxpool_conv.1.double_conv.0 42 0.00000823 27 1105
+down2.maxpool_conv.1.double_conv.0 43 0.00001331 27 1787
+down2.maxpool_conv.1.double_conv.0 44 0.00001279 27 1717
+down2.maxpool_conv.1.double_conv.0 45 0.00000734 27 985
+down2.maxpool_conv.1.double_conv.0 46 0.00001033 27 1386
+down2.maxpool_conv.1.double_conv.0 47 0.00001972 27 2647
+down2.maxpool_conv.1.double_conv.0 48 0.00001632 27 2191
+down2.maxpool_conv.1.double_conv.0 49 0.00001218 27 1635
+down2.maxpool_conv.1.double_conv.0 50 0.00001018 27 1367
+down2.maxpool_conv.1.double_conv.0 51 0.00001246 27 1673
+down2.maxpool_conv.1.double_conv.0 52 0.00001287 27 1728
+down2.maxpool_conv.1.double_conv.0 53 0.00001318 27 1769
+down2.maxpool_conv.1.double_conv.0 54 0.00000988 27 1326
+down2.maxpool_conv.1.double_conv.0 55 0.00000894 27 1200
+down2.maxpool_conv.1.double_conv.0 56 0.00002342 27 3144
+down2.maxpool_conv.1.double_conv.0 57 0.00000975 27 1308
+down2.maxpool_conv.1.double_conv.0 58 0.00001659 27 2227
+down2.maxpool_conv.1.double_conv.0 59 0.00001859 27 2495
+down2.maxpool_conv.1.double_conv.0 60 0.00001755 27 2355
+down2.maxpool_conv.1.double_conv.0 61 0.00001414 27 1898
+down2.maxpool_conv.1.double_conv.0 62 0.00001421 27 1907
+down2.maxpool_conv.1.double_conv.0 63 0.00001453 27 1950
+down2.maxpool_conv.1.double_conv.3 0 0.00001092 27 1465
+down2.maxpool_conv.1.double_conv.3 1 0.00001454 27 1952
+down2.maxpool_conv.1.double_conv.3 2 0.00001550 27 2080
+down2.maxpool_conv.1.double_conv.3 3 0.00001825 27 2449
+down2.maxpool_conv.1.double_conv.3 4 0.00001767 27 2372
+down2.maxpool_conv.1.double_conv.3 5 0.00001273 27 1709
+down2.maxpool_conv.1.double_conv.3 6 0.00001746 27 2343
+down2.maxpool_conv.1.double_conv.3 7 0.00001649 27 2213
+down2.maxpool_conv.1.double_conv.3 8 0.00001091 27 1464
+down2.maxpool_conv.1.double_conv.3 9 0.00001644 27 2206
+down2.maxpool_conv.1.double_conv.3 10 0.00001246 27 1673
+down2.maxpool_conv.1.double_conv.3 11 0.00001918 27 2574
+down2.maxpool_conv.1.double_conv.3 12 0.00002232 27 2996
+down2.maxpool_conv.1.double_conv.3 13 0.00001127 27 1513
+down2.maxpool_conv.1.double_conv.3 14 0.00001918 27 2574
+down2.maxpool_conv.1.double_conv.3 15 0.00001588 27 2131
+down2.maxpool_conv.1.double_conv.3 16 0.00002135 27 2865
+down2.maxpool_conv.1.double_conv.3 17 0.00001869 27 2509
+down2.maxpool_conv.1.double_conv.3 18 0.00001387 27 1861
+down2.maxpool_conv.1.double_conv.3 19 0.00001760 27 2362
+down2.maxpool_conv.1.double_conv.3 20 0.00001413 27 1897
+down2.maxpool_conv.1.double_conv.3 21 0.00001433 27 1924
+down2.maxpool_conv.1.double_conv.3 22 0.00001238 27 1662
+down2.maxpool_conv.1.double_conv.3 23 0.00001407 27 1888
+down2.maxpool_conv.1.double_conv.3 24 0.00001670 27 2241
+down2.maxpool_conv.1.double_conv.3 25 0.00001212 27 1627
+down2.maxpool_conv.1.double_conv.3 26 0.00001438 27 1930
+down2.maxpool_conv.1.double_conv.3 27 0.00001629 27 2187
+down2.maxpool_conv.1.double_conv.3 28 0.00001447 27 1942
+down2.maxpool_conv.1.double_conv.3 29 0.00001457 27 1956
+down2.maxpool_conv.1.double_conv.3 30 0.00002020 27 2711
+down2.maxpool_conv.1.double_conv.3 31 0.00001154 27 1549
+down2.maxpool_conv.1.double_conv.3 32 0.00002006 27 2693
+down2.maxpool_conv.1.double_conv.3 33 0.00001014 27 1361
+down2.maxpool_conv.1.double_conv.3 34 0.00002184 27 2931
+down2.maxpool_conv.1.double_conv.3 35 0.00001454 27 1952
+down2.maxpool_conv.1.double_conv.3 36 0.00001388 27 1863
+down2.maxpool_conv.1.double_conv.3 37 0.00001396 27 1874
+down2.maxpool_conv.1.double_conv.3 38 0.00001521 27 2041
+down2.maxpool_conv.1.double_conv.3 39 0.00001440 27 1933
+down2.maxpool_conv.1.double_conv.3 40 0.00002032 27 2727
+down2.maxpool_conv.1.double_conv.3 41 0.00001211 27 1626
+down2.maxpool_conv.1.double_conv.3 42 0.00001749 27 2348
+down2.maxpool_conv.1.double_conv.3 43 0.00001607 27 2157
+down2.maxpool_conv.1.double_conv.3 44 0.00002646 27 3551
+down2.maxpool_conv.1.double_conv.3 45 0.00002961 27 3974
+down2.maxpool_conv.1.double_conv.3 46 0.00001486 27 1995
+down2.maxpool_conv.1.double_conv.3 47 0.00001486 27 1994
+down2.maxpool_conv.1.double_conv.3 48 0.00001195 27 1604
+down2.maxpool_conv.1.double_conv.3 49 0.00001387 27 1861
+down2.maxpool_conv.1.double_conv.3 50 0.00001566 27 2102
+down2.maxpool_conv.1.double_conv.3 51 0.00001640 27 2201
+down2.maxpool_conv.1.double_conv.3 52 0.00001860 27 2496
+down2.maxpool_conv.1.double_conv.3 53 0.00002131 27 2860
+down2.maxpool_conv.1.double_conv.3 54 0.00001272 27 1707
+down2.maxpool_conv.1.double_conv.3 55 0.00001775 27 2382
+down2.maxpool_conv.1.double_conv.3 56 0.00001599 27 2146
+down2.maxpool_conv.1.double_conv.3 57 0.00001179 27 1582
+down2.maxpool_conv.1.double_conv.3 58 0.00001672 27 2244
+down2.maxpool_conv.1.double_conv.3 59 0.00001023 27 1373
+down2.maxpool_conv.1.double_conv.3 60 0.00001466 27 1967
+down2.maxpool_conv.1.double_conv.3 61 0.00002053 27 2755
+down2.maxpool_conv.1.double_conv.3 62 0.00001134 27 1522
+down2.maxpool_conv.1.double_conv.3 63 0.00000840 27 1127
+down3.maxpool_conv.1.double_conv.0 0 0.00000796 28 2138
+down3.maxpool_conv.1.double_conv.0 1 0.00000980 28 2630
+down3.maxpool_conv.1.double_conv.0 2 0.00001441 28 3869
+down3.maxpool_conv.1.double_conv.0 3 0.00000893 28 2396
+down3.maxpool_conv.1.double_conv.0 4 0.00000827 28 2220
+down3.maxpool_conv.1.double_conv.0 5 0.00001103 28 2960
+down3.maxpool_conv.1.double_conv.0 6 0.00001106 28 2969
+down3.maxpool_conv.1.double_conv.0 7 0.00001220 28 3276
+down3.maxpool_conv.1.double_conv.0 8 0.00001250 28 3355
+down3.maxpool_conv.1.double_conv.0 9 0.00001197 28 3213
+down3.maxpool_conv.1.double_conv.0 10 0.00000674 28 1810
+down3.maxpool_conv.1.double_conv.0 11 0.00000862 28 2313
+down3.maxpool_conv.1.double_conv.0 12 0.00001147 28 3079
+down3.maxpool_conv.1.double_conv.0 13 0.00001057 28 2838
+down3.maxpool_conv.1.double_conv.0 14 0.00001172 28 3146
+down3.maxpool_conv.1.double_conv.0 15 0.00001235 28 3316
+down3.maxpool_conv.1.double_conv.0 16 0.00000960 28 2576
+down3.maxpool_conv.1.double_conv.0 17 0.00000762 28 2046
+down3.maxpool_conv.1.double_conv.0 18 0.00001113 28 2987
+down3.maxpool_conv.1.double_conv.0 19 0.00001267 28 3401
+down3.maxpool_conv.1.double_conv.0 20 0.00001040 28 2791
+down3.maxpool_conv.1.double_conv.0 21 0.00000812 28 2180
+down3.maxpool_conv.1.double_conv.0 22 0.00001067 28 2863
+down3.maxpool_conv.1.double_conv.0 23 0.00001015 28 2725
+down3.maxpool_conv.1.double_conv.0 24 0.00000837 28 2246
+down3.maxpool_conv.1.double_conv.0 25 0.00000762 28 2046
+down3.maxpool_conv.1.double_conv.0 26 0.00000951 28 2552
+down3.maxpool_conv.1.double_conv.0 27 0.00001033 28 2774
+down3.maxpool_conv.1.double_conv.0 28 0.00001476 28 3961
+down3.maxpool_conv.1.double_conv.0 29 0.00000700 28 1880
+down3.maxpool_conv.1.double_conv.0 30 0.00000925 28 2483
+down3.maxpool_conv.1.double_conv.0 31 0.00000941 28 2526
+down3.maxpool_conv.1.double_conv.0 32 0.00000753 28 2022
+down3.maxpool_conv.1.double_conv.0 33 0.00001022 28 2744
+down3.maxpool_conv.1.double_conv.0 34 0.00001223 28 3284
+down3.maxpool_conv.1.double_conv.0 35 0.00000840 28 2254
+down3.maxpool_conv.1.double_conv.0 36 0.00000919 28 2467
+down3.maxpool_conv.1.double_conv.0 37 0.00000954 28 2560
+down3.maxpool_conv.1.double_conv.0 38 0.00000828 28 2222
+down3.maxpool_conv.1.double_conv.0 39 0.00001425 28 3826
+down3.maxpool_conv.1.double_conv.0 40 0.00000843 28 2263
+down3.maxpool_conv.1.double_conv.0 41 0.00001086 28 2916
+down3.maxpool_conv.1.double_conv.0 42 0.00000881 28 2364
+down3.maxpool_conv.1.double_conv.0 43 0.00001075 28 2887
+down3.maxpool_conv.1.double_conv.0 44 0.00000950 28 2550
+down3.maxpool_conv.1.double_conv.0 45 0.00000867 28 2327
+down3.maxpool_conv.1.double_conv.0 46 0.00001070 28 2872
+down3.maxpool_conv.1.double_conv.0 47 0.00000947 28 2542
+down3.maxpool_conv.1.double_conv.0 48 0.00000743 28 1994
+down3.maxpool_conv.1.double_conv.0 49 0.00001019 28 2735
+down3.maxpool_conv.1.double_conv.0 50 0.00000598 28 1606
+down3.maxpool_conv.1.double_conv.0 51 0.00001017 28 2729
+down3.maxpool_conv.1.double_conv.0 52 0.00001221 28 3277
+down3.maxpool_conv.1.double_conv.0 53 0.00000828 28 2223
+down3.maxpool_conv.1.double_conv.0 54 0.00001023 28 2745
+down3.maxpool_conv.1.double_conv.0 55 0.00000989 28 2656
+down3.maxpool_conv.1.double_conv.0 56 0.00000821 28 2203
+down3.maxpool_conv.1.double_conv.0 57 0.00001073 28 2880
+down3.maxpool_conv.1.double_conv.0 58 0.00001047 28 2810
+down3.maxpool_conv.1.double_conv.0 59 0.00000931 28 2499
+down3.maxpool_conv.1.double_conv.0 60 0.00001003 28 2692
+down3.maxpool_conv.1.double_conv.0 61 0.00001372 28 3682
+down3.maxpool_conv.1.double_conv.0 62 0.00000852 28 2288
+down3.maxpool_conv.1.double_conv.0 63 0.00000685 28 1838
+down3.maxpool_conv.1.double_conv.0 64 0.00000914 28 2454
+down3.maxpool_conv.1.double_conv.0 65 0.00000932 28 2502
+down3.maxpool_conv.1.double_conv.0 66 0.00000717 28 1924
+down3.maxpool_conv.1.double_conv.0 67 0.00000748 28 2009
+down3.maxpool_conv.1.double_conv.0 68 0.00000824 28 2212
+down3.maxpool_conv.1.double_conv.0 69 0.00000893 28 2396
+down3.maxpool_conv.1.double_conv.0 70 0.00001160 28 3113
+down3.maxpool_conv.1.double_conv.0 71 0.00001083 28 2906
+down3.maxpool_conv.1.double_conv.0 72 0.00000926 28 2487
+down3.maxpool_conv.1.double_conv.0 73 0.00001252 28 3360
+down3.maxpool_conv.1.double_conv.0 74 0.00000979 28 2629
+down3.maxpool_conv.1.double_conv.0 75 0.00000883 28 2370
+down3.maxpool_conv.1.double_conv.0 76 0.00000764 28 2051
+down3.maxpool_conv.1.double_conv.0 77 0.00000887 28 2380
+down3.maxpool_conv.1.double_conv.0 78 0.00001248 28 3351
+down3.maxpool_conv.1.double_conv.0 79 0.00001429 28 3836
+down3.maxpool_conv.1.double_conv.0 80 0.00000923 28 2479
+down3.maxpool_conv.1.double_conv.0 81 0.00000860 28 2309
+down3.maxpool_conv.1.double_conv.0 82 0.00000963 28 2585
+down3.maxpool_conv.1.double_conv.0 83 0.00001053 28 2827
+down3.maxpool_conv.1.double_conv.0 84 0.00001118 28 3001
+down3.maxpool_conv.1.double_conv.0 85 0.00000913 28 2451
+down3.maxpool_conv.1.double_conv.0 86 0.00001037 28 2784
+down3.maxpool_conv.1.double_conv.0 87 0.00001247 28 3347
+down3.maxpool_conv.1.double_conv.0 88 0.00000932 28 2502
+down3.maxpool_conv.1.double_conv.0 89 0.00000881 28 2365
+down3.maxpool_conv.1.double_conv.0 90 0.00000948 28 2545
+down3.maxpool_conv.1.double_conv.0 91 0.00001093 28 2933
+down3.maxpool_conv.1.double_conv.0 92 0.00000825 28 2215
+down3.maxpool_conv.1.double_conv.0 93 0.00001015 28 2725
+down3.maxpool_conv.1.double_conv.0 94 0.00000947 28 2541
+down3.maxpool_conv.1.double_conv.0 95 0.00001220 28 3275
+down3.maxpool_conv.1.double_conv.0 96 0.00000995 28 2671
+down3.maxpool_conv.1.double_conv.0 97 0.00000839 28 2253
+down3.maxpool_conv.1.double_conv.0 98 0.00000928 28 2492
+down3.maxpool_conv.1.double_conv.0 99 0.00000731 28 1961
+down3.maxpool_conv.1.double_conv.0 100 0.00001150 28 3088
+down3.maxpool_conv.1.double_conv.0 101 0.00000877 28 2355
+down3.maxpool_conv.1.double_conv.0 102 0.00001274 28 3421
+down3.maxpool_conv.1.double_conv.0 103 0.00000851 28 2285
+down3.maxpool_conv.1.double_conv.0 104 0.00000861 28 2310
+down3.maxpool_conv.1.double_conv.0 105 0.00001293 28 3472
+down3.maxpool_conv.1.double_conv.0 106 0.00001296 28 3478
+down3.maxpool_conv.1.double_conv.0 107 0.00000885 28 2375
+down3.maxpool_conv.1.double_conv.0 108 0.00000948 28 2545
+down3.maxpool_conv.1.double_conv.0 109 0.00000950 28 2550
+down3.maxpool_conv.1.double_conv.0 110 0.00001119 28 3004
+down3.maxpool_conv.1.double_conv.0 111 0.00000929 28 2493
+down3.maxpool_conv.1.double_conv.0 112 0.00000918 28 2463
+down3.maxpool_conv.1.double_conv.0 113 0.00000849 28 2279
+down3.maxpool_conv.1.double_conv.0 114 0.00000997 28 2676
+down3.maxpool_conv.1.double_conv.0 115 0.00000992 28 2664
+down3.maxpool_conv.1.double_conv.0 116 0.00000771 28 2069
+down3.maxpool_conv.1.double_conv.0 117 0.00000849 28 2278
+down3.maxpool_conv.1.double_conv.0 118 0.00001197 28 3214
+down3.maxpool_conv.1.double_conv.0 119 0.00001335 28 3584
+down3.maxpool_conv.1.double_conv.0 120 0.00000926 28 2486
+down3.maxpool_conv.1.double_conv.0 121 0.00000883 28 2370
+down3.maxpool_conv.1.double_conv.0 122 0.00001078 28 2894
+down3.maxpool_conv.1.double_conv.0 123 0.00001505 28 4041
+down3.maxpool_conv.1.double_conv.0 124 0.00000847 28 2273
+down3.maxpool_conv.1.double_conv.0 125 0.00000810 28 2174
+down3.maxpool_conv.1.double_conv.0 126 0.00000912 28 2448
+down3.maxpool_conv.1.double_conv.0 127 0.00001274 28 3421
+down3.maxpool_conv.1.double_conv.3 0 0.00001209 27 1623
+down3.maxpool_conv.1.double_conv.3 1 0.00001006 27 1350
+down3.maxpool_conv.1.double_conv.3 2 0.00000829 27 1112
+down3.maxpool_conv.1.double_conv.3 3 0.00000838 27 1125
+down3.maxpool_conv.1.double_conv.3 4 0.00000996 27 1337
+down3.maxpool_conv.1.double_conv.3 5 0.00001334 27 1791
+down3.maxpool_conv.1.double_conv.3 6 0.00001299 27 1744
+down3.maxpool_conv.1.double_conv.3 7 0.00001175 27 1577
+down3.maxpool_conv.1.double_conv.3 8 0.00000851 27 1142
+down3.maxpool_conv.1.double_conv.3 9 0.00001266 27 1699
+down3.maxpool_conv.1.double_conv.3 10 0.00001036 27 1391
+down3.maxpool_conv.1.double_conv.3 11 0.00001097 27 1473
+down3.maxpool_conv.1.double_conv.3 12 0.00001437 27 1929
+down3.maxpool_conv.1.double_conv.3 13 0.00001221 27 1639
+down3.maxpool_conv.1.double_conv.3 14 0.00000888 27 1192
+down3.maxpool_conv.1.double_conv.3 15 0.00001105 27 1483
+down3.maxpool_conv.1.double_conv.3 16 0.00000943 27 1266
+down3.maxpool_conv.1.double_conv.3 17 0.00001420 27 1906
+down3.maxpool_conv.1.double_conv.3 18 0.00001051 27 1410
+down3.maxpool_conv.1.double_conv.3 19 0.00000945 27 1269
+down3.maxpool_conv.1.double_conv.3 20 0.00001497 27 2009
+down3.maxpool_conv.1.double_conv.3 21 0.00001483 27 1991
+down3.maxpool_conv.1.double_conv.3 22 0.00001489 27 1998
+down3.maxpool_conv.1.double_conv.3 23 0.00000930 27 1248
+down3.maxpool_conv.1.double_conv.3 24 0.00001026 27 1377
+down3.maxpool_conv.1.double_conv.3 25 0.00001687 27 2264
+down3.maxpool_conv.1.double_conv.3 26 0.00001517 27 2036
+down3.maxpool_conv.1.double_conv.3 27 0.00001872 27 2512
+down3.maxpool_conv.1.double_conv.3 28 0.00001249 27 1676
+down3.maxpool_conv.1.double_conv.3 29 0.00000903 27 1212
+down3.maxpool_conv.1.double_conv.3 30 0.00001425 27 1913
+down3.maxpool_conv.1.double_conv.3 31 0.00001319 27 1771
+down3.maxpool_conv.1.double_conv.3 32 0.00000824 27 1106
+down3.maxpool_conv.1.double_conv.3 33 0.00001081 27 1451
+down3.maxpool_conv.1.double_conv.3 34 0.00001142 27 1533
+down3.maxpool_conv.1.double_conv.3 35 0.00001414 27 1898
+down3.maxpool_conv.1.double_conv.3 36 0.00001004 27 1348
+down3.maxpool_conv.1.double_conv.3 37 0.00000635 27 852
+down3.maxpool_conv.1.double_conv.3 38 0.00001010 27 1356
+down3.maxpool_conv.1.double_conv.3 39 0.00001285 27 1725
+down3.maxpool_conv.1.double_conv.3 40 0.00001076 27 1444
+down3.maxpool_conv.1.double_conv.3 41 0.00001089 27 1461
+down3.maxpool_conv.1.double_conv.3 42 0.00000981 27 1317
+down3.maxpool_conv.1.double_conv.3 43 0.00001287 27 1728
+down3.maxpool_conv.1.double_conv.3 44 0.00001375 27 1845
+down3.maxpool_conv.1.double_conv.3 45 0.00000963 27 1292
+down3.maxpool_conv.1.double_conv.3 46 0.00001172 27 1573
+down3.maxpool_conv.1.double_conv.3 47 0.00001132 27 1519
+down3.maxpool_conv.1.double_conv.3 48 0.00001066 27 1431
+down3.maxpool_conv.1.double_conv.3 49 0.00001178 27 1581
+down3.maxpool_conv.1.double_conv.3 50 0.00001013 27 1360
+down3.maxpool_conv.1.double_conv.3 51 0.00001349 27 1811
+down3.maxpool_conv.1.double_conv.3 52 0.00001061 27 1424
+down3.maxpool_conv.1.double_conv.3 53 0.00000779 27 1046
+down3.maxpool_conv.1.double_conv.3 54 0.00001101 27 1478
+down3.maxpool_conv.1.double_conv.3 55 0.00001047 27 1405
+down3.maxpool_conv.1.double_conv.3 56 0.00000744 27 999
+down3.maxpool_conv.1.double_conv.3 57 0.00001217 27 1634
+down3.maxpool_conv.1.double_conv.3 58 0.00001238 27 1661
+down3.maxpool_conv.1.double_conv.3 59 0.00001262 27 1694
+down3.maxpool_conv.1.double_conv.3 60 0.00000760 27 1020
+down3.maxpool_conv.1.double_conv.3 61 0.00001237 27 1660
+down3.maxpool_conv.1.double_conv.3 62 0.00001250 27 1678
+down3.maxpool_conv.1.double_conv.3 63 0.00001164 27 1562
+down3.maxpool_conv.1.double_conv.3 64 0.00001150 27 1543
+down3.maxpool_conv.1.double_conv.3 65 0.00000954 27 1280
+down3.maxpool_conv.1.double_conv.3 66 0.00001644 27 2206
+down3.maxpool_conv.1.double_conv.3 67 0.00001620 27 2174
+down3.maxpool_conv.1.double_conv.3 68 0.00001729 27 2321
+down3.maxpool_conv.1.double_conv.3 69 0.00001214 27 1630
+down3.maxpool_conv.1.double_conv.3 70 0.00001161 27 1558
+down3.maxpool_conv.1.double_conv.3 71 0.00001638 27 2198
+down3.maxpool_conv.1.double_conv.3 72 0.00001010 27 1355
+down3.maxpool_conv.1.double_conv.3 73 0.00001328 27 1782
+down3.maxpool_conv.1.double_conv.3 74 0.00001351 27 1813
+down3.maxpool_conv.1.double_conv.3 75 0.00000948 27 1272
+down3.maxpool_conv.1.double_conv.3 76 0.00001542 27 2070
+down3.maxpool_conv.1.double_conv.3 77 0.00000673 27 903
+down3.maxpool_conv.1.double_conv.3 78 0.00001320 27 1772
+down3.maxpool_conv.1.double_conv.3 79 0.00001161 27 1558
+down3.maxpool_conv.1.double_conv.3 80 0.00001082 27 1452
+down3.maxpool_conv.1.double_conv.3 81 0.00001485 27 1993
+down3.maxpool_conv.1.double_conv.3 82 0.00000817 27 1096
+down3.maxpool_conv.1.double_conv.3 83 0.00000956 27 1283
+down3.maxpool_conv.1.double_conv.3 84 0.00001651 27 2216
+down3.maxpool_conv.1.double_conv.3 85 0.00000822 27 1103
+down3.maxpool_conv.1.double_conv.3 86 0.00000985 27 1322
+down3.maxpool_conv.1.double_conv.3 87 0.00001119 27 1502
+down3.maxpool_conv.1.double_conv.3 88 0.00000991 27 1330
+down3.maxpool_conv.1.double_conv.3 89 0.00001533 27 2057
+down3.maxpool_conv.1.double_conv.3 90 0.00001087 27 1459
+down3.maxpool_conv.1.double_conv.3 91 0.00000928 27 1246
+down3.maxpool_conv.1.double_conv.3 92 0.00001354 27 1817
+down3.maxpool_conv.1.double_conv.3 93 0.00001615 27 2167
+down3.maxpool_conv.1.double_conv.3 94 0.00001749 27 2348
+down3.maxpool_conv.1.double_conv.3 95 0.00001267 27 1701
+down3.maxpool_conv.1.double_conv.3 96 0.00001448 27 1943
+down3.maxpool_conv.1.double_conv.3 97 0.00000974 27 1307
+down3.maxpool_conv.1.double_conv.3 98 0.00001567 27 2103
+down3.maxpool_conv.1.double_conv.3 99 0.00001241 27 1665
+down3.maxpool_conv.1.double_conv.3 100 0.00001012 27 1358
+down3.maxpool_conv.1.double_conv.3 101 0.00001063 27 1427
+down3.maxpool_conv.1.double_conv.3 102 0.00001016 27 1363
+down3.maxpool_conv.1.double_conv.3 103 0.00001449 27 1945
+down3.maxpool_conv.1.double_conv.3 104 0.00001351 27 1813
+down3.maxpool_conv.1.double_conv.3 105 0.00001206 27 1618
+down3.maxpool_conv.1.double_conv.3 106 0.00001024 27 1374
+down3.maxpool_conv.1.double_conv.3 107 0.00001201 27 1612
+down3.maxpool_conv.1.double_conv.3 108 0.00001482 27 1989
+down3.maxpool_conv.1.double_conv.3 109 0.00000805 27 1080
+down3.maxpool_conv.1.double_conv.3 110 0.00001153 27 1547
+down3.maxpool_conv.1.double_conv.3 111 0.00001333 27 1789
+down3.maxpool_conv.1.double_conv.3 112 0.00001328 27 1782
+down3.maxpool_conv.1.double_conv.3 113 0.00001259 27 1690
+down3.maxpool_conv.1.double_conv.3 114 0.00001425 27 1913
+down3.maxpool_conv.1.double_conv.3 115 0.00001284 27 1723
+down3.maxpool_conv.1.double_conv.3 116 0.00001598 27 2145
+down3.maxpool_conv.1.double_conv.3 117 0.00000795 27 1067
+down3.maxpool_conv.1.double_conv.3 118 0.00001410 27 1892
+down3.maxpool_conv.1.double_conv.3 119 0.00001238 27 1661
+down3.maxpool_conv.1.double_conv.3 120 0.00001202 27 1613
+down3.maxpool_conv.1.double_conv.3 121 0.00001138 27 1527
+down3.maxpool_conv.1.double_conv.3 122 0.00001434 27 1925
+down3.maxpool_conv.1.double_conv.3 123 0.00001112 27 1493
+down3.maxpool_conv.1.double_conv.3 124 0.00001114 27 1495
+down3.maxpool_conv.1.double_conv.3 125 0.00000864 27 1159
+down3.maxpool_conv.1.double_conv.3 126 0.00001013 27 1360
+down3.maxpool_conv.1.double_conv.3 127 0.00001109 27 1488
+down4.maxpool_conv.1.double_conv.0 0 0.00001150 27 1544
+down4.maxpool_conv.1.double_conv.0 1 0.00000808 27 1084
+down4.maxpool_conv.1.double_conv.0 2 0.00001210 27 1624
+down4.maxpool_conv.1.double_conv.0 3 0.00001367 27 1835
+down4.maxpool_conv.1.double_conv.0 4 0.00001021 27 1370
+down4.maxpool_conv.1.double_conv.0 5 0.00000914 27 1227
+down4.maxpool_conv.1.double_conv.0 6 0.00000736 27 988
+down4.maxpool_conv.1.double_conv.0 7 0.00000843 27 1132
+down4.maxpool_conv.1.double_conv.0 8 0.00000962 27 1291
+down4.maxpool_conv.1.double_conv.0 9 0.00000920 27 1235
+down4.maxpool_conv.1.double_conv.0 10 0.00000938 27 1259
+down4.maxpool_conv.1.double_conv.0 11 0.00001308 27 1756
+down4.maxpool_conv.1.double_conv.0 12 0.00000860 27 1154
+down4.maxpool_conv.1.double_conv.0 13 0.00000791 27 1061
+down4.maxpool_conv.1.double_conv.0 14 0.00001390 27 1866
+down4.maxpool_conv.1.double_conv.0 15 0.00000854 27 1146
+down4.maxpool_conv.1.double_conv.0 16 0.00000959 27 1287
+down4.maxpool_conv.1.double_conv.0 17 0.00001049 27 1408
+down4.maxpool_conv.1.double_conv.0 18 0.00000884 27 1187
+down4.maxpool_conv.1.double_conv.0 19 0.00001830 27 2456
+down4.maxpool_conv.1.double_conv.0 20 0.00001150 27 1543
+down4.maxpool_conv.1.double_conv.0 21 0.00000700 27 940
+down4.maxpool_conv.1.double_conv.0 22 0.00000973 27 1306
+down4.maxpool_conv.1.double_conv.0 23 0.00001071 27 1438
+down4.maxpool_conv.1.double_conv.0 24 0.00000700 27 939
+down4.maxpool_conv.1.double_conv.0 25 0.00001081 27 1451
+down4.maxpool_conv.1.double_conv.0 26 0.00000868 27 1165
+down4.maxpool_conv.1.double_conv.0 27 0.00001071 27 1438
+down4.maxpool_conv.1.double_conv.0 28 0.00000925 27 1241
+down4.maxpool_conv.1.double_conv.0 29 0.00000876 27 1176
+down4.maxpool_conv.1.double_conv.0 30 0.00000946 27 1270
+down4.maxpool_conv.1.double_conv.0 31 0.00001054 27 1415
+down4.maxpool_conv.1.double_conv.0 32 0.00000977 27 1311
+down4.maxpool_conv.1.double_conv.0 33 0.00000962 27 1291
+down4.maxpool_conv.1.double_conv.0 34 0.00001033 27 1387
+down4.maxpool_conv.1.double_conv.0 35 0.00001135 27 1523
+down4.maxpool_conv.1.double_conv.0 36 0.00000897 27 1204
+down4.maxpool_conv.1.double_conv.0 37 0.00001030 27 1383
+down4.maxpool_conv.1.double_conv.0 38 0.00001092 27 1465
+down4.maxpool_conv.1.double_conv.0 39 0.00001264 27 1696
+down4.maxpool_conv.1.double_conv.0 40 0.00001019 27 1368
+down4.maxpool_conv.1.double_conv.0 41 0.00001007 27 1351
+down4.maxpool_conv.1.double_conv.0 42 0.00001139 27 1529
+down4.maxpool_conv.1.double_conv.0 43 0.00000922 27 1238
+down4.maxpool_conv.1.double_conv.0 44 0.00001150 27 1543
+down4.maxpool_conv.1.double_conv.0 45 0.00000825 27 1107
+down4.maxpool_conv.1.double_conv.0 46 0.00000956 27 1283
+down4.maxpool_conv.1.double_conv.0 47 0.00001009 27 1354
+down4.maxpool_conv.1.double_conv.0 48 0.00001092 27 1466
+down4.maxpool_conv.1.double_conv.0 49 0.00001287 27 1728
+down4.maxpool_conv.1.double_conv.0 50 0.00001160 27 1557
+down4.maxpool_conv.1.double_conv.0 51 0.00000727 27 976
+down4.maxpool_conv.1.double_conv.0 52 0.00000747 27 1002
+down4.maxpool_conv.1.double_conv.0 53 0.00000950 27 1275
+down4.maxpool_conv.1.double_conv.0 54 0.00001328 27 1782
+down4.maxpool_conv.1.double_conv.0 55 0.00000857 27 1150
+down4.maxpool_conv.1.double_conv.0 56 0.00001088 27 1460
+down4.maxpool_conv.1.double_conv.0 57 0.00000830 27 1114
+down4.maxpool_conv.1.double_conv.0 58 0.00001066 27 1431
+down4.maxpool_conv.1.double_conv.0 59 0.00000919 27 1234
+down4.maxpool_conv.1.double_conv.0 60 0.00001165 27 1563
+down4.maxpool_conv.1.double_conv.0 61 0.00000887 27 1191
+down4.maxpool_conv.1.double_conv.0 62 0.00000808 27 1085
+down4.maxpool_conv.1.double_conv.0 63 0.00000896 27 1203
+down4.maxpool_conv.1.double_conv.0 64 0.00000864 27 1159
+down4.maxpool_conv.1.double_conv.0 65 0.00000916 27 1230
+down4.maxpool_conv.1.double_conv.0 66 0.00000972 27 1305
+down4.maxpool_conv.1.double_conv.0 67 0.00000708 27 950
+down4.maxpool_conv.1.double_conv.0 68 0.00000925 27 1242
+down4.maxpool_conv.1.double_conv.0 69 0.00001001 27 1343
+down4.maxpool_conv.1.double_conv.0 70 0.00000867 27 1164
+down4.maxpool_conv.1.double_conv.0 71 0.00000881 27 1182
+down4.maxpool_conv.1.double_conv.0 72 0.00001004 27 1348
+down4.maxpool_conv.1.double_conv.0 73 0.00000829 27 1113
+down4.maxpool_conv.1.double_conv.0 74 0.00001013 27 1359
+down4.maxpool_conv.1.double_conv.0 75 0.00000651 27 874
+down4.maxpool_conv.1.double_conv.0 76 0.00000888 27 1192
+down4.maxpool_conv.1.double_conv.0 77 0.00001195 27 1604
+down4.maxpool_conv.1.double_conv.0 78 0.00000745 27 1000
+down4.maxpool_conv.1.double_conv.0 79 0.00001062 27 1425
+down4.maxpool_conv.1.double_conv.0 80 0.00001236 27 1659
+down4.maxpool_conv.1.double_conv.0 81 0.00000933 27 1252
+down4.maxpool_conv.1.double_conv.0 82 0.00000991 27 1330
+down4.maxpool_conv.1.double_conv.0 83 0.00001113 27 1494
+down4.maxpool_conv.1.double_conv.0 84 0.00001104 27 1482
+down4.maxpool_conv.1.double_conv.0 85 0.00000715 27 959
+down4.maxpool_conv.1.double_conv.0 86 0.00001191 27 1598
+down4.maxpool_conv.1.double_conv.0 87 0.00000921 27 1236
+down4.maxpool_conv.1.double_conv.0 88 0.00000960 27 1288
+down4.maxpool_conv.1.double_conv.0 89 0.00001213 27 1628
+down4.maxpool_conv.1.double_conv.0 90 0.00000910 27 1221
+down4.maxpool_conv.1.double_conv.0 91 0.00000730 27 980
+down4.maxpool_conv.1.double_conv.0 92 0.00001208 27 1622
+down4.maxpool_conv.1.double_conv.0 93 0.00001155 27 1550
+down4.maxpool_conv.1.double_conv.0 94 0.00000979 27 1314
+down4.maxpool_conv.1.double_conv.0 95 0.00000736 27 988
+down4.maxpool_conv.1.double_conv.0 96 0.00000775 27 1040
+down4.maxpool_conv.1.double_conv.0 97 0.00000902 27 1210
+down4.maxpool_conv.1.double_conv.0 98 0.00001010 27 1356
+down4.maxpool_conv.1.double_conv.0 99 0.00001267 27 1701
+down4.maxpool_conv.1.double_conv.0 100 0.00000958 27 1286
+down4.maxpool_conv.1.double_conv.0 101 0.00001428 27 1917
+down4.maxpool_conv.1.double_conv.0 102 0.00001205 27 1617
+down4.maxpool_conv.1.double_conv.0 103 0.00001239 27 1663
+down4.maxpool_conv.1.double_conv.0 104 0.00001167 27 1566
+down4.maxpool_conv.1.double_conv.0 105 0.00000884 27 1186
+down4.maxpool_conv.1.double_conv.0 106 0.00000717 27 963
+down4.maxpool_conv.1.double_conv.0 107 0.00000995 27 1335
+down4.maxpool_conv.1.double_conv.0 108 0.00000904 27 1213
+down4.maxpool_conv.1.double_conv.0 109 0.00000820 27 1101
+down4.maxpool_conv.1.double_conv.0 110 0.00000865 27 1161
+down4.maxpool_conv.1.double_conv.0 111 0.00001563 27 2098
+down4.maxpool_conv.1.double_conv.0 112 0.00000937 27 1258
+down4.maxpool_conv.1.double_conv.0 113 0.00000682 27 916
+down4.maxpool_conv.1.double_conv.0 114 0.00001124 27 1509
+down4.maxpool_conv.1.double_conv.0 115 0.00000885 27 1188
+down4.maxpool_conv.1.double_conv.0 116 0.00001323 27 1776
+down4.maxpool_conv.1.double_conv.0 117 0.00000950 27 1275
+down4.maxpool_conv.1.double_conv.0 118 0.00000985 27 1322
+down4.maxpool_conv.1.double_conv.0 119 0.00000844 27 1133
+down4.maxpool_conv.1.double_conv.0 120 0.00000982 27 1318
+down4.maxpool_conv.1.double_conv.0 121 0.00000747 27 1002
+down4.maxpool_conv.1.double_conv.0 122 0.00001255 27 1684
+down4.maxpool_conv.1.double_conv.0 123 0.00001102 27 1479
+down4.maxpool_conv.1.double_conv.0 124 0.00000965 27 1295
+down4.maxpool_conv.1.double_conv.0 125 0.00000773 27 1038
+down4.maxpool_conv.1.double_conv.0 126 0.00000764 27 1026
+down4.maxpool_conv.1.double_conv.0 127 0.00001092 27 1466
+down4.maxpool_conv.1.double_conv.3 0 0.00001194 27 1602
+down4.maxpool_conv.1.double_conv.3 1 0.00000900 27 1208
+down4.maxpool_conv.1.double_conv.3 2 0.00000813 27 1091
+down4.maxpool_conv.1.double_conv.3 3 0.00001107 27 1486
+down4.maxpool_conv.1.double_conv.3 4 0.00000924 27 1240
+down4.maxpool_conv.1.double_conv.3 5 0.00000939 27 1260
+down4.maxpool_conv.1.double_conv.3 6 0.00000783 27 1051
+down4.maxpool_conv.1.double_conv.3 7 0.00000674 27 905
+down4.maxpool_conv.1.double_conv.3 8 0.00000843 27 1132
+down4.maxpool_conv.1.double_conv.3 9 0.00000957 27 1285
+down4.maxpool_conv.1.double_conv.3 10 0.00000706 27 948
+down4.maxpool_conv.1.double_conv.3 11 0.00000897 27 1204
+down4.maxpool_conv.1.double_conv.3 12 0.00000700 27 939
+down4.maxpool_conv.1.double_conv.3 13 0.00000989 27 1328
+down4.maxpool_conv.1.double_conv.3 14 0.00001323 27 1776
+down4.maxpool_conv.1.double_conv.3 15 0.00000917 27 1231
+down4.maxpool_conv.1.double_conv.3 16 0.00000852 27 1143
+down4.maxpool_conv.1.double_conv.3 17 0.00000964 27 1294
+down4.maxpool_conv.1.double_conv.3 18 0.00000688 27 924
+down4.maxpool_conv.1.double_conv.3 19 0.00000905 27 1215
+down4.maxpool_conv.1.double_conv.3 20 0.00000855 27 1147
+down4.maxpool_conv.1.double_conv.3 21 0.00000681 27 914
+down4.maxpool_conv.1.double_conv.3 22 0.00000834 27 1119
+down4.maxpool_conv.1.double_conv.3 23 0.00001258 27 1689
+down4.maxpool_conv.1.double_conv.3 24 0.00001375 27 1846
+down4.maxpool_conv.1.double_conv.3 25 0.00000864 27 1159
+down4.maxpool_conv.1.double_conv.3 26 0.00000805 27 1080
+down4.maxpool_conv.1.double_conv.3 27 0.00000886 27 1189
+down4.maxpool_conv.1.double_conv.3 28 0.00001133 27 1521
+down4.maxpool_conv.1.double_conv.3 29 0.00001258 27 1688
+down4.maxpool_conv.1.double_conv.3 30 0.00001047 27 1405
+down4.maxpool_conv.1.double_conv.3 31 0.00000744 27 999
+down4.maxpool_conv.1.double_conv.3 32 0.00000796 27 1069
+down4.maxpool_conv.1.double_conv.3 33 0.00001069 27 1435
+down4.maxpool_conv.1.double_conv.3 34 0.00001077 27 1446
+down4.maxpool_conv.1.double_conv.3 35 0.00000972 27 1304
+down4.maxpool_conv.1.double_conv.3 36 0.00000866 27 1162
+down4.maxpool_conv.1.double_conv.3 37 0.00001159 27 1556
+down4.maxpool_conv.1.double_conv.3 38 0.00000995 27 1335
+down4.maxpool_conv.1.double_conv.3 39 0.00000916 27 1229
+down4.maxpool_conv.1.double_conv.3 40 0.00000934 27 1253
+down4.maxpool_conv.1.double_conv.3 41 0.00000775 27 1040
+down4.maxpool_conv.1.double_conv.3 42 0.00001082 27 1452
+down4.maxpool_conv.1.double_conv.3 43 0.00001093 27 1467
+down4.maxpool_conv.1.double_conv.3 44 0.00000978 27 1312
+down4.maxpool_conv.1.double_conv.3 45 0.00000789 27 1059
+down4.maxpool_conv.1.double_conv.3 46 0.00001004 27 1347
+down4.maxpool_conv.1.double_conv.3 47 0.00000947 27 1271
+down4.maxpool_conv.1.double_conv.3 48 0.00000984 27 1321
+down4.maxpool_conv.1.double_conv.3 49 0.00001041 27 1397
+down4.maxpool_conv.1.double_conv.3 50 0.00000799 27 1072
+down4.maxpool_conv.1.double_conv.3 51 0.00001143 27 1534
+down4.maxpool_conv.1.double_conv.3 52 0.00000981 27 1317
+down4.maxpool_conv.1.double_conv.3 53 0.00001024 27 1375
+down4.maxpool_conv.1.double_conv.3 54 0.00001315 27 1765
+down4.maxpool_conv.1.double_conv.3 55 0.00000651 27 874
+down4.maxpool_conv.1.double_conv.3 56 0.00001033 27 1387
+down4.maxpool_conv.1.double_conv.3 57 0.00001001 27 1344
+down4.maxpool_conv.1.double_conv.3 58 0.00000916 27 1230
+down4.maxpool_conv.1.double_conv.3 59 0.00000833 27 1118
+down4.maxpool_conv.1.double_conv.3 60 0.00000802 27 1077
+down4.maxpool_conv.1.double_conv.3 61 0.00000881 27 1183
+down4.maxpool_conv.1.double_conv.3 62 0.00001425 27 1913
+down4.maxpool_conv.1.double_conv.3 63 0.00000816 27 1095
+down4.maxpool_conv.1.double_conv.3 64 0.00002436 27 3269
+down4.maxpool_conv.1.double_conv.3 65 0.00001310 27 1758
+down4.maxpool_conv.1.double_conv.3 66 0.00001059 27 1421
+down4.maxpool_conv.1.double_conv.3 67 0.00000764 27 1025
+down4.maxpool_conv.1.double_conv.3 68 0.00000639 27 858
+down4.maxpool_conv.1.double_conv.3 69 0.00000992 27 1332
+down4.maxpool_conv.1.double_conv.3 70 0.00001141 27 1531
+down4.maxpool_conv.1.double_conv.3 71 0.00001182 27 1586
+down4.maxpool_conv.1.double_conv.3 72 0.00001088 27 1460
+down4.maxpool_conv.1.double_conv.3 73 0.00000805 27 1080
+down4.maxpool_conv.1.double_conv.3 74 0.00000989 27 1327
+down4.maxpool_conv.1.double_conv.3 75 0.00001774 27 2381
+down4.maxpool_conv.1.double_conv.3 76 0.00001071 27 1437
+down4.maxpool_conv.1.double_conv.3 77 0.00000922 27 1237
+down4.maxpool_conv.1.double_conv.3 78 0.00001044 27 1401
+down4.maxpool_conv.1.double_conv.3 79 0.00000663 27 890
+down4.maxpool_conv.1.double_conv.3 80 0.00000870 27 1168
+down4.maxpool_conv.1.double_conv.3 81 0.00001111 27 1491
+down4.maxpool_conv.1.double_conv.3 82 0.00000983 27 1319
+down4.maxpool_conv.1.double_conv.3 83 0.00001905 27 2557
+down4.maxpool_conv.1.double_conv.3 84 0.00000983 27 1319
+down4.maxpool_conv.1.double_conv.3 85 0.00000720 27 966
+down4.maxpool_conv.1.double_conv.3 86 0.00000841 27 1129
+down4.maxpool_conv.1.double_conv.3 87 0.00000863 27 1158
+down4.maxpool_conv.1.double_conv.3 88 0.00000574 27 770
+down4.maxpool_conv.1.double_conv.3 89 0.00000890 27 1195
+down4.maxpool_conv.1.double_conv.3 90 0.00001054 27 1414
+down4.maxpool_conv.1.double_conv.3 91 0.00001009 27 1354
+down4.maxpool_conv.1.double_conv.3 92 0.00001199 27 1609
+down4.maxpool_conv.1.double_conv.3 93 0.00000999 27 1341
+down4.maxpool_conv.1.double_conv.3 94 0.00000848 27 1138
+down4.maxpool_conv.1.double_conv.3 95 0.00001326 27 1780
+down4.maxpool_conv.1.double_conv.3 96 0.00000760 27 1020
+down4.maxpool_conv.1.double_conv.3 97 0.00001457 27 1956
+down4.maxpool_conv.1.double_conv.3 98 0.00000848 27 1138
+down4.maxpool_conv.1.double_conv.3 99 0.00000900 27 1208
+down4.maxpool_conv.1.double_conv.3 100 0.00000826 27 1109
+down4.maxpool_conv.1.double_conv.3 101 0.00000846 27 1136
+down4.maxpool_conv.1.double_conv.3 102 0.00001647 27 2211
+down4.maxpool_conv.1.double_conv.3 103 0.00000938 27 1259
+down4.maxpool_conv.1.double_conv.3 104 0.00000787 27 1056
+down4.maxpool_conv.1.double_conv.3 105 0.00000828 27 1111
+down4.maxpool_conv.1.double_conv.3 106 0.00001103 27 1480
+down4.maxpool_conv.1.double_conv.3 107 0.00001237 27 1660
+down4.maxpool_conv.1.double_conv.3 108 0.00000674 27 905
+down4.maxpool_conv.1.double_conv.3 109 0.00001151 27 1545
+down4.maxpool_conv.1.double_conv.3 110 0.00000961 27 1290
+down4.maxpool_conv.1.double_conv.3 111 0.00000961 27 1290
+down4.maxpool_conv.1.double_conv.3 112 0.00000935 27 1255
+down4.maxpool_conv.1.double_conv.3 113 0.00001210 27 1624
+down4.maxpool_conv.1.double_conv.3 114 0.00001112 27 1492
+down4.maxpool_conv.1.double_conv.3 115 0.00000555 27 745
+down4.maxpool_conv.1.double_conv.3 116 0.00000864 27 1159
+down4.maxpool_conv.1.double_conv.3 117 0.00001106 27 1484
+down4.maxpool_conv.1.double_conv.3 118 0.00000785 27 1054
+down4.maxpool_conv.1.double_conv.3 119 0.00000732 27 982
+down4.maxpool_conv.1.double_conv.3 120 0.00000967 27 1298
+down4.maxpool_conv.1.double_conv.3 121 0.00001031 27 1384
+down4.maxpool_conv.1.double_conv.3 122 0.00001203 27 1615
+down4.maxpool_conv.1.double_conv.3 123 0.00001367 27 1835
+down4.maxpool_conv.1.double_conv.3 124 0.00001080 27 1450
+down4.maxpool_conv.1.double_conv.3 125 0.00001049 27 1408
+down4.maxpool_conv.1.double_conv.3 126 0.00000935 27 1255
+down4.maxpool_conv.1.double_conv.3 127 0.00000826 27 1108
+up1.conv.double_conv.0 0 0.00001012 26 679
+up1.conv.double_conv.0 1 0.00000651 26 437
+up1.conv.double_conv.0 2 0.00001572 26 1055
+up1.conv.double_conv.0 3 0.00000985 26 661
+up1.conv.double_conv.0 4 0.00000700 26 470
+up1.conv.double_conv.0 5 0.00001173 26 787
+up1.conv.double_conv.0 6 0.00001110 26 745
+up1.conv.double_conv.0 7 0.00000820 26 550
+up1.conv.double_conv.0 8 0.00001182 26 793
+up1.conv.double_conv.0 9 0.00001363 26 915
+up1.conv.double_conv.0 10 0.00001030 26 691
+up1.conv.double_conv.0 11 0.00000535 26 359
+up1.conv.double_conv.0 12 0.00001386 26 930
+up1.conv.double_conv.0 13 0.00000645 26 433
+up1.conv.double_conv.0 14 0.00000744 26 499
+up1.conv.double_conv.0 15 0.00000836 26 561
+up1.conv.double_conv.0 16 0.00000837 26 562
+up1.conv.double_conv.0 17 0.00001018 26 683
+up1.conv.double_conv.0 18 0.00002785 26 1869
+up1.conv.double_conv.0 19 0.00000930 26 624
+up1.conv.double_conv.0 20 0.00001022 26 686
+up1.conv.double_conv.0 21 0.00001463 26 982
+up1.conv.double_conv.0 22 0.00000846 26 568
+up1.conv.double_conv.0 23 0.00001381 26 927
+up1.conv.double_conv.0 24 0.00001256 26 843
+up1.conv.double_conv.0 25 0.00000697 26 468
+up1.conv.double_conv.0 26 0.00000690 26 463
+up1.conv.double_conv.0 27 0.00000709 26 476
+up1.conv.double_conv.0 28 0.00000951 26 638
+up1.conv.double_conv.0 29 0.00001374 26 922
+up1.conv.double_conv.0 30 0.00001912 26 1283
+up1.conv.double_conv.0 31 0.00001068 26 717
+up1.conv.double_conv.0 32 0.00001636 26 1098
+up1.conv.double_conv.0 33 0.00001183 26 794
+up1.conv.double_conv.0 34 0.00000609 26 409
+up1.conv.double_conv.0 35 0.00000787 26 528
+up1.conv.double_conv.0 36 0.00001623 26 1089
+up1.conv.double_conv.0 37 0.00000872 26 585
+up1.conv.double_conv.0 38 0.00000949 26 637
+up1.conv.double_conv.0 39 0.00000910 26 611
+up1.conv.double_conv.0 40 0.00000817 26 548
+up1.conv.double_conv.0 41 0.00000846 26 568
+up1.conv.double_conv.0 42 0.00000891 26 598
+up1.conv.double_conv.0 43 0.00000761 26 511
+up1.conv.double_conv.0 44 0.00001055 26 708
+up1.conv.double_conv.0 45 0.00000577 26 387
+up1.conv.double_conv.0 46 0.00000896 26 601
+up1.conv.double_conv.0 47 0.00001626 26 1091
+up1.conv.double_conv.0 48 0.00001474 26 989
+up1.conv.double_conv.0 49 0.00000773 26 519
+up1.conv.double_conv.0 50 0.00000896 26 601
+up1.conv.double_conv.0 51 0.00000690 26 463
+up1.conv.double_conv.0 52 0.00000937 26 629
+up1.conv.double_conv.0 53 0.00000946 26 635
+up1.conv.double_conv.0 54 0.00001055 26 708
+up1.conv.double_conv.0 55 0.00000952 26 639
+up1.conv.double_conv.0 56 0.00001436 26 964
+up1.conv.double_conv.0 57 0.00000896 26 601
+up1.conv.double_conv.0 58 0.00000863 26 579
+up1.conv.double_conv.0 59 0.00001141 26 766
+up1.conv.double_conv.0 60 0.00000899 26 603
+up1.conv.double_conv.0 61 0.00001392 26 934
+up1.conv.double_conv.0 62 0.00000735 26 493
+up1.conv.double_conv.0 63 0.00000891 26 598
+up1.conv.double_conv.0 64 0.00000916 26 615
+up1.conv.double_conv.0 65 0.00000864 26 580
+up1.conv.double_conv.0 66 0.00000553 26 371
+up1.conv.double_conv.0 67 0.00000605 26 406
+up1.conv.double_conv.0 68 0.00001171 26 786
+up1.conv.double_conv.0 69 0.00001405 26 943
+up1.conv.double_conv.0 70 0.00000997 26 669
+up1.conv.double_conv.0 71 0.00001010 26 678
+up1.conv.double_conv.0 72 0.00000966 26 648
+up1.conv.double_conv.0 73 0.00000945 26 634
+up1.conv.double_conv.0 74 0.00001100 26 738
+up1.conv.double_conv.0 75 0.00001016 26 682
+up1.conv.double_conv.0 76 0.00001098 26 737
+up1.conv.double_conv.0 77 0.00000912 26 612
+up1.conv.double_conv.0 78 0.00000992 26 666
+up1.conv.double_conv.0 79 0.00001197 26 803
+up1.conv.double_conv.0 80 0.00002675 26 1795
+up1.conv.double_conv.0 81 0.00001563 26 1049
+up1.conv.double_conv.0 82 0.00001036 26 695
+up1.conv.double_conv.0 83 0.00000879 26 590
+up1.conv.double_conv.0 84 0.00001192 26 800
+up1.conv.double_conv.0 85 0.00000681 26 457
+up1.conv.double_conv.0 86 0.00000936 26 628
+up1.conv.double_conv.0 87 0.00001347 26 904
+up1.conv.double_conv.0 88 0.00000742 26 498
+up1.conv.double_conv.0 89 0.00001036 26 695
+up1.conv.double_conv.0 90 0.00003083 26 2069
+up1.conv.double_conv.0 91 0.00000525 26 352
+up1.conv.double_conv.0 92 0.00001030 26 691
+up1.conv.double_conv.0 93 0.00001442 26 968
+up1.conv.double_conv.0 94 0.00001027 26 689
+up1.conv.double_conv.0 95 0.00001155 26 775
+up1.conv.double_conv.0 96 0.00000924 26 620
+up1.conv.double_conv.0 97 0.00000921 26 618
+up1.conv.double_conv.0 98 0.00000963 26 646
+up1.conv.double_conv.0 99 0.00000954 26 640
+up1.conv.double_conv.0 100 0.00000896 26 601
+up1.conv.double_conv.0 101 0.00001504 26 1009
+up1.conv.double_conv.0 102 0.00000831 26 558
+up1.conv.double_conv.0 103 0.00000636 26 427
+up1.conv.double_conv.0 104 0.00001456 26 977
+up1.conv.double_conv.0 105 0.00000900 26 604
+up1.conv.double_conv.0 106 0.00001042 26 699
+up1.conv.double_conv.0 107 0.00000879 26 590
+up1.conv.double_conv.0 108 0.00001438 26 965
+up1.conv.double_conv.0 109 0.00001444 26 969
+up1.conv.double_conv.0 110 0.00000638 26 428
+up1.conv.double_conv.0 111 0.00000970 26 651
+up1.conv.double_conv.0 112 0.00001125 26 755
+up1.conv.double_conv.0 113 0.00000972 26 652
+up1.conv.double_conv.0 114 0.00002201 26 1477
+up1.conv.double_conv.0 115 0.00000787 26 528
+up1.conv.double_conv.0 116 0.00000621 26 417
+up1.conv.double_conv.0 117 0.00000560 26 376
+up1.conv.double_conv.0 118 0.00000747 26 501
+up1.conv.double_conv.0 119 0.00000779 26 523
+up1.conv.double_conv.0 120 0.00000949 26 637
+up1.conv.double_conv.0 121 0.00000694 26 466
+up1.conv.double_conv.0 122 0.00000882 26 592
+up1.conv.double_conv.0 123 0.00000750 26 503
+up1.conv.double_conv.0 124 0.00000779 26 523
+up1.conv.double_conv.0 125 0.00001150 26 772
+up1.conv.double_conv.0 126 0.00000951 26 638
+up1.conv.double_conv.0 127 0.00000818 26 549
+up1.conv.double_conv.3 0 0.00001368 27 1836
+up1.conv.double_conv.3 1 0.00000899 27 1206
+up1.conv.double_conv.3 2 0.00000957 27 1284
+up1.conv.double_conv.3 3 0.00000957 27 1284
+up1.conv.double_conv.3 4 0.00000995 27 1335
+up1.conv.double_conv.3 5 0.00001073 27 1440
+up1.conv.double_conv.3 6 0.00000919 27 1233
+up1.conv.double_conv.3 7 0.00000953 27 1279
+up1.conv.double_conv.3 8 0.00001366 27 1834
+up1.conv.double_conv.3 9 0.00001017 27 1365
+up1.conv.double_conv.3 10 0.00001951 27 2618
+up1.conv.double_conv.3 11 0.00001461 27 1961
+up1.conv.double_conv.3 12 0.00001791 27 2404
+up1.conv.double_conv.3 13 0.00001441 27 1934
+up1.conv.double_conv.3 14 0.00001321 27 1773
+up1.conv.double_conv.3 15 0.00000893 27 1198
+up1.conv.double_conv.3 16 0.00001436 27 1927
+up1.conv.double_conv.3 17 0.00000809 27 1086
+up1.conv.double_conv.3 18 0.00001148 27 1541
+up1.conv.double_conv.3 19 0.00001258 27 1689
+up1.conv.double_conv.3 20 0.00000868 27 1165
+up1.conv.double_conv.3 21 0.00001100 27 1477
+up1.conv.double_conv.3 22 0.00001377 27 1848
+up1.conv.double_conv.3 23 0.00001267 27 1700
+up1.conv.double_conv.3 24 0.00000852 27 1144
+up1.conv.double_conv.3 25 0.00001393 27 1870
+up1.conv.double_conv.3 26 0.00000811 27 1089
+up1.conv.double_conv.3 27 0.00000675 27 906
+up1.conv.double_conv.3 28 0.00001185 27 1591
+up1.conv.double_conv.3 29 0.00000922 27 1237
+up1.conv.double_conv.3 30 0.00000948 27 1273
+up1.conv.double_conv.3 31 0.00000986 27 1324
+up1.conv.double_conv.3 32 0.00001059 27 1422
+up1.conv.double_conv.3 33 0.00001144 27 1536
+up1.conv.double_conv.3 34 0.00001459 27 1958
+up1.conv.double_conv.3 35 0.00001702 27 2285
+up1.conv.double_conv.3 36 0.00001664 27 2233
+up1.conv.double_conv.3 37 0.00000770 27 1034
+up1.conv.double_conv.3 38 0.00000844 27 1133
+up1.conv.double_conv.3 39 0.00002655 27 3563
+up1.conv.double_conv.3 40 0.00000643 27 863
+up1.conv.double_conv.3 41 0.00001162 27 1559
+up1.conv.double_conv.3 42 0.00000730 27 980
+up1.conv.double_conv.3 43 0.00001342 27 1801
+up1.conv.double_conv.3 44 0.00001547 27 2076
+up1.conv.double_conv.3 45 0.00001048 27 1407
+up1.conv.double_conv.3 46 0.00001261 27 1692
+up1.conv.double_conv.3 47 0.00001039 27 1394
+up1.conv.double_conv.3 48 0.00000847 27 1137
+up1.conv.double_conv.3 49 0.00000906 27 1216
+up1.conv.double_conv.3 50 0.00000660 27 886
+up1.conv.double_conv.3 51 0.00000647 27 869
+up1.conv.double_conv.3 52 0.00001387 27 1862
+up1.conv.double_conv.3 53 0.00001042 27 1399
+up1.conv.double_conv.3 54 0.00001452 27 1949
+up1.conv.double_conv.3 55 0.00001127 27 1513
+up1.conv.double_conv.3 56 0.00001217 27 1634
+up1.conv.double_conv.3 57 0.00001359 27 1824
+up1.conv.double_conv.3 58 0.00000983 27 1320
+up1.conv.double_conv.3 59 0.00000674 27 905
+up1.conv.double_conv.3 60 0.00001232 27 1653
+up1.conv.double_conv.3 61 0.00001226 27 1646
+up1.conv.double_conv.3 62 0.00000609 27 818
+up1.conv.double_conv.3 63 0.00000997 27 1338
+up2.conv.double_conv.0 0 0.00001374 26 922
+up2.conv.double_conv.0 1 0.00000544 26 365
+up2.conv.double_conv.0 2 0.00001456 26 977
+up2.conv.double_conv.0 3 0.00001183 26 794
+up2.conv.double_conv.0 4 0.00003192 26 2142
+up2.conv.double_conv.0 5 0.00000829 26 556
+up2.conv.double_conv.0 6 0.00001846 26 1239
+up2.conv.double_conv.0 7 0.00000912 26 612
+up2.conv.double_conv.0 8 0.00000991 26 665
+up2.conv.double_conv.0 9 0.00001177 26 790
+up2.conv.double_conv.0 10 0.00001155 26 775
+up2.conv.double_conv.0 11 0.00001074 26 721
+up2.conv.double_conv.0 12 0.00001682 26 1129
+up2.conv.double_conv.0 13 0.00000972 26 652
+up2.conv.double_conv.0 14 0.00000922 26 619
+up2.conv.double_conv.0 15 0.00000672 26 451
+up2.conv.double_conv.0 16 0.00001895 26 1272
+up2.conv.double_conv.0 17 0.00001329 26 892
+up2.conv.double_conv.0 18 0.00001264 26 848
+up2.conv.double_conv.0 19 0.00000714 26 479
+up2.conv.double_conv.0 20 0.00002365 26 1587
+up2.conv.double_conv.0 21 0.00002150 26 1443
+up2.conv.double_conv.0 22 0.00000632 26 424
+up2.conv.double_conv.0 23 0.00002576 26 1729
+up2.conv.double_conv.0 24 0.00002192 26 1471
+up2.conv.double_conv.0 25 0.00002149 26 1442
+up2.conv.double_conv.0 26 0.00001469 26 986
+up2.conv.double_conv.0 27 0.00001112 26 746
+up2.conv.double_conv.0 28 0.00001444 26 969
+up2.conv.double_conv.0 29 0.00002004 26 1345
+up2.conv.double_conv.0 30 0.00001743 26 1170
+up2.conv.double_conv.0 31 0.00001231 26 826
+up2.conv.double_conv.0 32 0.00001881 26 1262
+up2.conv.double_conv.0 33 0.00001253 26 841
+up2.conv.double_conv.0 34 0.00002635 26 1768
+up2.conv.double_conv.0 35 0.00002378 26 1596
+up2.conv.double_conv.0 36 0.00001822 26 1223
+up2.conv.double_conv.0 37 0.00001144 26 768
+up2.conv.double_conv.0 38 0.00000775 26 520
+up2.conv.double_conv.0 39 0.00001737 26 1166
+up2.conv.double_conv.0 40 0.00001022 26 686
+up2.conv.double_conv.0 41 0.00000840 26 564
+up2.conv.double_conv.0 42 0.00001094 26 734
+up2.conv.double_conv.0 43 0.00000900 26 604
+up2.conv.double_conv.0 44 0.00001073 26 720
+up2.conv.double_conv.0 45 0.00001238 26 831
+up2.conv.double_conv.0 46 0.00000975 26 654
+up2.conv.double_conv.0 47 0.00001401 26 940
+up2.conv.double_conv.0 48 0.00000955 26 641
+up2.conv.double_conv.0 49 0.00001708 26 1146
+up2.conv.double_conv.0 50 0.00001501 26 1007
+up2.conv.double_conv.0 51 0.00003162 26 2122
+up2.conv.double_conv.0 52 0.00001502 26 1008
+up2.conv.double_conv.0 53 0.00000964 26 647
+up2.conv.double_conv.0 54 0.00001179 26 791
+up2.conv.double_conv.0 55 0.00002146 26 1440
+up2.conv.double_conv.0 56 0.00000940 26 631
+up2.conv.double_conv.0 57 0.00000952 26 639
+up2.conv.double_conv.0 58 0.00000969 26 650
+up2.conv.double_conv.0 59 0.00001070 26 718
+up2.conv.double_conv.0 60 0.00001068 26 717
+up2.conv.double_conv.0 61 0.00001353 26 908
+up2.conv.double_conv.0 62 0.00001666 26 1118
+up2.conv.double_conv.0 63 0.00001098 26 737
+up2.conv.double_conv.3 0 0.00000964 27 1294
+up2.conv.double_conv.3 1 0.00001325 27 1778
+up2.conv.double_conv.3 2 0.00001456 27 1954
+up2.conv.double_conv.3 3 0.00000904 27 1213
+up2.conv.double_conv.3 4 0.00001083 27 1453
+up2.conv.double_conv.3 5 0.00001684 27 2260
+up2.conv.double_conv.3 6 0.00001206 27 1619
+up2.conv.double_conv.3 7 0.00001582 27 2123
+up2.conv.double_conv.3 8 0.00000962 27 1291
+up2.conv.double_conv.3 9 0.00000688 27 923
+up2.conv.double_conv.3 10 0.00001016 27 1363
+up2.conv.double_conv.3 11 0.00000867 27 1164
+up2.conv.double_conv.3 12 0.00001431 27 1921
+up2.conv.double_conv.3 13 0.00001714 27 2301
+up2.conv.double_conv.3 14 0.00001593 27 2138
+up2.conv.double_conv.3 15 0.00001048 27 1406
+up2.conv.double_conv.3 16 0.00001420 27 1906
+up2.conv.double_conv.3 17 0.00000787 27 1056
+up2.conv.double_conv.3 18 0.00000520 27 698
+up2.conv.double_conv.3 19 0.00001305 27 1752
+up2.conv.double_conv.3 20 0.00002827 27 3795
+up2.conv.double_conv.3 21 0.00000586 27 787
+up2.conv.double_conv.3 22 0.00000750 27 1007
+up2.conv.double_conv.3 23 0.00001581 27 2122
+up2.conv.double_conv.3 24 0.00001334 27 1791
+up2.conv.double_conv.3 25 0.00000753 27 1011
+up2.conv.double_conv.3 26 0.00001680 27 2255
+up2.conv.double_conv.3 27 0.00000565 27 758
+up2.conv.double_conv.3 28 0.00001005 27 1349
+up2.conv.double_conv.3 29 0.00001046 27 1404
+up2.conv.double_conv.3 30 0.00001014 27 1361
+up2.conv.double_conv.3 31 0.00001500 27 2013
+up3.conv.double_conv.0 0 0.00002483 27 3333
+up3.conv.double_conv.0 1 0.00000876 27 1176
+up3.conv.double_conv.0 2 0.00001654 27 2220
+up3.conv.double_conv.0 3 0.00001553 27 2084
+up3.conv.double_conv.0 4 0.00000806 27 1082
+up3.conv.double_conv.0 5 0.00000907 27 1217
+up3.conv.double_conv.0 6 0.00001809 27 2428
+up3.conv.double_conv.0 7 0.00001207 27 1620
+up3.conv.double_conv.0 8 0.00000737 27 989
+up3.conv.double_conv.0 9 0.00001176 27 1579
+up3.conv.double_conv.0 10 0.00001119 27 1502
+up3.conv.double_conv.0 11 0.00000630 27 845
+up3.conv.double_conv.0 12 0.00000650 27 872
+up3.conv.double_conv.0 13 0.00001176 27 1579
+up3.conv.double_conv.0 14 0.00000945 27 1268
+up3.conv.double_conv.0 15 0.00001706 27 2290
+up3.conv.double_conv.0 16 0.00002280 27 3060
+up3.conv.double_conv.0 17 0.00001013 27 1360
+up3.conv.double_conv.0 18 0.00001154 27 1549
+up3.conv.double_conv.0 19 0.00001024 27 1375
+up3.conv.double_conv.0 20 0.00001091 27 1464
+up3.conv.double_conv.0 21 0.00002887 27 3875
+up3.conv.double_conv.0 22 0.00000855 27 1147
+up3.conv.double_conv.0 23 0.00001736 27 2330
+up3.conv.double_conv.0 24 0.00001139 27 1529
+up3.conv.double_conv.0 25 0.00001193 27 1601
+up3.conv.double_conv.0 26 0.00000885 27 1188
+up3.conv.double_conv.0 27 0.00001089 27 1461
+up3.conv.double_conv.0 28 0.00000883 27 1185
+up3.conv.double_conv.0 29 0.00000805 27 1081
+up3.conv.double_conv.0 30 0.00000913 27 1226
+up3.conv.double_conv.0 31 0.00001369 27 1837
+up3.conv.double_conv.3 0 0.00001547 27 2077
+up3.conv.double_conv.3 1 0.00000573 27 769
+up3.conv.double_conv.3 2 0.00000850 27 1141
+up3.conv.double_conv.3 3 0.00000984 27 1321
+up3.conv.double_conv.3 4 0.00001395 27 1872
+up3.conv.double_conv.3 5 0.00001027 27 1378
+up3.conv.double_conv.3 6 0.00000875 27 1174
+up3.conv.double_conv.3 7 0.00000812 27 1090
+up3.conv.double_conv.3 8 0.00001043 27 1400
+up3.conv.double_conv.3 9 0.00000653 27 877
+up3.conv.double_conv.3 10 0.00001171 27 1572
+up3.conv.double_conv.3 11 0.00000963 27 1293
+up3.conv.double_conv.3 12 0.00000724 27 972
+up3.conv.double_conv.3 13 0.00000685 27 919
+up3.conv.double_conv.3 14 0.00000826 27 1108
+up3.conv.double_conv.3 15 0.00000829 27 1112
+up3.conv.double_conv.3 16 0.00000606 27 814
+up3.conv.double_conv.3 17 0.00001094 27 1468
+up3.conv.double_conv.3 18 0.00000613 27 823
+up3.conv.double_conv.3 19 0.00001113 27 1494
+up3.conv.double_conv.3 20 0.00001197 27 1606
+up3.conv.double_conv.3 21 0.00001055 27 1416
+up3.conv.double_conv.3 22 0.00000741 27 994
+up3.conv.double_conv.3 23 0.00000583 27 783
+up3.conv.double_conv.3 24 0.00001563 27 2098
+up3.conv.double_conv.3 25 0.00001717 27 2304
+up3.conv.double_conv.3 26 0.00000862 27 1157
+up3.conv.double_conv.3 27 0.00000875 27 1175
+up3.conv.double_conv.3 28 0.00000720 27 966
+up3.conv.double_conv.3 29 0.00000732 27 982
+up3.conv.double_conv.3 30 0.00001512 27 2029
+up3.conv.double_conv.3 31 0.00001159 27 1556
+up4.conv.double_conv.0 0 0.00001067 26 716
+up4.conv.double_conv.0 1 0.00001080 26 725
+up4.conv.double_conv.0 2 0.00001146 26 769
+up4.conv.double_conv.0 3 0.00000949 26 637
+up4.conv.double_conv.0 4 0.00000864 26 580
+up4.conv.double_conv.0 5 0.00000912 26 612
+up4.conv.double_conv.0 6 0.00000915 26 614
+up4.conv.double_conv.0 7 0.00004132 26 2773
+up4.conv.double_conv.0 8 0.00001897 26 1273
+up4.conv.double_conv.0 9 0.00000915 26 614
+up4.conv.double_conv.0 10 0.00001173 26 787
+up4.conv.double_conv.0 11 0.00000855 26 574
+up4.conv.double_conv.0 12 0.00002159 26 1449
+up4.conv.double_conv.0 13 0.00001609 26 1080
+up4.conv.double_conv.0 14 0.00000928 26 623
+up4.conv.double_conv.0 15 0.00001164 26 781
+up4.conv.double_conv.0 16 0.00001007 26 676
+up4.conv.double_conv.0 17 0.00002481 26 1665
+up4.conv.double_conv.0 18 0.00000905 26 607
+up4.conv.double_conv.0 19 0.00000928 26 623
+up4.conv.double_conv.0 20 0.00001329 26 892
+up4.conv.double_conv.0 21 0.00000639 26 429
+up4.conv.double_conv.0 22 0.00001402 26 941
+up4.conv.double_conv.0 23 0.00001261 26 846
+up4.conv.double_conv.0 24 0.00001712 26 1149
+up4.conv.double_conv.0 25 0.00001159 26 778
+up4.conv.double_conv.0 26 0.00000992 26 666
+up4.conv.double_conv.0 27 0.00001287 26 864
+up4.conv.double_conv.0 28 0.00001393 26 935
+up4.conv.double_conv.0 29 0.00000769 26 516
+up4.conv.double_conv.0 30 0.00005513 26 3700
+up4.conv.double_conv.0 31 0.00000541 26 363
+up4.conv.double_conv.3 0 0.00002109 26 1415
+up4.conv.double_conv.3 1 0.00002538 26 1703
+up4.conv.double_conv.3 2 0.00002599 26 1744
+up4.conv.double_conv.3 3 0.00002652 26 1780
+up4.conv.double_conv.3 4 0.00003484 26 2338
+up4.conv.double_conv.3 5 0.00002709 26 1818
+up4.conv.double_conv.3 6 0.00001785 26 1198
+up4.conv.double_conv.3 7 0.00002223 26 1492
+up4.conv.double_conv.3 8 0.00003116 26 2091
+up4.conv.double_conv.3 9 0.00002897 26 1944
+up4.conv.double_conv.3 10 0.00002792 26 1874
+up4.conv.double_conv.3 11 0.00002280 26 1530
+up4.conv.double_conv.3 12 0.00002222 26 1491
+up4.conv.double_conv.3 13 0.00003266 26 2192
+up4.conv.double_conv.3 14 0.00002788 26 1871
+up4.conv.double_conv.3 15 0.00004987 26 3347
+up4.conv.double_conv.3 16 0.00002292 26 1538
+up4.conv.double_conv.3 17 0.00003326 26 2232
+up4.conv.double_conv.3 18 0.00002478 26 1663
+up4.conv.double_conv.3 19 0.00003937 26 2642
+up4.conv.double_conv.3 20 0.00002404 26 1613
+up4.conv.double_conv.3 21 0.00002001 26 1343
+up4.conv.double_conv.3 22 0.00002480 26 1664
+up4.conv.double_conv.3 23 0.00002198 26 1475
+up4.conv.double_conv.3 24 0.00005008 26 3361
+up4.conv.double_conv.3 25 0.00002287 26 1535
+up4.conv.double_conv.3 26 0.00003420 26 2295
+up4.conv.double_conv.3 27 0.00002384 26 1600
+up4.conv.double_conv.3 28 0.00002678 26 1797
+up4.conv.double_conv.3 29 0.00003180 26 2134
+up4.conv.double_conv.3 30 0.00001715 26 1151
+up4.conv.double_conv.3 31 0.00002739 26 1838
+outc.conv 0 0.00003821 24 641
+outc.conv 1 0.00006610 24 1109
+outc.conv 2 0.00008702 24 1460
+outc.conv 3 0.00012541 24 2104
+outc.conv 4 0.00006628 24 1112
+outc.conv 5 0.00011402 24 1913
+outc.conv 6 0.00015479 24 2597
+outc.conv 7 0.00018024 24 3024
+outc.conv 8 0.00009006 24 1511
+outc.conv 9 0.00009131 24 1532
+outc.conv 10 0.00006008 24 1008
+outc.conv 11 0.00015754 24 2643
+outc.conv 12 0.00009078 24 1523
+outc.conv 13 0.00014114 24 2368
+outc.conv 14 0.00008351 24 1401
+outc.conv 15 0.00011963 24 2007
+outc.conv 16 0.00009465 24 1588
+outc.conv 17 0.00016218 24 2721
+outc.conv 18 0.00012356 24 2073
+outc.conv 19 0.00009286 24 1558
