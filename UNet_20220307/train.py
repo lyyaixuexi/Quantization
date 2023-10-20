@@ -67,8 +67,8 @@ def train_net(net,
               save_cp=True,
               args=None):
 
-    train=CityscapesDataset('/gdata/Cityscapes',split='train',mode='fine',augment=True)
-    val = CityscapesDataset('/gdata/Cityscapes', split='val', mode='fine', augment=False)
+    train = CityscapesDataset('/home/lyy/data/Cityscapes',split='train', mode='fine',augment=True)
+    val = CityscapesDataset('/home/lyy/data/Cityscapes', split='val', mode='fine', augment=False)
     n_train=train.__len__()
     train_sampler=DistributedSampler(train)
     train_loader = DataLoader(train, batch_size=batch_size, shuffle=False, num_workers=8, sampler=train_sampler, pin_memory=True)

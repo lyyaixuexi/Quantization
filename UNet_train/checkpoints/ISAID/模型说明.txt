@@ -1,0 +1,4 @@
+Image-size：256*256
+Batch-size：16
+Learning-rate ：1e-5
+精度：0.7729603052139282

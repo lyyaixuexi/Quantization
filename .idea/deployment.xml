@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="lyy@gpu010.scut-smil.cn:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="liaoyuyan@202.38.247.39:32250 password" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
     <serverData>
       <paths name="A800-1">
         <serverdata>
@@ -16,59 +16,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="lyy@gpu010.scut-smil.cn:22 password">
+      <paths name="liaoyuyan@202.38.247.39:32250 password">
         <serverdata>
           <mappings>
-            <mapping deploy="/Quantization" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lyy@gpu010.scut-smil.cn:22 password (2)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lyy@gpu017.scut-smil.cn:22 password">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/Quantization" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lyy@gpu018.scut-smil.cn:22 password">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/Quantization" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lyy@gpu020.scut-smil.cn:22 password">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lyy@gpu023.scut-smil.cn:22 password">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/Quantization" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lyy@gpu024.scut-smil.cn:22 password">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="lyy@gpu024.scut-smil.cn:22 password (2)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/mnt/cephfs/home/lyy/Quantization" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/liaoyuyan/Quantization" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
@@ -76,6 +27,13 @@
         <serverdata>
           <mappings>
             <mapping deploy="/Quantization" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@3.tcp.vip.cpolar.cn:14543 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

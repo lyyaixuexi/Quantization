@@ -7,7 +7,7 @@ cd /userhome/UNet && xxxx
 
 ############################################ train fp32 model #################################################################
 # fp32   50 epoch   lr0.0001   mpa: 88.45%   mIoU: 0.5497
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node 4 train.py -e 50 -b 2 -c ./checkpoint/ckpt_fp32_50epoch_20210901
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node 4 train.py -e 50 -b 2 -c ./checkpoint/ckpt_fp32_50epoch_20231012
 
 # fp32  100 epoch   lr0.0001   mpa: 88.67%  mIoU: 0.5510
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node 4 train.py -e 100 -b 2 -c ./checkpoint/ckpt_fp32_100epoch_20210901
