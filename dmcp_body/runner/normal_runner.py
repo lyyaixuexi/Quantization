@@ -305,7 +305,9 @@ class NormalRunner:
         top5_meter.update(reduced_top5.item())
 
         loss.backward()
+        # nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=20, norm_type=2)
         dist.average_gradient(self.model.parameters())
+        nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=20, norm_type=2)
         optimizer.step()
 
     def _logging(self, tb_logger, epoch_idx, batch_idx, total_batch, meters, cur_lr):
