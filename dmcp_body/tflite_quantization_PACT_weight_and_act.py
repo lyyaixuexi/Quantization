@@ -220,6 +220,9 @@ def uniform_symmetric_quantizer_per_channel(x, num_levels, bits=8, bias_scale=No
         minv = - maxv
         scale = (maxv - minv+1e-5) / (num_levels - 2)   # scale shape = c_out*1
 
+        if alpha is not None:
+            scale = scale * alpha
+
         if bias is not None:
             temp = acc_clamp_range / 2 * act_scale.detach() / bias.detach().abs()
             min_scale = 1 / temp.floor()
@@ -228,8 +231,6 @@ def uniform_symmetric_quantizer_per_channel(x, num_levels, bits=8, bias_scale=No
             # print(min_scale)
             scale = torch.where(scale > min_scale, scale, min_scale)
 
-        if alpha is not None:
-            scale = scale * alpha
 
         scale_expand = scale.unsqueeze(1).unsqueeze(2).unsqueeze(3).expand_as(x)
 
@@ -243,7 +244,7 @@ def uniform_symmetric_quantizer_per_channel(x, num_levels, bits=8, bias_scale=No
         # clamp
         num_levels = int(num_levels)
         x_int = torch.clamp(x_int, -1 * (num_levels / 2 - 1), (num_levels / 2 - 1))
-        print("x_int==============>", x_int)
+        # print("x_int==============>", x_int)
         # dequantize
         x_dequant = x_int * scale_expand
 

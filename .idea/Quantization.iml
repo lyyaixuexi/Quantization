@@ -20,7 +20,7 @@
       <sourceFolder url="file://$MODULE_DIR$/PyHessian" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UNet_train" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.10.0 (sftp://liaoyuyan@202.38.247.39:32250/var/conda/envs/pytorch310/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.7.16 (sftp://lyy@gpu020.scut-smil.cn:22/mnt/cephfs/home/lyy/miniconda3/envs/mae-lite/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

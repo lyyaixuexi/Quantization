@@ -34,8 +34,8 @@ optimizer:
     no_wd: True
 
 lr_scheduler:
-    base_lr: 0.001 #0.2
-    warmup_lr: 0.002   #0.8
+    base_lr: 0.01 #0.2
+    warmup_lr: 0.02   #0.8
     warmup_steps: 62 #1250
     min_lr: 0.0
 

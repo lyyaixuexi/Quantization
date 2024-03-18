@@ -58,7 +58,7 @@
 
 CUDA_VISIBLE_DEVICES=4 python  test.py  --mode eval --data /mnt/cephfs/home/lyy/data/body_detect/split_data  --config config/res18/retrain-pcb-stage2.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch   --model_path /mnt/cephfs/home/lyy/Quantization/dmcp_body/stage3/int4/AdaptiveResNet18_1040.0_030717/best/best.pth >out_int4_test.txt
 
-CUDA_VISIBLE_DEVICES=4 python  test.py  --mode eval --data /mnt/cephfs/home/lyy/data/body_detect/split_data  --config config/res18/retrain-pcb-v3.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch   --model_path /mnt/cephfs/home/lyy/Quantization/dmcp_body/stage3/int8/AdaptiveResNet18_1040.0_022417/best/best.pth >out_int8_test.txt
+CUDA_VISIBLE_DEVICES=4 python  test.py  --mode eval --data /mnt/cephfs/home/lyy/data/body_detect/split_data  --config config/res18/retrain-pcb-v3.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch   --model_path /mnt/cephfs/home/lyy/Quantization/dmcp_body/stage3/int8/AdaptiveResNet18_1040.0_031815/best/best.pth >out_int8_test.txt
 
 CUDA_VISIBLE_DEVICES=4 python  test.py  --mode eval --data /mnt/cephfs/home/lyy/data/body_detect/split_data  --config config/res18/retrain-pcb-v3.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch   --model_path /mnt/cephfs/home/lyy/Quantization/dmcp_body/stage3/int16/AdaptiveResNet18_1040.0_030717/best/best.pth >out_int16_test.txt
 
