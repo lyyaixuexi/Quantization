@@ -28,11 +28,11 @@ def calculate_No(device, model, oaq_conv_result):
             # layer.scale_int_weight: [C_out]
             bias_bits_global = tflite.c_round(layer.bias_bits)
             
-            # min = - 2 ** (bias_bits_global - 1 - 1) + 1
-            # max = 2 ** (bias_bits_global - 1 - 1) - 1
+            min = - 2 ** (bias_bits_global - 1 - 1) + 1
+            max = 2 ** (bias_bits_global - 1 - 1) - 1
 
-            min = - 2 ** (bias_bits_global - 1 ) + 1
-            max = 2 ** (bias_bits_global - 1) - 1
+            # min = - 2 ** (bias_bits_global - 1 ) + 1
+            # max = 2 ** (bias_bits_global - 1) - 1
 
             print(bias_bits_global)
             
@@ -61,11 +61,11 @@ def calculate_No(device, model, oaq_conv_result):
 def calculate_No0(model, oaq_conv_result, conv_accumulator_bits):
    
     # conv_accumulator_bits: [min, max], sign=True
-    # min = - 2 ** (conv_accumulator_bits - 1 - 1) + 1
-    # max = 2 ** (conv_accumulator_bits - 1 - 1) - 1
+    min = - 2 ** (conv_accumulator_bits - 1 - 1) + 1
+    max = 2 ** (conv_accumulator_bits - 1 - 1) - 1
 
-    min = - 2 ** (conv_accumulator_bits - 1) + 1
-    max = 2 ** (conv_accumulator_bits - 1) - 1
+    # min = - 2 ** (conv_accumulator_bits - 1) + 1
+    # max = 2 ** (conv_accumulator_bits - 1) - 1
     index = 0
     No = torch.zeros(len(oaq_conv_result))   # nx1, n: the number of conv layer
     for name, layer in model.named_modules():

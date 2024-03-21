@@ -1,2 +1,2 @@
-/home/lyy/data/tsr/t1q_tsr_data_part1
-/home/lyy/data/tsr/t1q_tsr_data_part2
+/mnt/cephfs/mixed/home/lyy/dataset/tsr/t1q_tsr_data_part1
+/mnt/cephfs/mixed/home/lyy/dataset/tsr/t1q_tsr_data_part2
