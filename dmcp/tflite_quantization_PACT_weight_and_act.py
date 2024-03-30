@@ -1146,7 +1146,7 @@ def replace(model, quantization_bits=8, m_bits=12, bias_bits=16, inference_type=
                 weight_bits =8 #6 
             elif count==last_layer[0]:
                 act_bits =4 # 4
-                weight_bits =4 
+                weight_bits =8
             bias_bits =16 
         else:
             act_bits = quantization_bits
@@ -1154,6 +1154,7 @@ def replace(model, quantization_bits=8, m_bits=12, bias_bits=16, inference_type=
             bias_bits = set_bias_bits
 
         # print("set layer: {} act_bits: {}  weight_bits:{}  bias_bits:{}".format(count, act_bits, weight_bits, bias_bits))
+
 
         if  isinstance(module, nn.Conv2d):
             # print('Conv{}.............'.format(count))
@@ -1175,6 +1176,10 @@ def replace(model, quantization_bits=8, m_bits=12, bias_bits=16, inference_type=
             temp_conv.weight.data.copy_(module.weight.data)
             if module.bias is not None:
                 temp_conv.bias.data.copy_(module.bias.data)
+
+            if count == 0 and quantization_bits < 8:
+                temp_conv.out_clamp_range = c_round(2 ** (c_round(torch.tensor([4])) - 1) - 1)
+
             replace_layer_by_unique_name(model, name, temp_conv)
             count += 1
     # print("After replace:\n {}".format(model))

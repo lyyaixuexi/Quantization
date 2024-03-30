@@ -177,27 +177,27 @@ def main(args):
                 print('freezing %s' % k)
                 v.requires_grad = False  
     #######################################################       
-    count=0
-    for name,module in model.named_modules(): 
-           if isinstance(module,tflite.Conv2d_quantization):
-                if True:#opt.quantization_bits>8:
-                    print('Conv')
-                    print(opt.quantization_bits)
-                    print(module.act_bits.get_device())
-                    module.act_bits = torch.tensor([opt.quantization_bits],device=module.act_bits.get_device())
-                    module.weight_bits = torch.tensor([opt.quantization_bits],device=module.act_bits.get_device()) #4bit时的第一层的8it恢复成了4bit
-                    
-                    module.act_num_levels= torch.tensor([tflite.c_round(2 ** module.act_bits)],device=module.act_bits.get_device())
-                    module.weight_num_levels=torch.tensor([tflite.c_round(2 ** module.weight_bits)],device=module.act_bits.get_device()) 
-                    module.out_clamp_range=torch.tensor([tflite.c_round(2 ** (tflite.c_round(module.weight_bits) - 1) - 1)],device=module.act_bits.get_device())
-                    if  opt.quantization_bits==4:
-                        module.out_clamp_range=torch.tensor([7],device=module.act_bits.get_device()) #仅用于stage3
-                    #bias_bits = set_bias_bits
-                    if  opt.quantization_bits>4 and opt.quantization_bits<=8 :
-                        module.out_clamp_range=torch.tensor([127],device=module.act_bits.get_device()) #仅用于stage3
-                    if  opt.quantization_bits>8 and opt.quantization_bits<=16:
-                        module.out_clamp_range=torch.tensor([32767],device=module.act_bits.get_device()) #仅用于stage3
-                count+=1
+    # count=0
+    # for name,module in model.named_modules():
+    #        if isinstance(module,tflite.Conv2d_quantization):
+    #             if True:#opt.quantization_bits>8:
+    #                 print('Conv')
+    #                 print(opt.quantization_bits)
+    #                 print(module.act_bits.get_device())
+    #                 module.act_bits = torch.tensor([opt.quantization_bits],device=module.act_bits.get_device())
+    #                 module.weight_bits = torch.tensor([opt.quantization_bits],device=module.act_bits.get_device()) #4bit时的第一层的8it恢复成了4bit
+    #
+    #                 module.act_num_levels= torch.tensor([tflite.c_round(2 ** module.act_bits)],device=module.act_bits.get_device())
+    #                 module.weight_num_levels=torch.tensor([tflite.c_round(2 ** module.weight_bits)],device=module.act_bits.get_device())
+    #                 module.out_clamp_range=torch.tensor([tflite.c_round(2 ** (tflite.c_round(module.weight_bits) - 1) - 1)],device=module.act_bits.get_device())
+    #                 if  opt.quantization_bits==4:
+    #                     module.out_clamp_range=torch.tensor([7],device=module.act_bits.get_device()) #仅用于stage3
+    #                 #bias_bits = set_bias_bits
+    #                 if  opt.quantization_bits>4 and opt.quantization_bits<=8 :
+    #                     module.out_clamp_range=torch.tensor([127],device=module.act_bits.get_device()) #仅用于stage3
+    #                 if  opt.quantization_bits>8 and opt.quantization_bits<=16:
+    #                     module.out_clamp_range=torch.tensor([32767],device=module.act_bits.get_device()) #仅用于stage3
+    #             count+=1
    ####################################################
     #optimizer=optim.Adam(model.parameters(), lr , weight_decay =5e-4)
     
