@@ -10,5 +10,5 @@ export PYTHONPATH=$PYTHONPATH:/userhome/resnet18_fault_det/dmcp-master
 
 
 
-CUDA_VISIBLE_DEVICES=2 python train_quantize.py  --mode train --data ../pcb_3  --config config/res18/retrain-tsr-stage3-v2.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch --quantization  --quantization_bits 4 --m_bits 12 --bias_bits 16 --fuseBN /mnt/cephfs/home/lyy/Quantization/dmcp/stage1/int4/AdaptiveResNet18_1040.0_022215/best/best.pth  --Mn_aware  --load_pretrain_fuseBN /mnt/cephfs/home/lyy/Quantization/dmcp/stage2/int4/AdaptiveResNet18_1040.0_022602/best/best.pth  --save_dir './stage3/int4' >out_4bits_stage3.txt
+CUDA_VISIBLE_DEVICES=7 python train_quantize.py  --mode train --data ../pcb_3  --config config/res18/retrain-tsr-stage3-v2.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch --quantization  --quantization_bits 4 --m_bits 12 --bias_bits 16 --fuseBN /mnt/cephfs/home/lyy/Quantization/dmcp/stage1/int4/AdaptiveResNet18_1040.0_032817/best/best.pth  --Mn_aware  --load_pretrain_fuseBN /mnt/cephfs/home/lyy/Quantization/dmcp/stage2/int4/AdaptiveResNet18_1040.0_032923/best/best.pth  --save_dir './stage3/int4' >out_4bits_stage3.txt
 

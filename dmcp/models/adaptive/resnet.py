@@ -205,8 +205,8 @@ class AdaptiveBasicBlock(nn.Module):
 
         if self.conv1.inference_type == "full_int" and self.conv1.Mn_aware:
             ###########################
-            N_overflow = tflite.is_overflow(out, self.conv2.weight_bits)
-            print('resblock Overflow:{}'.format(N_overflow))
+            # N_overflow = tflite.is_overflow(out, self.conv2.weight_bits)
+            # print('resblock Overflow:{}'.format(N_overflow))
             ###########################
             #######################################################
             out = tflite.clamp(out, min=-1 * self.conv1.out_clamp_range, max=self.conv1.out_clamp_range)

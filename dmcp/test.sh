@@ -56,7 +56,7 @@
 /userhome/anaconda3_1/envs/pytorch_wzb/bin/python   test.py  --mode eval --data ../pcb_7  --config 'config/res18/retrain-pcb-stage2.yaml' --flops  1040  --chcfg './results/DMCPResNet18_1040.0_051312/model_sample/expected_ch'  --model_path 'stage3/int16/AdaptiveResNet18_1040.0_121013/best/best.pth'  >out_int16_test.txt
 
 
-CUDA_VISIBLE_DEVICES=4 python  test.py  --mode eval --data ../pcb_3  --config config/res18/retrain-tsr-stage2.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch   --model_path /mnt/cephfs/home/lyy/Quantization/dmcp/stage3/int4/AdaptiveResNet18_1040.0_022801/best/best.pth >out_int4_test.txt
+CUDA_VISIBLE_DEVICES=4 python  test.py  --mode eval --data ../pcb_3  --config config/res18/retrain-tsr-stage2.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch   --model_path /mnt/cephfs/home/lyy/Quantization/dmcp/stage3/int4/AdaptiveResNet18_1040.0_033017/best/best.pth >out_int4_test.txt
 
 CUDA_VISIBLE_DEVICES=4 python  test.py  --mode eval --data ../pcb_3  --config config/res18/retrain-tsr-v3.yaml --flops  1040  --chcfg /mnt/cephfs/home/lyy/Quantization/dmcp/results/DMCPResNet18_1040.0_051312/model_sample/expected_ch   --model_path /mnt/cephfs/home/lyy/Quantization/dmcp/stage3/int8/AdaptiveResNet18_1040.0_022801/best/best.pth >out_int8_test.txt
 

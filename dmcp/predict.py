@@ -136,14 +136,14 @@ if __name__ == '__main__':
    
     if args.raw:  
         #if args.mode == 'evaluate':
-        loaders = tools.get_data_loader(config)
-        evaluate(runner, loaders)
         #elif args.mode == 'calc_flops':
         flops = tools.get_model_flops(config, runner.get_model())
         print('flops: {}'.format(flops))
         #elif args.mode == 'calc_params': 
         params = tools.get_model_parameters(runner.get_model())
         print('params: {}'.format(params)) 
+        loaders = tools.get_data_loader(config)
+        evaluate(runner, loaders)
     else:
         model=runner.model
         model=model.module 
@@ -188,6 +188,7 @@ if __name__ == '__main__':
             delattr(model, 'bn1')  # remove batchnorm
             model.forward=model.fuseforward #####dDDP
         if opt.model_path is not None:
+            # state_dict = torch.load(opt.model_path)['model']#.float().state_dict()
             state_dict = torch.load(opt.model_path)['model']#.float().state_dict()
             state_dict1={key[7:]:state_dict[key] for key in state_dict.keys()} ##去掉DDP的'.module'
             model.load_state_dict(state_dict1, strict=False) 
@@ -212,7 +213,7 @@ if __name__ == '__main__':
 
         temp_input = torch.zeros([1, 3, 224, 224]).cuda()
         model = model.eval().cuda()
-        # # update alpha, act_scale, weight_sacle 
+        # # update alpha, act_scale, weight_sacle, M, n 
         temp_output = model(temp_input)
         tflite.update_next_act_scale(model)
         del temp_input, temp_output
@@ -225,14 +226,8 @@ if __name__ == '__main__':
         # register hook to get conv_layer‘s input and output
         register_hook(model, hook_conv_results)
 
-        for name, param in model.named_parameters():
-            if 'bias' in name:
-                print(name)
-
         # runner.model.module=model
         runner.model=model.cuda()
-
-
         #if args.mode == 'evaluate':
         #evaluate(runner, loaders)
         # pic = cv2.imread(args.img_path)
@@ -341,13 +336,26 @@ if __name__ == '__main__':
                     img[96 * 2:96 * 2 + 96, 96 * 2:96 * 2 + 96, :] = temp_img
                     label[2, 2] = labels[img_path]
 
+            img = cv2.resize(img,(224, 224))
+            
+            # save 3*3 formatimage
+            cv2.imwrite("test_input_image.jpg", img)
+            img = cv2.imread("test_input_image.jpg")
+
             img = transform(img)
             img = torch.from_numpy(img).float().cuda()
             label = torch.from_numpy(label).float().cuda()
 
             data = img.unsqueeze(0)
+
+            print("(data.size():{}".format(data.size()))
+
+
             output = model(data)
 
+            # print("data after convert to float==>")
+            # print(output)
+            print(output.dtype)
             pred = output.data.max(1, keepdim=True)[1]  # get the index of the max log-probability
             correct += pred.eq(label.data.view_as(pred)).cpu().sum()
 
